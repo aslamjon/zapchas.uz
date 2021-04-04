@@ -1,0 +1,145 @@
+.section-google {
+    .container {
+        max-width: 84vw !important;
+        .row {
+            .boglanish {
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 42px;
+            }
+            .hamkorlik {
+                font-size: 16px;
+                line-height: 24px;
+                /* or 150% */
+                text-align: center;
+                color: #616161;
+            }
+            .col-lg-3 {
+                .card {
+                    border: none !important;
+                    background-color: white;
+                    padding: 40px;
+                    height: 211px !important;
+                    a {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .loco {
+                        margin-top: 20px;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #616161;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .row {
+            .col-lg-10 {
+                background-color: white;
+                form {
+                    padding: 20px;
+                    .row {
+                        .col-lg-4,
+                        .col-12 {
+                            input {
+                                height: 59px !important;
+                            }
+                            .textar {
+                                position: relative;
+                                height: 189px !important;
+                            }
+                            .textar::placeholder {
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+                            }
+                            input::placeholder {
+                                font-weight: normal;
+                                padding-left: 10px;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #A5A5A5;
+                            }
+                            label {
+                                font-weight: bold;
+                                font-size: 20px;
+                                line-height: 24px;
+                                text-align: center;
+                                color: #616161;
+                            }
+                        }
+                        .col-md-3 {
+                            button {
+                                border-radius: 3px;
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 19px;
+                                padding: 10px 0px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:991px) and (max-width:1200px) {
+    .section-google {
+        .container {
+            max-width: 84vw !important;
+            .row {
+                .col-lg-3 {
+                    .card {
+                        .loco {
+                            margin-top: 20px;
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 20px;
+                            text-align: center;
+                            color: #616161;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .section-google {
+        .container {
+            .row {
+                .col-lg-10 {
+                    form {
+                        .row {
+                            .col-lg-4,
+                            .col-12 {
+                                input {
+                                    height: 40px !important;
+                                }
+                                .textar {
+                                    height: 100px !important;
+                                }
+                                input::placeholder {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                                label {
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    line-height: 20px;
+                                    color: #616161;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

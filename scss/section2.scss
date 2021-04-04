@@ -1,0 +1,43 @@
+.section-2 {
+    .discount {
+        display: flex;
+        justify-content: center;
+        .title {
+            text-align: center;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 42px;
+            color: #000000;
+            margin: 10px;
+        }
+        .clock {
+            display: flex;
+            justify-content: center;
+            .day,
+            .hours,
+            .minut,
+            .sec {
+                width: 65px;
+                height: 65px;
+                background: #fae100;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 10px;
+                .num {
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 30px;
+                    color: #000000;
+                }
+                .text {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: #676767;
+                }
+            }
+        }
+    }
+}

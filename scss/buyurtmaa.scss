@@ -1,0 +1,159 @@
+.section-buyurtma {
+    .container {
+        max-width: 84vw !important;
+        .row {
+            .col-12 {
+                padding: 25px;
+                background: #fff;
+                .muhim {
+                    display: flex;
+                    align-items: center;
+                    .count {
+                        color: #007CFF;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 41px;
+                    }
+                    .buy {
+                        color: #616161;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 41px;
+                    }
+                }
+                .tolov {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #616161;
+                }
+                .mal {
+                    font-weight: bold;
+                    font-size: 26px;
+                    line-height: 32px;
+                }
+                .ota {
+                    display: flex;
+                    width: 100%;
+                    border: 1px solid rgb(224, 213, 213);
+                    .first-table {
+                        border-left: 1px solid rgb(218, 208, 208);
+                        border-right: 1px solid rgb(218, 208, 208);
+                        width: 50%;
+                        .bol,
+                        .whit,
+                        .yellow {
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: #616161;
+                            height: 50px;
+                            background: #F6F6F6;
+                            align-items: center;
+                            display: flex;
+                            padding-left: 20px;
+                        }
+                        .yellow {
+                            font-weight: bold;
+                            color: #DBAD37;
+                            background: white;
+                        }
+                        .whit {
+                            background: white;
+                        }
+                    }
+                }
+                .buttonss {
+                    button {
+                        width: 20%;
+                        height: 50px;
+                    }
+                    .bun {
+                        background: #616161 !important;
+                        box-shadow: none !important;
+                        border: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:870px) {
+    .section-buyurtma {
+        .container {
+            .row {
+                .col-12 {
+                    .buttonss {
+                        button {
+                            width: 49.2%;
+                            height: 40px;
+                        }
+                        .bun {
+                            background: #616161 !important;
+                            box-shadow: none !important;
+                            border: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:650px) {
+    .section-buyurtma {
+        .container {
+            .row {
+                .col-12 {
+                    .muhim {
+                        .count {
+                            font-size: 14px;
+                        }
+                        .buy {
+                            font-size: 14px;
+                        }
+                    }
+                    .tolov {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #616161;
+                    }
+                    .mal {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+                    .ota {
+                        .first-table {
+                            .bol,
+                            .whit,
+                            .yellow {
+                                font-weight: 450;
+                                font-size: 14px;
+                                height: 40px;
+                                line-height: 15px;
+                                padding-left: 5px;
+                            }
+                            .yellow {
+                                height: 70px;
+                                font-weight: 450;
+                            }
+                        }
+                    }
+                    .buttonss {
+                        button {
+                            width: 49%;
+                            height: 50px;
+                            font-size: 14px;
+                        }
+                        .bun {
+                            background: #616161 !important;
+                            box-shadow: none !important;
+                            border: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,252 @@
+.headd {
+    background: transparent;
+    height: 0;
+}
+
+.section-Afsus {
+    margin-top: 100px;
+    width: 100% !important;
+    margin-bottom: -50px !important;
+    .container {
+        max-width: 84vw !important;
+        .ro1 {
+            font-weight: 900;
+            font-size: 95px;
+            line-height: 111px;
+            color: #DDDDDD;
+        }
+        .ro2 {
+            margin-top: 25px;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 47px;
+        }
+        .ro3 {
+            margin-top: 25px;
+            font-weight: normal;
+            font-size: 20px;
+            color: #616161;
+        }
+        .ro4 {
+            .col-md-6 {
+                .row {
+                    .col-lg-8 {
+                        input {
+                            height: 55px;
+                            background: #E3E3E3;
+                        }
+                    }
+                    .col-lg-4 {
+                        button {
+                            height: 55px;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+        .ro5 {
+            margin-top: 25px;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            color: #616161;
+        }
+        .ro6 {
+            button {
+                margin-top: 20px;
+                background: #616161 !important;
+                border-radius: 3px;
+                border: none !important;
+                outline: none !important;
+                width: 198px;
+                height: 55px;
+            }
+        }
+    }
+}
+
+@media(max-width:1600px) {
+    .section-Afsus {
+        margin-top: 70px;
+        .container {
+            .ro1 {
+                font-weight: 900;
+                font-size: 70px;
+                line-height: 90px;
+            }
+            .ro4 {
+                .col-md-6 {
+                    .row {
+                        .col-lg-8 {
+                            input {
+                                height: 40px;
+                            }
+                        }
+                        .col-lg-4 {
+                            button {
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            .ro6 {
+                button {
+                    margin-top: 20px;
+                    background: #616161 !important;
+                    border-radius: 3px;
+                    border: none !important;
+                    outline: none !important;
+                    width: 198px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1160px) {
+    .section-Afsus {
+        margin-top: 50px;
+        .container {
+            .ro1 {
+                font-weight: 700;
+                font-size: 55px;
+            }
+            .ro2 {
+                margin-top: 5px;
+                font-weight: 500;
+                font-size: 30px;
+            }
+            .ro3 {
+                margin-top: 5px;
+            }
+            .ro4 {
+                .col-md-6 {
+                    .row {
+                        .col-lg-8 {
+                            input {
+                                height: 40px;
+                            }
+                        }
+                        .col-lg-4 {
+                            button {
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            .ro5 {
+                margin-top: 15px;
+            }
+            .ro6 {
+                button {
+                    margin-top: 15px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:860px) {
+    .section-Afsus {
+        margin-top: 30px;
+        .container {
+            .ro1 {
+                font-weight: 700;
+                font-size: 35px;
+            }
+            .ro2 {
+                margin-top: -10px;
+                font-weight: 500;
+                font-size: 25px;
+            }
+            .ro3 {
+                margin-top: 5px;
+                font-size: 16px;
+                text-align: center;
+            }
+            .ro4 {
+                .col-md-6 {
+                    .row {
+                        .col-lg-8 {
+                            input {
+                                height: 35px;
+                            }
+                        }
+                        .col-lg-4 {
+                            button {
+                                height: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+            .ro5 {
+                margin-top: 15px;
+                font-size: 16px;
+            }
+            .ro6 {
+                button {
+                    margin-top: 15px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:550px) {
+    .section-Afsus {
+        margin-top: 50px;
+        .container {
+            .ro1 {
+                font-size: 28px;
+                text-align: center;
+                line-height: 35px !important;
+            }
+            .ro2 {
+                margin-top: 0px;
+                font-weight: 500;
+                font-size: 24px;
+            }
+            .ro3 {
+                margin-top: 0px;
+                font-size: 16px;
+                text-align: center;
+            }
+            .ro4 {
+                .col-md-6 {
+                    .row {
+                        .col-lg-8 {
+                            input {
+                                height: 35px;
+                            }
+                        }
+                        .col-lg-4 {
+                            button {
+                                height: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+            .ro5 {
+                margin-top: 15px;
+                font-size: 16px;
+                text-align: center;
+            }
+            .ro6 {
+                button {
+                    margin-top: 15px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}

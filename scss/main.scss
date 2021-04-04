@@ -1,0 +1,1046 @@
+@import 'google';
+@import 'xatolik404';
+@import 'aboutMe';
+@import 'yangiliklarName';
+@import 'buyurtmaa';
+@import 'difficult';
+@import 'nav';
+@import 'header';
+@import 'section1';
+@import 'section2';
+@import 'section3';
+@import 'aboutProduct';
+@import 'selectedProducts';
+@import 'savatcha';
+@import 'savatcha2';
+@import 'footer';
+@import 'account';
+@import 'carusel';
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+.rang {
+    background-color: #EAEAEA;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #898989;
+    cursor: pointer;
+    mask: {
+        position: center center;
+        size: 90%;
+        repeat: no-repeat;
+    }
+    -webkit-mask: {
+        position: center center;
+        size: 90%;
+        repeat: no-repeat;
+    }
+}
+
+.icon-click {
+    width: 28.25px;
+    height: 28.25px;
+    display: inline-block;
+    background-color: #898989;
+    cursor: pointer;
+    mask: {
+        position: center center;
+        size: 90%;
+        repeat: no-repeat;
+    }
+    -webkit-mask: {
+        position: center center;
+        size: 90%;
+        repeat: no-repeat;
+    }
+}
+
+.icon-click.active {
+    background-color: #FF0000;
+}
+
+.icon-like {
+    mask-image: url('/img/likee.svg');
+    -webkit-mask-image: url('/img/likee.svg');
+}
+
+.click-ver {
+    mask-image: url('/img/verclick.svg');
+    -webkit-mask-image: url('/img/verclick.svg');
+}
+
+.click-gor {
+    mask-image: url('/img/gorclick.svg');
+    -webkit-mask-image: url('/img/gorclick.svg');
+}
+
+.click-all {
+    mask-image: url('/img/kvclick.svg');
+    -webkit-mask-image: url('/img/kvclick.svg');
+}
+
+.icon-buy {
+    mask-image: url('/img/buyicon.svg');
+    -webkit-mask-image: url('/img/buyicon.svg');
+}
+
+.icon-big {
+    mask-image: url('/img/bigScreen.svg');
+    -webkit-mask-image: url('/img/bigScreen.svg');
+}
+
+.icon-col {
+    mask-image: url('/img/collection.svg');
+    -webkit-mask-image: url('/img/collection.svg');
+}
+
+.section-Azizbek {
+    // CONTAINER 1360PX EKRANDAN KATTA EKRANLARDA HAM BIR XIL BOL
+    .container {
+        max-width: 84vw !important;
+        // YANGILIKLAR
+        .owl-carusel-2 {
+            position: relative;
+            ul {
+                border: none !important;
+                position: absolute;
+                top: 2px;
+                right: 120px;
+                li {
+                    a {
+                        padding: 3px 5px;
+                        font-size: 16px !important;
+                        line-height: 19px !important;
+                        color: #616161 !important;
+                        text-decoration: none;
+                        &.active {
+                            background-color: black;
+                            color: white !important;
+                        }
+                    }
+                }
+            }
+            .text-songi {
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 30px;
+                padding-bottom: 5px;
+            }
+            .owl-carousel {
+                .owl-nav {
+                    position: absolute;
+                    top: -30px;
+                    right: 20px;
+                    z-index: 1111;
+                    .owl-prev,
+                    .owl-next {
+                        background-image: url(../img/slideBag.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 35.22px;
+                        height: 22px;
+                        color: white;
+                        outline: none !important;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .col-md-4 {
+                .card-img-top {
+                    width: 350% !important;
+                    img {
+                        width: 100% !important;
+                    }
+                }
+                .card-body {
+                    width: 350% !important;
+                    p {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+                    div {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        // INTERIER, EXTERIER, DVIGITEL, CAROUSEL
+        .row {
+            .col-lg-3 {
+                .card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 100% !important;
+                    }
+                    .window {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        opacity: 0.6;
+                        background: linear-gradient(to top, rgb(87, 131, 197), black);
+                    }
+                    .dataInterier {
+                        text-align: center;
+                        font-weight: 500;
+                        font-size: 26px;
+                        line-height: 30px;
+                        position: absolute;
+                        color: white;
+                        z-index: inherit;
+                        bottom: 12%;
+                    }
+                }
+            }
+            .col-lg-9 {
+                .row {
+                    #owl-carusel-top,
+                    #owl-carusel-top-2,
+                    #owl-carusel-top-3 {
+                        .owl-nav {
+                            display: block !important;
+                            position: absolute;
+                            z-index: 111111111;
+                            right: 10px;
+                            top: -30px;
+                            .owl-next,
+                            .owl-prev {
+                                width: 35px;
+                                height: 22px;
+                                background-image: url(../img/slideBag.png);
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                color: white;
+                                outline: none !important;
+                            }
+                        }
+                        .item {
+                            width: 400% !important;
+                            .col-lg-3 {
+                                .card {
+                                    width: 100% !important;
+                                    position: relative;
+                                    .icon-hover-1,
+                                    .icon-hover-2 {
+                                        position: absolute;
+                                        z-index: 1111;
+                                        top: 10px;
+                                        right: 10px;
+                                        .icon {
+                                            &:hover {
+                                                background-color: #007CFF;
+                                            }
+                                        }
+                                    }
+                                    .icon-hover-2 {
+                                        top: 30px;
+                                        right: 10px;
+                                    }
+                                    img {
+                                        margin-top: 30px;
+                                        width: 65% !important;
+                                    }
+                                    .dataRull {
+                                        padding: 20px;
+                                        width: 100%;
+                                        .tro {
+                                            font-weight: normal;
+                                            font-size: 14px;
+                                            line-height: 16px;
+                                            color: #A5A5A5;
+                                        }
+                                        .chambarag {
+                                            margin-top: 10px;
+                                            font-weight: 500;
+                                            font-size: 20px;
+                                            line-height: 23px;
+                                        }
+                                        .stars {
+                                            display: flex;
+                                            img {
+                                                width: 17px !important;
+                                                height: 16px !important;
+                                            }
+                                            img:nth-child(2) {
+                                                margin-left: 10px;
+                                            }
+                                            img:nth-child(3) {
+                                                margin-left: 10px;
+                                            }
+                                            img:nth-child(4) {
+                                                margin-left: 10px;
+                                            }
+                                            img:nth-child(5) {
+                                                margin-left: 10px;
+                                            }
+                                        }
+                                        .price-savat {
+                                            width: 100%;
+                                            margin-top: 15px;
+                                            display: flex;
+                                            align-items: center;
+                                            .price {
+                                                font-weight: 500;
+                                                font-size: 20px;
+                                                line-height: 23px;
+                                            }
+                                            .iconPlace {
+                                                margin-left: auto;
+                                                width: 27px;
+                                                height: 27px;
+                                                border-radius: 50%;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                &:hover .icon {
+                                                    background-color: white !important;
+                                                }
+                                                &:hover {
+                                                    background-color: #007CFF;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #owl-carusel-top-2 {
+                        .item {
+                            .col-lg-3 {
+                                .card {
+                                    .imgdiv {
+                                        height: 200px;
+                                        img {
+                                            margin-left: 10%;
+                                            margin-top: 50px;
+                                            width: 80% !important;
+                                            height: 100px !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #owl-carusel-top-3 {
+                        .item {
+                            .col-lg-3 {
+                                .card {
+                                    .imgdiv {
+                                        height: 200px;
+                                        img {
+                                            margin-left: 5%;
+                                            margin-top: 50px;
+                                            width: 90% !important;
+                                            height: 150px !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //TOP MAXSULOTLAR, BESTSELLER VA MAXSUS TAKLIF
+        .row-br {
+            .col-md-4 {
+                .brbot {
+                    padding: 8px 0px;
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 30px;
+                    border-bottom: 2px solid rgb(228, 215, 215);
+                }
+                .cardMiniWidth {
+                    position: relative;
+                    background-color: white;
+                    display: flex;
+                    width: 100% !important;
+                    height: 102px !important;
+                    .rasmMin {
+                        width: 30%;
+                        height: 102px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .rul {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+                    .bigAbsolute {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                    }
+                }
+            }
+        }
+        // Ommabop brendlar carusel
+        .row {
+            .col-md-2 {
+                text-align: center;
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 30px;
+            }
+            #owl-causel-1 {
+                .item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 95% !important;
+                    height: 107px !important;
+                    background-color: white;
+                    img {
+                        width: 60% !important;
+                    }
+                    .romb {
+                        width: 40% !important;
+                    }
+                    .mers {
+                        width: 50% !important;
+                    }
+                }
+                .owl-nav {
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .owl-prev,
+                    .owl-next {
+                        background-image: url(../img/slideBagRight.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 41px !important;
+                        height: 22px !important;
+                        outline: none !important;
+                        color: white;
+                    }
+                    .owl-prev {
+                        background-image: url(../img/slideBagLeft.png) !important;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        // MOTOR MOYLARI va HAYDOVCHI KABINASI
+        .row {
+            .col-lg-6 {
+                position: relative;
+                .motor {
+                    width: 100% !important;
+                }
+                .noMotor {
+                    width: 95% !important;
+                    position: absolute;
+                    top: 0;
+                    left: 2%;
+                    height: 100% !important;
+                }
+                .noH {
+                    width: 95% !important;
+                    position: absolute;
+                    top: 0;
+                    right: 3%;
+                    height: 100% !important;
+                }
+                .data {
+                    position: absolute;
+                    z-index: 111;
+                    left: 10%;
+                    top: 10%;
+                    color: white;
+                    .mtext {
+                        color: #FAE100;
+                        font-weight: bold;
+                        font-size: 46px;
+                        line-height: 54px;
+                    }
+                    .mtext2 {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 33px;
+                    }
+                    .btnDanger {
+                        width: 50% !important;
+                        color: white;
+                        height: 42px;
+                        border: none !important;
+                        border-radius: 5px;
+                        outline: none !important;
+                        background-color: #ff0000;
+                        margin-top: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1200px) and (max-width:1450px) {
+    .section-Azizbek {
+        .container {
+            // MOTOR MOYLARI va HAYDOVCHI KABINASI
+            .row {
+                .col-lg-6 {
+                    .data {
+                        position: absolute;
+                        z-index: 111;
+                        left: 10%;
+                        top: 9%;
+                        color: white;
+                        .mtext {
+                            color: #FAE100;
+                            font-weight: 600;
+                            font-size: 32px;
+                            line-height: 36px;
+                        }
+                        .mtext2 {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                        .btnDanger {
+                            width: 50% !important;
+                            color: white;
+                            height: 42px;
+                            border: none !important;
+                            border-radius: 5px;
+                            outline: none !important;
+                            background-color: #ff0000;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+            // ommabop
+            .row {
+                .ommabop {
+                    font-weight: 550;
+                    font-size: 17px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+    .section-footer {
+        .container {
+            .row-footer {
+                .ali {
+                    margin-top: 20px;
+                }
+                .gani {
+                    form {
+                        input {
+                            &::placeholder {
+                                font-size: 14px;
+                                padding-left: 5%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .section-Azizbek {
+        .container {
+            // INTERIER, EXTERIER, DVIGITEL, CAROUSEL
+            .row {
+                .col-md-3 {
+                    .card {
+                        .dataInterier {
+                            text-align: center;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 18px;
+                            position: absolute;
+                            color: white;
+                            z-index: inherit;
+                            bottom: 12%;
+                        }
+                    }
+                }
+            }
+            // MOTOR MOYLARI va HAYDOVCHI KABINASI
+            .row {
+                .col-lg-6 {
+                    .data {
+                        position: absolute;
+                        z-index: 111;
+                        left: 10%;
+                        top: 6%;
+                        color: white;
+                        .mtext {
+                            color: #FAE100;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 30px;
+                        }
+                        .mtext2 {
+                            margin-top: 5px;
+                            font-weight: 450;
+                            font-size: 13px;
+                            line-height: 15px;
+                        }
+                        .btnDanger {
+                            width: 42% !important;
+                            color: white;
+                            height: 30px;
+                            border: none !important;
+                            border-radius: 5px;
+                            outline: none !important;
+                            background-color: #ff0000;
+                            margin-top: 10px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            // TOP MAXSULOTLAR, BESTSELLER VA MAXSUS TAKLIF 
+            .row-br {
+                .col-md-4 {
+                    .brbot {
+                        padding: 4x 0px;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 18px;
+                        border-bottom: 2px solid rgb(228, 215, 215);
+                    }
+                    .cardMiniWidth {
+                        position: relative;
+                        background-color: white;
+                        display: flex;
+                        width: 100% !important;
+                        height: 102px !important;
+                        .rasmMin {
+                            width: 30%;
+                            height: 102px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .rul {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 15px;
+                        }
+                        .bigAbsolute {
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                        }
+                    }
+                }
+            }
+            // yangilioklar
+            .row {
+                .card-img-top {
+                    width: 100% !important;
+                    img {
+                        width: 100% !important;
+                    }
+                }
+                .card-body {
+                    width: 100% !important;
+                    p {
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 14px;
+                    }
+                    div {
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+            }
+            // ommabop
+            .row {
+                .ommabop {
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .section-footer {
+        .container {
+            .row-footer {
+                .ali {
+                    margin-top: 20px;
+                    img {
+                        width: 110px;
+                        height: 80px;
+                    }
+                    .textFF,
+                    .tel,
+                    .tel-num,
+                    .address,
+                    .location {
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #BCBCBC;
+                        text-decoration: none;
+                    }
+                    .tel-num,
+                    .location {
+                        font-weight: 450;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                .vali {
+                    margin-top: 50px;
+                    p {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 17px;
+                        color: #FFFFFF;
+                    }
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        font-size: 12px;
+                        line-height: 41px;
+                        color: #BCBCBC;
+                    }
+                }
+                .gani {
+                    form {
+                        input {
+                            width: 61%;
+                            &::placeholder {
+                                font-size: 12px;
+                                padding: 0 !important;
+                            }
+                        }
+                        .azo-click {
+                            width: 37%;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .section-Azizbek {
+        .container {
+            // INTERIER, EXTERIER, DVIGITEL, CAROUSEL
+            .row {
+                .col-md-3 {
+                    .card {
+                        .dataInterier {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+            // MOTOR MOYLARI va HAYDOVCHI KABINASI
+            .row {
+                .col-lg-6 {
+                    .data {
+                        .mtext {
+                            font-weight: 600;
+                            font-size: 35px;
+                            line-height: 54px;
+                        }
+                        .mtext2 {
+                            font-weight: 450;
+                            font-size: 17px;
+                            line-height: 23px;
+                        }
+                        .btnDanger {
+                            width: 45% !important;
+                            height: 32px;
+                        }
+                    }
+                }
+            }
+            // TOP MAXSULOTLAR, BESTSELLER VA MAXSUS TAKLIF 
+            .row-br {
+                .col-md-4 {
+                    .brbot {
+                        font-size: 18px;
+                        line-height: 14px;
+                    }
+                    .cardMiniWidth {
+                        .rul {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 13px;
+                        }
+                        .bigAbsolute {
+                            top: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-footer {
+        .ali {
+            margin-top: 30px;
+            img {
+                width: 110px;
+                height: 80px;
+            }
+            .textFF,
+            .tel,
+            .tel-num,
+            .address,
+            .location {
+                font-weight: 550;
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+        .vali {
+            margin-top: 50px;
+            p {
+                margin-left: 25px;
+                font-weight: 600;
+                font-size: 22px;
+            }
+            a {
+                font-size: 15px;
+                line-height: 41px;
+            }
+        }
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .section-Azizbek {
+        .container {
+            // MOTOR MOYLARI va HAYDOVCHI KABINASI 
+            .owl-carusel-2 {
+                ul {
+                    top: 100% !important;
+                    left: 0;
+                    li {
+                        a {
+                            padding: 3px 5px;
+                            &.active {
+                                background-color: black;
+                                color: white !important;
+                            }
+                        }
+                    }
+                }
+                .col-md-4 {
+                    .card-img-top {
+                        width: 103% !important;
+                        img {
+                            width: 100% !important;
+                        }
+                    }
+                    .card-body {
+                        width: 103% !important;
+                    }
+                }
+            }
+            .row {
+                .col-lg-6 {
+                    .data {
+                        top: 5%;
+                        .mtext {
+                            font-weight: 550;
+                            font-size: 26px;
+                            line-height: 54px;
+                        }
+                        .mtext2 {
+                            margin-top: -10px !important;
+                            font-weight: 450;
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                        .btnDanger {
+                            width: 40% !important;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-footer {
+        .ali {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media(min-width:400px) and (max-width:576px) {
+    .section-Azizbek {
+        .container {
+            max-width: 96vw !important;
+            // MOTOR MOYLARI va HAYDOVCHI KABINASI
+            .owl-carusel-2 {
+                ul {
+                    top: 100% !important;
+                    left: 50%;
+                    li {
+                        a {
+                            padding: 3px 5px;
+                            &.active {
+                                background-color: black;
+                                color: white !important;
+                            }
+                        }
+                    }
+                }
+                .col-md-4 {
+                    .card-img-top {
+                        width: 100% !important;
+                        img {
+                            width: 100% !important;
+                        }
+                    }
+                    .card-body {
+                        width: 100% !important;
+                    }
+                }
+            }
+            .row {
+                .col-lg-6 {
+                    .data {
+                        top: 2%;
+                        position: absolute;
+                        left: 7%;
+                        .mtext {
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 54px;
+                        }
+                        .mtext2 {
+                            margin-top: -10px;
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                        .btnDanger {
+                            width: 40% !important;
+                            height: 30px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-footer {
+        .container {
+            max-width: 96vw !important;
+            .row-footer {
+                .ali {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .section-Azizbek {
+        .container {
+            max-width: 96vw !important;
+            // MOTOR MOYLARI va HAYDOVCHI KABINASI
+            .row {
+                .col-lg-6 {
+                    .data {
+                        top: -10px;
+                        position: absolute;
+                        left: 3.5%;
+                        .mtext {
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 54px;
+                        }
+                        .mtext2 {
+                            margin-top: -15px;
+                            font-size: 10px;
+                            line-height: 12px;
+                        }
+                        .btnDanger {
+                            width: 40% !important;
+                            height: 20px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            //  Carusel
+            .owl-carusel-2 {
+                .col-md-4 {
+                    .card-img-top {
+                        width: 100% !important;
+                        img {
+                            width: 100% !important;
+                        }
+                    }
+                    .card-body {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+    .section-footer {
+        .container {
+            max-width: 96vw !important;
+            .row-footer {
+                .ali {
+                    margin-top: 30px;
+                    .location,
+                    .tel-num {
+                        font-size: 12px;
+                    }
+                }
+                .gani {
+                    form {
+                        input {
+                            width: 60%;
+                            &::placeholder {
+                                font-size: 12px;
+                                padding: 0 !important;
+                            }
+                        }
+                        .azo-click {
+                            padding: 10px 0px 7px 0px;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
