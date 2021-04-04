@@ -2925,8 +2925,8 @@ header .search form .year,
 header .search form .brend,
 header .search form .model12,
 header .search form .dvi {
-  min-height: 60px;
-  max-height: 60px;
+  min-height: 67px;
+  max-height: 67px;
   min-width: 210px;
   background: #fff !important;
   border: none;
@@ -2936,7 +2936,9 @@ header .search form .dvi {
   line-height: 23px;
   text-align: center;
   color: #000000;
+  padding: 10px;
   cursor: pointer;
+  position: relative;
 }
 header .search form .year select,
 header .search form .year #open-select-show,
@@ -2966,6 +2968,8 @@ header .search form .dvi #open-select-show4 {
   border: none;
   outline: none;
   cursor: pointer;
+  position: absolute;
+  left: 5px;
 }
 header .search form .year #open-select-show,
 header .search form .year #open-select-show2,
@@ -2983,14 +2987,17 @@ header .search form .dvi #open-select-show,
 header .search form .dvi #open-select-show2,
 header .search form .dvi #open-select-show3,
 header .search form .dvi #open-select-show4 {
+  height: 28px;
   display: none;
   align-items: center;
   color: #000000;
-  padding: 3px 0 0 9px;
   text-transform: none;
   overflow-y: unset;
   justify-content: space-between;
   padding-right: 5px;
+  margin-top: 1px;
+  margin-left: 4px;
+  width: 90%;
 }
 header .search form .year #open-select-show .select-strelka,
 header .search form .year #open-select-show2 .select-strelka,
@@ -3070,6 +3077,13 @@ header .search form .dvi #open-select-show3 .select-strelka div:last-child,
 header .search form .dvi #open-select-show4 .select-strelka div:last-child {
   transform: rotate(45deg) translate(-2px, -8px);
 }
+header .search form .year #open-select-show4,
+header .search form .brend #open-select-show4,
+header .search form .model12 #open-select-show4,
+header .search form .dvi #open-select-show4 {
+  padding-right: 10px;
+  width: 93%;
+}
 header .search form .year div,
 header .search form .brend div,
 header .search form .model12 div,
@@ -3079,7 +3093,9 @@ header .search form .dvi div {
   line-height: 19px;
   text-transform: capitalize;
   color: #a5a5a5;
-  padding: 7px 0 0 10px;
+}
+header .search form .year div {
+  padding: 0;
 }
 header .search form .s-btn {
   font-weight: bold;
@@ -3185,6 +3201,14 @@ header .search form .s-btn {
   }
   header .search {
     margin-top: -10px;
+  }
+}
+@media (max-width: 401px) {
+  header .search form .year,
+header .search form .brend,
+header .search form .model12,
+header .search form .dvi {
+    min-height: 60px;
   }
 }
 .section-1 {
@@ -9668,11 +9692,13 @@ body {
   mask-repeat: no-repeat;
   -webkit-mask-position: center center;
   -webkit-mask-size: 90%;
-  -webkit-mask-repeat: no-repeat; }
+  -webkit-mask-repeat: no-repeat;
+}
 
 #heart {
   mask-image: url("/img/Heart.svg");
-  -webkit-mask-image: url("/img/Heart.svg"); }
+  -webkit-mask-image: url("/img/Heart.svg");
+}
 
 .icon {
   width: 15px;
