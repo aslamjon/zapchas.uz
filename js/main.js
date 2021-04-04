@@ -17,7 +17,27 @@ $('.chegirma').owlCarousel({
             items: 5
         }
     }
-})
+});
+$('#section1Owl').owlCarousel({
+    items: 2,
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: false,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+});
 $('#tab-owl').owlCarousel({
     loop: true,
     margin: 10,
@@ -33,7 +53,7 @@ $('#tab-owl').owlCarousel({
             items: 5
         }
     }
-})
+});
 
 let minus = document.querySelectorAll('.minus');
 let plus = document.querySelectorAll('.plus');
@@ -166,3 +186,10 @@ function changeGreyStar(){
     })
 }
 changeGreyStar();
+
+document.querySelector('.leftBtnOfCarusel').onclick = function(){
+    document.querySelector('.owl-prev').click();
+}
+document.querySelector('.rightBtnOfCarusel').onclick = function(){
+    document.querySelector('.owl-next').click();
+}
