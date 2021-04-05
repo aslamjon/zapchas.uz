@@ -359,14 +359,14 @@
   line-height: 42px;
 }
 
-#otaaaAb {
+#otaaa {
   margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#otaaaAb #kichikAb,
-#otaaaAb #kichik2Ab {
+#otaaa #kichikAb,
+#otaaa #kichik2Ab {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -658,6 +658,23 @@
     padding: 30px 30px;
   }
 }
+#otaaa {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#otaaa #kichikAb,
+#otaaa #kichik2Ab {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #BCBCBC;
+  text-decoration: none;
+}
+
 .section-buyurtma .container {
   max-width: 84vw !important;
 }
@@ -784,14 +801,14 @@
     border: none !important;
   }
 }
-#otaaaM {
+#otaaa {
   margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#otaaaM #kichikM,
-#otaaaM #kichik2M {
+#otaaa #kichikM,
+#otaaa #kichik2M {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -1057,10 +1074,18 @@
   position: relative;
   background: white;
 }
+.section-difficult .container .row .col-lg-9 .row .col-lg-3 .divat:hover .icon-heart {
+  opacity: 1;
+  transition: 0.5s;
+}
+.section-difficult .container .row .col-lg-9 .row .col-lg-3 .divat:hover .postion-text {
+  opacity: 1;
+  transition: 0.5s;
+}
 .section-difficult .container .row .col-lg-9 .row .col-lg-3 .divat .position-icon {
   position: absolute;
-  top: 10px;
-  right: 14px;
+  top: 7px;
+  right: 10px;
 }
 .section-difficult .container .row .col-lg-9 .row .col-lg-3 .divat .position-icon:hover {
   background-color: #007cff;
@@ -1077,6 +1102,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+  opacity: 0;
 }
 .section-difficult .container .row .col-lg-9 .row .col-lg-3 .divat .img-card {
   display: flex;
@@ -3275,6 +3301,10 @@ header .search form .dvi {
   background: #ffffff;
   box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
 }
+.section-1 .tab-content #section1Owl .owl-item .item:hover .icon-heart {
+  opacity: 1;
+  transition: 0.5s;
+}
 .section-1 .tab-content #section1Owl .owl-item .item .pin {
   position: absolute;
   top: 8px;
@@ -3985,6 +4015,14 @@ header .search form .dvi {
   box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
   border: none;
 }
+.section-3 .chegirma .item .card:hover .icon-heart {
+  opacity: 1;
+  transition: 0.5s;
+}
+.section-3 .chegirma .item .card:hover .chegirma__text {
+  opacity: 1;
+  transition: 0.5s;
+}
 .section-3 .chegirma .item .card .pin {
   position: absolute;
   top: 8px;
@@ -4014,8 +4052,8 @@ header .search form .dvi {
   width: 18px;
 }
 .section-3 .chegirma .item .card .chegirma__text {
-  width: 69px;
-  height: 19px;
+  padding: 4px 5px;
+  opacity: 0;
   background: #ff0000;
   font-size: 16px;
   line-height: 19px;
@@ -4391,6 +4429,23 @@ header .search form .dvi {
 }
 .aboutP .title2 div a {
   color: #bcbcbc;
+}
+
+#otaaa {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#otaaa #kichikAb,
+#otaaa #kichik2Ab {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #BCBCBC;
+  text-decoration: none;
 }
 
 @media (min-width: 1000px) {
@@ -6553,6 +6608,23 @@ header .search form .dvi {
     font-size: 22px;
   }
 }
+#otaaa {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#otaaa #kichikAb,
+#otaaa #kichik2Ab {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #BCBCBC;
+  text-decoration: none;
+}
+
 .savatcha-page {
   max-width: 92vw !important;
   margin-top: 10px;
@@ -6954,6 +7026,23 @@ header .search form .dvi {
     width: 16%;
   }
 }
+#otaaa {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#otaaa #kichikAb,
+#otaaa #kichik2Ab {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #BCBCBC;
+  text-decoration: none;
+}
+
 .savatcha-page2 .sp2,
 .savatcha-page2 .sp2-1 {
   padding: 15px;
@@ -8261,6 +8350,23 @@ header .search form .dvi {
   color: #717171;
 }
 
+#otaaa {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#otaaa #kichikAb,
+#otaaa #kichik2Ab {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #BCBCBC;
+  text-decoration: none;
+}
+
 .account-main {
   display: flex;
   padding-top: 20px;
@@ -8620,6 +8726,23 @@ header .search form .dvi {
     max-width: 665px;
   }
 }
+#otaaa {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#otaaa #kichikAb,
+#otaaa #kichik2Ab {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #BCBCBC;
+  text-decoration: none;
+}
+
 .section-Azizbek .container {
   max-width: 84vw !important;
 }
@@ -9746,11 +9869,13 @@ body {
 .icon-heart {
   position: absolute;
   top: 40px;
-  right: 14px;
-  width: 15px;
-  height: 14px;
+  right: 9px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
+  opacity: 0;
   background-color: #898989;
+  z-index: 2;
   cursor: pointer;
   mask-position: center center;
   mask-size: 90%;
@@ -9766,8 +9891,8 @@ body {
 }
 
 .icon {
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   display: inline-block;
   background-color: #898989;
   cursor: pointer;
@@ -9849,6 +9974,7 @@ body {
   font-size: 16px !important;
   line-height: 19px !important;
   color: #616161 !important;
+  font-family: Roboto;
   text-decoration: none;
 }
 .section-Azizbek .container .owl-carusel-2 ul li a.active {
@@ -9858,6 +9984,7 @@ body {
 .section-Azizbek .container .owl-carusel-2 .text-songi {
   font-weight: 500;
   font-size: 26px;
+  font-family: Roboto;
   line-height: 30px;
   padding-bottom: 5px;
 }
@@ -9874,6 +10001,7 @@ body {
   background-size: cover;
   width: 35.22px;
   height: 22px;
+  font-family: Roboto;
   color: white;
   outline: none !important;
   font-weight: 600;
@@ -9890,12 +10018,14 @@ body {
 .section-Azizbek .container .owl-carusel-2 .col-md-4 .card-body p {
   font-weight: 600;
   font-size: 20px;
+  font-family: Roboto;
   line-height: 20px;
 }
 .section-Azizbek .container .owl-carusel-2 .col-md-4 .card-body div {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  font-family: Roboto;
 }
 .section-Azizbek .container .row .col-lg-3 .card {
   display: flex;
@@ -9914,6 +10044,7 @@ body {
 }
 .section-Azizbek .container .row .col-lg-3 .card .dataInterier {
   text-align: center;
+  font-family: Roboto;
   font-weight: 500;
   font-size: 26px;
   line-height: 30px;
@@ -9956,6 +10087,12 @@ body {
   width: 100% !important;
   position: relative;
 }
+.section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top .item .col-lg-3 .card:hover .icon-heart,
+.section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top-2 .item .col-lg-3 .card:hover .icon-heart,
+.section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top-3 .item .col-lg-3 .card:hover .icon-heart {
+  opacity: 1;
+  transition: 0.5s;
+}
 .section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top .item .col-lg-3 .card .icon-hover-1,
 .section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top .item .col-lg-3 .card .icon-hover-2,
 .section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top-2 .item .col-lg-3 .card .icon-hover-1,
@@ -9966,14 +10103,6 @@ body {
   z-index: 1111;
   top: 10px;
   right: 10px;
-}
-.section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top .item .col-lg-3 .card .icon-hover-1 .icon:hover,
-.section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top .item .col-lg-3 .card .icon-hover-2 .icon:hover,
-.section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top-2 .item .col-lg-3 .card .icon-hover-1 .icon:hover,
-.section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top-2 .item .col-lg-3 .card .icon-hover-2 .icon:hover,
-.section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top-3 .item .col-lg-3 .card .icon-hover-1 .icon:hover,
-.section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top-3 .item .col-lg-3 .card .icon-hover-2 .icon:hover {
-  background-color: #007CFF;
 }
 .section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top .item .col-lg-3 .card .icon-hover-2,
 .section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top-2 .item .col-lg-3 .card .icon-hover-2,
@@ -9999,6 +10128,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  font-family: Roboto;
   color: #A5A5A5;
 }
 .section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top .item .col-lg-3 .card .dataRull .chambarag,
@@ -10008,6 +10138,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
+  font-family: Roboto;
 }
 .section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top .item .col-lg-3 .card .dataRull .stars,
 .section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top-2 .item .col-lg-3 .card .dataRull .stars,
@@ -10054,6 +10185,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
+  font-family: Roboto;
 }
 .section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top .item .col-lg-3 .card .dataRull .price-savat .iconPlace,
 .section-Azizbek .container .row .col-lg-9 .row #owl-carusel-top-2 .item .col-lg-3 .card .dataRull .price-savat .iconPlace,
@@ -10100,6 +10232,7 @@ body {
   font-size: 26px;
   line-height: 30px;
   border-bottom: 2px solid #e4d7d7;
+  font-family: Roboto;
 }
 .section-Azizbek .container .row-br .col-md-4 .cardMiniWidth {
   position: relative;
@@ -10119,6 +10252,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
+  font-family: Roboto;
 }
 .section-Azizbek .container .row-br .col-md-4 .cardMiniWidth .bigAbsolute {
   position: absolute;
@@ -10131,6 +10265,7 @@ body {
   font-weight: 500;
   font-size: 26px;
   line-height: 30px;
+  font-family: Roboto;
 }
 .section-Azizbek .container .row #owl-causel-1 .item {
   display: flex;
@@ -10203,10 +10338,12 @@ body {
   font-weight: bold;
   font-size: 46px;
   line-height: 54px;
+  font-family: Roboto;
 }
 .section-Azizbek .container .row .col-lg-6 .data .mtext2 {
   font-weight: 500;
   font-size: 20px;
+  font-family: Roboto;
   line-height: 33px;
 }
 .section-Azizbek .container .row .col-lg-6 .data .btnDanger {

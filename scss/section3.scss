@@ -32,6 +32,16 @@
                 position: relative;
                 box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
                 border: none;
+                &:hover {
+                    .icon-heart {
+                        opacity: 1;
+                        transition: 0.5s;
+                    }
+                    .chegirma__text {
+                        opacity: 1;
+                        transition: 0.5s;
+                    }
+                }
                 .pin {
                     position: absolute;
                     top: 8px;
@@ -65,8 +75,8 @@
                     width: 18px;
                 }
                 .chegirma__text {
-                    width: 69px;
-                    height: 19px;
+                    padding: 4px 5px;
+                    opacity: 0;
                     background: #ff0000;
                     font-size: 16px;
                     line-height: 19px;
@@ -213,6 +223,7 @@
         clip-path: polygon(19% 0%, 100% 0, 100% 100%, 0% 100%);
     }
 }
+
 // card
 @media (max-width: 600px) {
     .section-3 {
@@ -228,6 +239,7 @@
         }
     }
 }
+
 // card
 @media (min-width: 1500px) {
     .section-3 {
@@ -246,6 +258,7 @@
         }
     }
 }
+
 // card
 @media (min-width: 1647px) {
     .section-3 {
@@ -258,6 +271,7 @@
         }
     }
 }
+
 // card
 @media (min-width: 1880px) {
     .section-3 {
@@ -322,6 +336,7 @@
         }
     }
 }
+
 @media (min-width: 769px) and (max-width: 900px) {
     .section-3 {
         .title__on_section {
@@ -339,6 +354,7 @@
         }
     }
 }
+
 // title__on_section, owl-nav
 @media (max-width: 768px) {
     .section-3 {
@@ -357,6 +373,7 @@
         }
     }
 }
+
 @media (max-width: 700px) {
     .section-3 {
         .title__on_section {
@@ -370,6 +387,7 @@
         }
     }
 }
+
 @media (max-width: 598px) {
     .section-3 {
         height: 80vh;
@@ -396,7 +414,6 @@
             font-size: 64%;
             width: 36%;
             left: 31%;
-
             clip-path: polygon(0 0, 100% 0, 93% 100%, 7% 100%);
         }
         .chegirma {
@@ -439,6 +456,7 @@
         }
     }
 }
+
 // title, owl-nav
 @media (max-width: 404px) {
     .section-3 {
@@ -460,6 +478,7 @@
         }
     }
 }
+
 // title, owl-nav
 @media (max-width: 348px) {
     .section-3 {
@@ -488,11 +507,13 @@
         padding-top: 80px;
     }
 }
+
 @media (min-height: 745px) {
     .section-3 {
         height: 70vh;
     }
 }
+
 @media (max-height: 600px) {
     .section-3 {
         height: 90vh;
