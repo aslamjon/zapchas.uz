@@ -1,7 +1,25 @@
+#otaaa {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    #kichik,
+    #kichik2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #BCBCBC;
+        text-decoration: none;
+    }
+}
+
 .section-news {
     .container {
         max-width: 84vw !important;
+        padding-right: 0 !important;
         .row {
+            margin: 0 auto !important;
             width: 100% !important;
             .col-lg-9 {
                 order: 1;
@@ -46,7 +64,10 @@
                 }
                 .divtwo {
                     padding: 30px 15px;
-                    p {
+                    a {
+                        padding-top: 20px;
+                        display: block;
+                        text-decoration: none;
                         font-family: Roboto;
                         font-style: normal;
                         font-weight: normal;

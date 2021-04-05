@@ -19,14 +19,23 @@
                 font-size: 36px;
                 line-height: 42px;
             }
-            .text-small {
-                margin-top: 15px;
-                text-align: center !important;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 19px;
-                color: #BCBCBC;
-            }
+        }
+    }
+    
+    #otaaaAb {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #kichikAb,
+        #kichik2Ab {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #BCBCBC;
+            text-decoration: none;
         }
     }
     
@@ -49,10 +58,10 @@
                         }
                         ul.active {
                             transition: 0.5s;
-                            transform: perspective(1000px) rotateX(0deg);
+                            transform: perspective(1000px) rotateX(-90deg);
                         }
                         ul {
-                            transform: perspective(1000px) rotateX(-90deg);
+                            transform: perspective(1000px) rotateX(0deg);
                             position: absolute;
                             margin: 0;
                             padding: 0;
@@ -62,10 +71,17 @@
                             transform-origin: 0.5s;
                             li {
                                 list-style: none;
+                                &:hover {
+                                    background-color: #007cff;
+                                    a {
+                                        color: white;
+                                    }
+                                }
                                 a {
+                                    padding: 15px;
                                     text-decoration: none;
                                     display: block;
-                                    padding: 6px 10px;
+                                    // padding: 6px 10px;
                                     color: #5F5F5F;
                                     font-size: 16px;
                                     border-bottom: 0.5px solid rgb(247, 242, 242);
