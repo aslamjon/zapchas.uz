@@ -2096,9 +2096,9 @@ nav .second-collapse ul li a .noti, .top-nav .right .right-content, .top-nav .se
 }
 .top-nav .right .right-content {
   height: 100%;
-  position: absolute;
-  top: auto;
-  right: 10%;
+  width: 80%;
+  justify-content: space-between;
+  margin-left: 10%;
 }
 .top-nav .right .right-content img {
   width: 15px;
@@ -2231,6 +2231,7 @@ nav .second-collapse ul li .dropdown .dropdown-menu .dropdown-item {
   line-height: 19px;
   color: #676767;
   padding: 5px !important;
+  background: none;
 }
 nav .modal {
   /* width */
@@ -4879,6 +4880,17 @@ header .search form .dvi {
   box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
   border: none;
 }
+.main-section .tafsiya .card .heart-ic {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  -webkit-mask-image: url("../img/Heart.svg");
+  mask-image: url("../img/Heart.svg");
+  opacity: 0;
+  transition: 0.3s;
+}
 .main-section .tafsiya .card .chegir {
   padding: 5px;
   background: red;
@@ -5082,6 +5094,9 @@ header .search form .dvi {
 }
 .main-section .tafsiya .card .c-footer .cartt .modal .modal-dialog .modal-body .m-footer .btn2 {
   background: #575757;
+}
+.main-section .tafsiya .card:hover .heart-ic {
+  opacity: 1;
 }
 
 @media (max-width: 1366px) {
@@ -6623,7 +6638,7 @@ header .search form .dvi {
 .savatcha-page .s-body {
   display: flex;
   align-items: center;
-  margin: 20px 5px;
+  margin: 30px 5px;
 }
 .savatcha-page .s-body .s-close {
   text-align: center;
@@ -6996,6 +7011,8 @@ header .search form .dvi {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  transform: translateX(-1200px);
+  transition: 0.3s;
 }
 .savatcha-page2 .sp2-body form .first-head {
   font-weight: 500;
@@ -7072,6 +7089,10 @@ header .search form .dvi {
   color: #000000;
   margin-left: 35px;
   margin-bottom: 20px;
+}
+.savatcha-page2 .sp2-body form .data {
+  transform: translateX(-1200px);
+  transition: 0.3s;
 }
 .savatcha-page2 .sp2-body form .data .first-head span {
   font-weight: 500;
@@ -8249,6 +8270,7 @@ header .search form .dvi {
   height: 300px;
   display: block;
   background: #fff;
+  border: none;
 }
 .account-main .nav-tabs .title {
   font-weight: 500;
@@ -8263,6 +8285,7 @@ header .search form .dvi {
   font-size: 16px;
   line-height: 19px;
   color: #616161;
+  padding: 10px 1rem;
 }
 .account-main .nav-tabs li a.active {
   background: #f5f5f5;
@@ -9666,6 +9689,48 @@ header .search form .dvi {
   .cartt-modal .cartt .modal .modal-dialog .modal-body .m-footer .btn2 {
     width: 100%;
     margin-top: 10px;
+  }
+}
+#checkedYourOrder {
+  margin-top: 30px;
+}
+#checkedYourOrder .modal-header {
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#checkedYourOrder .modal-body form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#checkedYourOrder .modal-body form div {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+}
+#checkedYourOrder .modal-body form a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: #575757;
+  border-radius: 3px;
+  width: 100px;
+  padding: 10px;
+}
+
+@media (min-width: 576px) {
+  #checkedYourOrder .modal-dialog {
+    max-width: 545px;
+  }
+}
+@media (max-width: 558px) {
+  #checkedYourOrder .modal-body form br {
+    display: none;
   }
 }
 body {

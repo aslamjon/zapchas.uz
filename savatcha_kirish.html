@@ -238,7 +238,27 @@
             </div>
         </div>
     </header>
+    <!-- The Modal -->
+    <div class="modal" id="checkedYourOrder">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <img src="img/check.png" alt="check">
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="#">
+                        <div>Sizning buyurtmangiz qabul qilindi. Tez orada bizning <br>
+                            mutaxassislarimiz siz bilan bog’lanishadi</div>
+                        <a href="#" class="btn mt-4">Yopish</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <main class="container-sm savatcha-page2">
         <div class="row mt-5">
             <div class="col-md-8 col-sm-12">
@@ -381,7 +401,7 @@
                         <div class="sum">20 000 so’m</div>
                     </div>
                     <div class="total">Jami: 399 000 so’m</div>
-                    <a href="#" class="btn">Buyurtmani tasdiqlash</a>
+                    <a class="btn cursor-pointer" data-toggle="modal" data-target="#checkedYourOrder">Buyurtmani tasdiqlash</a>
                 </div>
             </div>
         </div>

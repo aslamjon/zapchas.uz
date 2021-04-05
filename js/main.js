@@ -197,3 +197,6 @@ document.querySelector('.leftBtnOfCarusel').onclick = function(){
 document.querySelector('.rightBtnOfCarusel').onclick = function(){
     document.querySelector('.owl-next').click();
 }
+function href(url){
+    window.location = url;
+}

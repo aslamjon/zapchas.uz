@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/privet_bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Zapchas.uz</title>
@@ -300,7 +301,7 @@
                         <input type="tel" value="1" class="count">
                         <button type="button" class="plus">+</button>
                     </form>
-                    <a href="#" class="btn1">Sotib olish</a>
+                    <a href="savatcha2.html" class="btn1">Sotib olish</a>
                     <a class="btn2 cursor-pointer" onclick="addSavat()">Savatchaga qo’shish</a>
                 </div>
 
@@ -326,7 +327,7 @@
                         <div>Partiya raqami</div>
                         <div>BDX-750Z370-S</div>
                     </div>
-                    <a href="#" class="btn btn-block btn1">Sotib olish</a>
+                    <a href="savatcha2.html" class="btn btn-block btn1">Sotib olish</a>
                     <a href="#" class="btn btn-block btn2" data-toggle="modal" data-target="#fasterBuy">Tezkor xarid qilish</a>
                 </div>
             </div>
@@ -542,8 +543,9 @@
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-12">
-                    <div class="card">
+                    <div class="card wow fadeInUp">
                         <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
+                        <div class="icon heart-ic" onclick="href('selectedProducts.html')"></div>
                         <img src="img/product-23-1 1.png" alt="by Aslmajon">
                         <div class="card-body">
                             <div class="model">STP-577843-E</div>
@@ -565,7 +567,8 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-12">
-                    <div class="card">
+                    <div class="card wow fadeInUp">
+                        <div class="icon heart-ic" onclick="href('selectedProducts.html')"></div>
                         <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
                         <img src="img/product-22-1-300x300 1.png" alt="by Aslmajon">
                         <div class="card-body">
@@ -588,7 +591,8 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-12">
-                    <div class="card">
+                    <div class="card wow fadeInUp">
+                        <div class="icon heart-ic" onclick="href('selectedProducts.html')"></div>
                         <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
                         <img src="img/product-21-1-300x300 1.png" alt="by Aslmajon">
                         <div class="card-body">
@@ -611,7 +615,8 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-12">
-                    <div class="card">
+                    <div class="card wow fadeInUp">
+                        <div class="icon heart-ic" onclick="href('selectedProducts.html')"></div>
                         <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
                         <img src="img/product-20-1-300x300 1.png" alt="by Aslmajon">
                         <div class="card-body">
@@ -801,6 +806,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/addHtml.js "></script>
     <script>
@@ -826,6 +832,9 @@
                 }
             }
         })
+    </script>
+    <script>
+        new WOW().init();
     </script>
 </body>
 

@@ -60,6 +60,8 @@
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
+                transform: translateX(-1200px);
+                transition: 0.3s;
             }
             .first-head {
                 //
@@ -144,6 +146,8 @@
                 }
             }
             .data {
+                transform: translateX(-1200px);
+                transition: 0.3s;
                 .first-head {
                     span {
                         font-weight: 500;
