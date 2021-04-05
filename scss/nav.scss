@@ -121,6 +121,7 @@ nav {
     min-height: 65px;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    background: white !important;
     .log1 {
         display: none;
     }
@@ -1064,6 +1065,53 @@ nav {
                             box-shadow: 0 0 12px 0px grey;
                             border: none;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// fixed nav left
+@media  (min-width: 768px) and (max-width: 1114px){
+    nav {
+        .first-collapse{ 
+            .first-ul{ 
+                li{ 
+                    a{
+                        margin: 0 20px 0 0;
+                    }
+                    &:last-child{
+                        a{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  (min-width: 768px) and (max-width: 1014px){
+    nav {
+        .first-collapse{ 
+            .first-ul{ 
+                li{ 
+                    a{
+                        margin: 0 12px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media  (min-width: 768px) and (max-width: 914px){
+    nav {
+        .first-collapse{ 
+            .first-ul{ 
+                li{ 
+                    a{
+                        margin: 0 10px 0 0;
+                        font-size: 14px;
                     }
                 }
             }

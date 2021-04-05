@@ -558,7 +558,7 @@
             border:none;
             .heart-ic{
                 position: absolute;
-                top: 25px;
+                top: 35px;
                 right: 10px;
                 width: 20px;
                 height: 20px;
@@ -580,7 +580,7 @@
             }
             .pin{
                 position: absolute;
-                top: 5px;
+                top: 10px;
                 right: 10px;
                 width: 20px;
                 height: 20px;
@@ -791,6 +791,27 @@
             &:hover{
                 .heart-ic{
                     opacity: 1;
+                }
+            }
+        }
+        .search-page{
+            .card-body{
+                .name{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1130px){
+    .main-section{
+        .tafsiya{
+            .search-page{
+                .card-body{
+                    .name{
+                        font-size: 16px;
+                        line-height: 17px;
+                    }
                 }
             }
         }

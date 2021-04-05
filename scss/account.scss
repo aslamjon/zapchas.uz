@@ -4,7 +4,7 @@
     .title2 {
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 10px;
+        padding: 30px 0;
         div {
             font-size: 14px;
             color: #717171;
@@ -235,17 +235,12 @@
 }
 @media (min-width: 1400px) {
     .custom-container {
-        max-width: 90vw !important;
+        max-width: 84vw !important;
     }
 }
-@media (min-width: 1200px) {
-    .custom-container {
-        max-width: 94vw !important;
-    }
-}
+
 @media (max-width: 1199px) {
     .custom-container {
-        max-width: 94vw !important;
         .nav-tabs {
             min-width: 192px;
         }
@@ -264,8 +259,7 @@
     }
 }
 @media (max-width: 991px) {
-    .custom-container {
-        max-width: 94vw !important;
+    .custom-container {;
         padding-top: 20px;
     }
     .account-header {
@@ -424,5 +418,11 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 576px){
+    .custom-container {
+        max-width: 96vw !important;
     }
 }

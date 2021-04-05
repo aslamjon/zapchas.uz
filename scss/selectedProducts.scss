@@ -83,6 +83,16 @@
         .row {
             margin-top: 10px;
         }
+        .card{
+            .pin-sel{
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                top: 10.3px;
+                right: 15.41px;
+                cursor: pointer;
+            }
+        }
         .colcha {
             width: 18.55%;
             margin: 0.7%;
