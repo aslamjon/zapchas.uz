@@ -3,7 +3,6 @@
     display: flex;
     #kichik,
     #kichik2 {
-        font-family: Roboto;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -92,6 +91,17 @@
                 border: none !important;
                 height: 100%;
                 position: relative;
+                .heart-ic{
+                    position: absolute;
+                    top: 35px;
+                    right: 13px;
+                    width: 20px;
+                    height: 20px;
+                    -webkit-mask-image: url("../img/Heart.svg");
+                    mask-image: url("../img/Heart.svg");
+                    opacity: 0;
+                    transition: 0.3s;
+                }
                 .chegirmaa {
                     font-size: 16px;
                     line-height: 19px;
@@ -102,6 +112,8 @@
                     position: absolute;
                     top: 20px;
                     left: 18px;
+                    opacity: 0;
+                    transition: 0.3s;
                 }
                 .pin {
                     position: absolute;
@@ -123,7 +135,6 @@
                 .card-body {
                     padding: 10px;
                     .model {
-                        font-family: Roboto;
                         font-style: normal;
                         font-weight: normal;
                         font-size: 14px;
@@ -132,7 +143,6 @@
                     }
                     .name {
                         margin-top: 9px;
-                        font-family: Roboto;
                         font-style: normal;
                         font-weight: 500;
                         font-size: 20px;
@@ -316,6 +326,11 @@
                                 }
                             }
                         }
+                    }
+                }
+                &:hover{
+                    .chegirmaa,.heart-ic{
+                        opacity: 1;
                     }
                 }
             }
