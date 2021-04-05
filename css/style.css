@@ -2886,10 +2886,10 @@ header .top-content form .slash {
   height: 80%;
   background: #ebebeb;
   margin: 10px;
-  transform: rotate(-20deg);
+  transform: rotate(-30deg);
 }
 header .top-content form .slash {
-  transform: rotate(20deg);
+  transform: rotate(30deg);
 }
 header .top-content form input {
   width: 60%;
