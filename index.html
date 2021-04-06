@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/highcharts.css">
     <link rel="stylesheet" href="css/privet_bootstrap.css">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Zapchaz.uz</title>
 </head>
@@ -163,23 +165,25 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="cart-order">
-                                        <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                        <div class="content">
-                                            <div class="c-title">STP Generator Platinum</div>
-                                            <div class="text">
-                                                Many philosophical debates that began in ancient times are still debated today. In one general sense.
-                                            </div>
-                                            <div class="c-footer">
-                                                <div class="sum">379 000 so’m</div>
-                                                <form action="#">
-                                                    <button type="button" class="minus">-</button>
-                                                    <input type="tel" value="1" class="count">
-                                                    <button type="button" class="plus">+</button>
-                                                </form>
+                                    <a href="savatcha.html" class="text-decoration-none">
+                                        <div class="cart-order">
+                                            <img src="img/product-24-1-300x300 1.png" alt="Error">
+                                            <div class="content">
+                                                <div class="c-title">STP Generator Platinum</div>
+                                                <div class="text">
+                                                    Many philosophical debates that began in ancient times are still debated today. In one general sense.
+                                                </div>
+                                                <div class="c-footer">
+                                                    <div class="sum">379 000 so’m</div>
+                                                    <form action="#">
+                                                        <button type="button" class="minus">-</button>
+                                                        <input type="tel" value="1" class="count">
+                                                        <button type="button" class="plus">+</button>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
 
                                 <!-- Modal footer -->
@@ -301,7 +305,7 @@
     </header>
     <main>
         <div class=" container-sm ">
-            <div class="section-1">
+            <div class="section-1 wow fadeInUp">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="xizmat">
@@ -488,7 +492,7 @@
                                     </div>
                                     <div class="second">
                                         <div class="sum">379 000 so’m</div>
-                                        <a class="cartt">
+                                        <a class="cartt" onclick="addSavat()">
                                             <div class="img icon"></div>
 
                                         </a>
@@ -516,7 +520,7 @@
                                     </div>
                                     <div class="second">
                                         <div class="sum">379 000 so’m</div>
-                                        <a class="cartt">
+                                        <a class="cartt" onclick="addSavat()">
                                             <div class="img icon"></div>
 
                                         </a>
@@ -544,7 +548,7 @@
                                     </div>
                                     <div class="second">
                                         <div class="sum">379 000 so’m</div>
-                                        <a class="cartt">
+                                        <a class="cartt" onclick="addSavat()">
                                             <div class="img icon"></div>
 
                                         </a>
@@ -572,7 +576,7 @@
                                     </div>
                                     <div class="second">
                                         <div class="sum">379 000 so’m</div>
-                                        <a class="cartt">
+                                        <a class="cartt" onclick="addSavat()">
                                             <div class="img icon"></div>
 
                                         </a>
@@ -600,7 +604,7 @@
                                     </div>
                                     <div class="second">
                                         <div class="sum">379 000 so’m</div>
-                                        <a class="cartt">
+                                        <a class="cartt" onclick="addSavat()">
                                             <div class="img icon"></div>
 
                                         </a>
@@ -619,7 +623,7 @@
                     <div id="menu5" class="container tab-pane fade"><br></div>
                 </div>
             </div>
-            <section class="section-2 mt-5">
+            <section class="section-2 mt-5 wow fadeInUp">
                 <div class="discount">
                     <div>
                         <div class="title">Diqqat!!!</div>
@@ -646,7 +650,7 @@
                 </div>
             </section>
         </div>
-        <section class="section-3">
+        <section class="section-3 wow fadeInUp">
             <div class="title__on_section">Barcha chegirmali mahsulotlar</div>
             <div class=" container-sm ">
                 <div class="owl-carousel owl-theme chegirma">
@@ -3977,7 +3981,10 @@
     <script src="js/main.js "></script>
     <script src="js/addHtml.js"></script>
     <!-- <script src="js/jquerpapka.js "></script> -->
-
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script>
         $('#tabCarusel').owlCarousel({
             loop: true,
