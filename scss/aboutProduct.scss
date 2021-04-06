@@ -557,6 +557,17 @@
             position: relative;
             box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
             border:none;
+            .heart-ic{
+                position: absolute;
+                top: 25px;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                -webkit-mask-image: url("../img/Heart.svg");
+                mask-image: url("../img/Heart.svg");
+                opacity: 0;
+                transition: 0.3s;
+            }
             .chegir {
                 padding: 5px;
                 background: red;
@@ -776,6 +787,11 @@
                             }
                         }
                     }
+                }
+            }
+            &:hover{
+                .heart-ic{
+                    opacity: 1;
                 }
             }
         }

@@ -80,9 +80,12 @@
         .right-content {
             height: 100%;
             @extend %center;
-            position: absolute;
-            top: auto;
-            right: 10%;
+            // position: absolute;
+            // top: auto;
+            // right: 10%;
+            width: 80%;
+            justify-content: space-between;
+            margin-left: 10%;
             img {
                 width: 15px;
                 height: 15px;
@@ -220,6 +223,7 @@ nav {
                             line-height: 19px;
                             color: #676767;
                             padding: 5px !important;
+                            background: none;
                         }
                     }
                 }
