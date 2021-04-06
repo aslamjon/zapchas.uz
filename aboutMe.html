@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/highcharts.css">
     <link rel="stylesheet" href="css/privet_bootstrap.css">
@@ -50,7 +51,7 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-md bg-light navbar-light">
+    <nav class="navbar navbar-expand-md bg-white">
 
         <!-- Brand -->
         <a class="navbar-brand log1" href="index.html">
@@ -227,8 +228,8 @@
             </form>
         </div>
         <div class="img-opasity">
-            <div class="text-big text-white">BIZ HAQIMIZDA</div>
-            <div id="otaaa">
+            <div class="text-big text-white wow fadeInUp">BIZ HAQIMIZDA</div>
+            <div id="otaaa" class="wow fadeInUp">
                 <a href="index.html" id="kichikAb">Bosh sahifa /<a> <a href="#" id="kichik2Ab">Tanlangan mahsulotlar</a>
             </div>
         </div>
@@ -236,7 +237,7 @@
 
     <div class="section-aboutMe mt-5">
         <div class="container">
-            <div class="row">
+            <div class="row wow fadeInUp">
                 <div class="col-lg-3 col-sm-12 col-md-3">
                     <div class="dropdown">
                         <button id="butn" class="btn btn-primary btn-block">KOMPANIYA HAQIDA <img src="img/Vector (1).svg" alt=""></button>
@@ -321,7 +322,7 @@
     <div class="section-google section-Azizbek">
         <div class="container">
             <!-- OMMABOP BRANDLAR -->
-            <div class="row mt-10">
+            <div class="row mt-10 wow fadeInUp">
                 <div class="col-md-5">
                     <img src="img/lineRow.png" class="img-fluid" alt="">
                 </div>
@@ -333,7 +334,7 @@
                 </div>
             </div>
             <!-- OMMABOP BRANDLAR -->
-            <div class="row mt-4 ">
+            <div class="row mt-4  wow fadeInUp">
                 <div class="owl-carousel owl-theme" id="owl-causel-1">
                     <div class="item ">
                         <img src="img/scania.png" class="img-fluid" alt="">
@@ -394,7 +395,7 @@
             <div class="row row-footer">
                 <div class="footerBlack"></div>
 
-                <div class="col-md-6 col-lg-4 col-sm-12 ali">
+                <div class="col-md-6 col-lg-4 col-sm-12 ali wow fadeInUp">
                     <a href="index.html"> <img src="img/LogoF.png" class="img-fluid" alt=""></a>
                     <p class="textFF mt-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
                     <div class="d-flex">
@@ -416,7 +417,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-2 col-sm-6 vali">
+                <div class="col-md-6 col-lg-2 col-sm-6 vali wow fadeInUp">
                     <p>Ma’lumotlar</p>
                     <a href="#">-Biz haqimizda</a>
                     <a href="#">-Yetkazib berish xizmati</a>
@@ -425,7 +426,7 @@
                     <a href="#">-Biz bilan aloqa</a>
                     <a href="#">Sayt xaritasi</a>
                 </div>
-                <div class="col-md-6 col-lg-2 col-sm-6 vali">
+                <div class="col-md-6 col-lg-2 col-sm-6 vali wow fadeInUp">
                     <p>Ma’lumotlar</p>
                     <a href="#">-Biz haqimizda</a>
                     <a href="#">-Yetkazib berish xizmati</a>
@@ -434,7 +435,7 @@
                     <a href="#">-Biz bilan aloqa</a>
                     <a href="#">Sayt xaritasi</a>
                 </div>
-                <div class="col-md-6 col-lg-4 col-sm-12 gani">
+                <div class="col-md-6 col-lg-4 col-sm-12 gani wow fadeInUp">
                     <div class="obuna">Obuna bo’lish</div>
                     <p>Bizning xabarnomamizga obuna bo'lish va chegirmalar va maxsus <br> takliflar bilan dolzarb bo'lib turish uchun quyidagi elektron pochta <br> manzilingizni kiriting.</p>
                     <form class="">
@@ -470,7 +471,7 @@
                 </div>
             </div>
         </div>
-        <div class="foooter center">
+        <div class="foooter center wow fadeInUp">
             <div class="container">
                 © 2021. Zapchas.uz Barcha huquqlar himoyalangan
             </div>
@@ -483,6 +484,10 @@
     <script src="js/bootstrap.min.js "></script>
     <script src="js/owl.carousel.js "></script>
     <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script>
         $(document).ready(function() {
             $("#butn").click(function() {

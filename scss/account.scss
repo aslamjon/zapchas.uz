@@ -8,12 +8,13 @@
         div {
             font-size: 14px;
             color: #717171;
-            a{
+            a {
                 color: #717171;
             }
         }
     }
 }
+
 #otaaa {
     margin-top: 15px;
     display: flex;
@@ -21,7 +22,6 @@
     justify-content: center;
     #kichikAb,
     #kichik2Ab {
-        font-family: Roboto;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -30,6 +30,7 @@
         text-decoration: none;
     }
 }
+
 .account-main {
     display: flex;
     padding-top: 20px;
@@ -130,7 +131,8 @@
                     margin-top: 5px;
                 }
             }
-            .second,.fourth{
+            .second,
+            .fourth {
                 margin-left: 15px;
             }
         }
@@ -234,36 +236,43 @@
         }
     }
 }
+
 @media (min-width: 1400px) {
     .custom-container {
         max-width: 90vw !important;
     }
 }
+
 @media (min-width: 1200px) {
     .custom-container {
         max-width: 94vw !important;
     }
 }
+
 @media (max-width: 1199px) {
     .custom-container {
         max-width: 94vw !important;
         .nav-tabs {
             min-width: 192px;
         }
-        .tab-content{
+        .tab-content {
             width: 73%;
         }
     }
-    .account-main{
-        .tab-content{
-            #home{
-                .first,.second,.third,.fourth{
+    .account-main {
+        .tab-content {
+            #home {
+                .first,
+                .second,
+                .third,
+                .fourth {
                     width: 40%;
                 }
             }
         }
     }
 }
+
 @media (max-width: 991px) {
     .custom-container {
         max-width: 94vw !important;
@@ -289,15 +298,19 @@
                 }
             }
         }
-        .tab-content{
-            #home{
-                .first,.second,.third,.fourth{
+        .tab-content {
+            #home {
+                .first,
+                .second,
+                .third,
+                .fourth {
                     width: 49%;
                 }
             }
         }
     }
 }
+
 @media (max-width: 918px) {
     .account-main {
         .tab-content {
@@ -317,7 +330,6 @@
                 }
             }
             #haveOrder {
-                
                 .last-body {
                     overflow: auto;
                     min-width: 484px;
@@ -351,18 +363,17 @@
         }
     }
 }
+
 @media (max-width: 767px) {
     .account-main {
         display: block;
         position: relative;
-
         .nav-tabs {
             width: 100%;
             display: flex;
             height: auto;
             flex-wrap: nowrap;
             overflow: auto;
-            
             .title,
             .nav-link {
                 min-width: 180px;
@@ -387,6 +398,7 @@
         }
     }
 }
+
 @media (max-width: 610px) {
     .account-main {
         .tab-content {
@@ -401,7 +413,8 @@
                         .fourth {
                             width: 100%;
                         }
-                        .second,.fourth{
+                        .second,
+                        .fourth {
                             margin-left: 0;
                         }
                     }

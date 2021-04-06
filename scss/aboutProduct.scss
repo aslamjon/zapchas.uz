@@ -23,12 +23,13 @@
             font-size: 16px;
             line-height: 19px;
             color: #bcbcbc;
-            a{
+            a {
                 color: #bcbcbc;
             }
         }
     }
 }
+
 #otaaa {
     margin-top: 15px;
     display: flex;
@@ -36,25 +37,27 @@
     justify-content: center;
     #kichikAb,
     #kichik2Ab {
-        font-family: Roboto;
+        text-decoration: none;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
         color: #BCBCBC;
-        text-decoration: none;
     }
 }
+
 @media (min-width: 1000px) {
     .aboutP {
         background-position-x: 50% !important;
     }
 }
+
 @media (max-width: 999px) {
     .aboutP {
         background-position-x: 25% !important;
     }
 }
+
 // title2 size
 @media (max-width: 500px) {
     .aboutP {
@@ -66,6 +69,7 @@
         }
     }
 }
+
 @media (max-width: 500px) {
     .aboutP {
         .title2 {
@@ -76,6 +80,7 @@
         }
     }
 }
+
 .main-section {
     margin-top: 15px;
     transition: 0.3s;
@@ -556,10 +561,10 @@
             height: 335px;
             position: relative;
             box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
-            border:none;
-            .heart-ic{
+            border: none;
+            .heart-ic {
                 position: absolute;
-                top: 25px;
+                top: 36px;
                 right: 10px;
                 width: 20px;
                 height: 20px;
@@ -579,7 +584,7 @@
                 align-items: center;
                 margin: 10px 0 0 10px;
             }
-            .pin{
+            .pin {
                 position: absolute;
                 top: 5px;
                 right: 10px;
@@ -697,7 +702,6 @@
                                         }
                                     }
                                 }
-
                                 .title {
                                     font-weight: 500;
                                     font-size: 24px;
@@ -789,14 +793,15 @@
                     }
                 }
             }
-            &:hover{
-                .heart-ic{
+            &:hover {
+                .heart-ic {
                     opacity: 1;
                 }
             }
         }
     }
 }
+
 @media (max-width: 1366px) {
     .main-section {
         max-width: 90vw !important;
@@ -810,6 +815,7 @@
         }
     }
 }
+
 @media (min-width: 1366px) {
     .main-section {
         max-width: 90vw !important;
@@ -831,6 +837,7 @@
         }
     }
 }
+
 @media (min-width: 1454px) {
     .main-section {
         max-width: 90vw !important;
@@ -851,6 +858,7 @@
         }
     }
 }
+
 @media (min-width: 1540px) {
     .main-section {
         max-width: 90vw !important;
@@ -872,6 +880,7 @@
         }
     }
 }
+
 @media (min-width: 1640px) {
     .main-section {
         max-width: 90vw !important;
@@ -893,6 +902,7 @@
         }
     }
 }
+
 @media (max-width: 1234px) {
     .main-section {
         max-width: 90vw !important;
@@ -914,6 +924,7 @@
         }
     }
 }
+
 @media (min-width: 1146px) and (max-width: 1200px) {
     .main-section {
         .tafsiya {
@@ -923,6 +934,7 @@
         }
     }
 }
+
 @media (min-width: 1015px) and (max-width: 1145px) {
     .main-section {
         .tafsiya {
@@ -936,6 +948,7 @@
         }
     }
 }
+
 @media (min-width: 769px) and (max-width: 1014px) {
     .main-section {
         .tafsiya {
@@ -947,6 +960,7 @@
         }
     }
 }
+
 @media (max-width: 922px) {
     .main-section {
         max-width: 95vw !important;
@@ -968,6 +982,7 @@
         }
     }
 }
+
 @media (max-width: 876px) {
     .main-section {
         max-width: 95vw !important;
@@ -992,6 +1007,7 @@
         }
     }
 }
+
 @media (max-width: 768px) {
     .main-section {
         max-width: 95vw !important;
@@ -1016,7 +1032,6 @@
                 }
             }
         }
-
         .tab-section {
             width: 100%;
             margin: 0;
@@ -1038,6 +1053,7 @@
         }
     }
 }
+
 @media (max-width: 468px) {
     .main-section {
         .tab-section {
@@ -1070,6 +1086,7 @@
         }
     }
 }
+
 @media (min-width: 500px) and (max-width: 768px) {
     .main-section {
         .tafsiya {
@@ -1084,6 +1101,7 @@
         }
     }
 }
+
 @media (max-width: 410px) {
     .main-section {
         .tafsiya {
@@ -1093,6 +1111,7 @@
         }
     }
 }
+
 @media (max-width: 384px) {
     .main-section {
         .tafsiya {
@@ -1122,6 +1141,7 @@
         }
     }
 }
+
 @media (max-width: 767px) {
     .main-section {
         .tafsiya {
@@ -1144,14 +1164,15 @@
                     }
                 }
             }
-            #infocard{
-                .second-section{
+            #infocard {
+                .second-section {
                     display: block;
                 }
             }
         }
     }
 }
+
 @media (max-width: 498px) {
     .main-section {
         .tafsiya {
@@ -1183,6 +1204,7 @@
         }
     }
 }
+
 @media (max-width: 480px) {
     .main-section {
         .tafsiya {
@@ -1219,6 +1241,7 @@
         }
     }
 }
+
 @media (max-width: 434px) {
     .main-section {
         .tafsiya {
@@ -1242,6 +1265,7 @@
         }
     }
 }
+
 @media (max-width: 422px) {
     .main-section {
         .tafsiya {
@@ -1275,6 +1299,7 @@
         }
     }
 }
+
 @media (max-width: 382px) {
     .main-section {
         .tafsiya {
@@ -1303,6 +1328,7 @@
         }
     }
 }
+
 @media (min-width: 1516px) {
     .main-section {
         .tafsiya {
@@ -1330,7 +1356,8 @@
 @media (max-width: 767px) {
     .main-section {
         .tafsiya {
-            .modal,#infocard {
+            .modal,
+            #infocard {
                 .modal-dialog {
                     margin: 1.75rem auto !important;
                     .modal-body {
@@ -1340,8 +1367,9 @@
                                 margin: 0 auto;
                             }
                         }
-                        .m-footer{
-                            .btn1,.btn2{
+                        .m-footer {
+                            .btn1,
+                            .btn2 {
                                 font-size: 14px;
                             }
                         }

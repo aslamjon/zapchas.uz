@@ -5,7 +5,6 @@
     justify-content: center;
     #kichikAb,
     #kichik2Ab {
-        font-family: Roboto;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -18,7 +17,7 @@
 .savatcha-page {
     max-width: 92vw !important;
     margin-top: 10px;
-    .bg-style-c{
+    .bg-style-c {
         box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
     }
     .bg-white {
@@ -57,14 +56,13 @@
                 width: 196px;
                 height: 40px;
                 outline: none;
-                    font-size: 14px;
-                    line-height: 16px;
-                    color: #676767;
-                    display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #fff;
-                
+                font-size: 14px;
+                line-height: 16px;
+                color: #676767;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: #fff;
             }
         }
     }
@@ -107,7 +105,6 @@
             margin-right: 5px;
             cursor: pointer;
         }
-
         .img-title {
             display: flex;
             align-items: center;
@@ -260,6 +257,7 @@
         }
     }
 }
+
 @media (max-width: 1156px) {
     .savatcha-page {
         .title {
@@ -303,6 +301,7 @@
         }
     }
 }
+
 @media (max-width: 1038px) {
     .savatcha-page {
         .s-body {
@@ -330,6 +329,7 @@
         }
     }
 }
+
 @media (max-width: 878px) {
     .savatcha-page {
         .title {
@@ -343,6 +343,7 @@
         }
     }
 }
+
 @media (max-width: 490px) {
     .savatcha-page {
         .title {
@@ -399,13 +400,14 @@
         }
     }
 }
+
 // second section
 @media (min-width: 1366px) {
     .savatcha-page {
         .col-md-4 {
             .cupon {
                 form {
-                    button{
+                    button {
                         width: 13%;
                     }
                 }
@@ -413,6 +415,7 @@
         }
     }
 }
+
 @media (max-width: 1060px) {
     .savatcha-page {
         .col-md-4 {
@@ -426,50 +429,53 @@
         }
     }
 }
+
 @media (max-width: 1004px) {
     .savatcha-page {
         .col-md-4 {
             .cupon {
-                .c-text{
+                .c-text {
                     font-size: 14px;
                     line-height: 23px;
                 }
             }
-            
-            .btn1, .btn2{
+            .btn1,
+            .btn2 {
                 font-size: 14px;
                 line-height: 14px;
             }
         }
     }
 }
+
 @media (max-width: 868px) {
     .savatcha-page {
         .col-md-4 {
-            .narx-price{
-                .n-narx{
+            .narx-price {
+                .n-narx {
                     font-size: 20px;
                 }
-                .n-text{
+                .n-text {
                     font-size: 14px;
                 }
                 .n-text,
-                .n-price{
+                .n-price {
                     margin: 0;
                 }
             }
         }
     }
 }
+
 @media (max-width: 768px) {
     .savatcha-page {
         .col-md-4 {
-            .cupon{
-                form{
-                    input{
+            .cupon {
+                form {
+                    input {
                         width: 90%;
                     }
-                    button{
+                    button {
                         width: 8%;
                     }
                 }
@@ -477,15 +483,16 @@
         }
     }
 }
+
 @media (max-width: 540px) {
     .savatcha-page {
         .col-md-4 {
-            .cupon{
-                form{
-                    input{
+            .cupon {
+                form {
+                    input {
                         width: 85%;
                     }
-                    button{
+                    button {
                         width: 13%;
                     }
                 }
@@ -493,15 +500,16 @@
         }
     }
 }
+
 @media (max-width: 360px) {
     .savatcha-page {
         .col-md-4 {
-            .cupon{
-                form{
-                    input{
+            .cupon {
+                form {
+                    input {
                         width: 82%;
                     }
-                    button{
+                    button {
                         width: 16%;
                     }
                 }

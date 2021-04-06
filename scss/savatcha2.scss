@@ -1,20 +1,19 @@
-
-    #otaaa {
-        margin-top: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        #kichikAb,
-        #kichik2Ab {
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 19px;
-            color: #BCBCBC;
-            text-decoration: none;
-        }
+#otaaa {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #kichikAb,
+    #kichik2Ab {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #BCBCBC;
+        text-decoration: none;
     }
+}
+
 .savatcha-page2 {
     .sp2,
     .sp2-1 {
@@ -100,7 +99,6 @@
                     -moz-user-select: none;
                     -ms-user-select: none;
                     user-select: none;
-
                     font-size: 14px;
                     line-height: 19px;
                     color: #616161;
@@ -140,16 +138,16 @@
                     }
                     /* On mouse-over, add a grey background color */
                     &:hover {
-                        input ~ .checkmark {
+                        input~.checkmark {
                             background-color: #ccc;
                         }
                     }
                     /* When the checkbox is checked, add a blue background */
-                    input:checked ~ .checkmark {
+                    input:checked~.checkmark {
                         background-color: #2196f3;
                     }
                     /* Show the checkmark when checked */
-                    input:checked ~ .checkmark:after {
+                    input:checked~.checkmark:after {
                         display: block;
                     }
                 }
@@ -339,6 +337,7 @@
         }
     }
 }
+
 @media (max-width: 1000px) {
     .savatcha-page2 {
         .sp2-1 {
@@ -353,6 +352,7 @@
         }
     }
 }
+
 @media (max-width: 991px) {
     .savatcha-page2 {
         max-width: 92vw !important;
@@ -390,6 +390,7 @@
         }
     }
 }
+
 @media (max-width: 891px) {
     .savatcha-page2 {
         .sp2-1 {
@@ -402,6 +403,7 @@
         }
     }
 }
+
 @media (max-width: 813px) {
     .savatcha-page2 {
         .sp2-1 {
@@ -418,6 +420,7 @@
         }
     }
 }
+
 @media (max-width: 767px) {
     .savatcha-page2 {
         .sp2-1 {
@@ -442,11 +445,12 @@
         }
     }
 }
+
 @media (max-width: 569px) {
     .savatcha-page2 {
         .sp2 {
-            .head{
-                a{
+            .head {
+                a {
                     font-size: 16px;
                 }
             }
@@ -457,8 +461,8 @@
                     }
                 }
                 form {
-                    .inputt{
-                        a{
+                    .inputt {
+                        a {
                             font-size: 16px;
                         }
                     }
@@ -475,7 +479,6 @@
                         }
                     }
                 }
-
                 .data {
                     .content {
                         display: block;

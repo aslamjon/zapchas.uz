@@ -33,9 +33,9 @@
                 <div class="modal-body">
                     <form action="#">
                         <label for="login">Login</label>
-                        <input type="text" id="login" placeholder="Email yoki telefon raqam">
+                        <input required type="text" id="login" placeholder="Email yoki telefon raqam">
                         <label for="passwordd">Parol</label>
-                        <input type="password" id="passwordd" placeholder="Parolni kiriting">
+                        <input required type="password" id="passwordd" placeholder="Parolni kiriting">
                         <div class="forget">Parolni unutdingizmi?</div>
                         <a href="#" class="btn btn-block">Kirish</a>
                         <a href="#" class="text-info">Ro’yxatdan o’tish</a>
@@ -62,21 +62,21 @@
                 <div class="modal-body">
                     <form action="#">
                         <label for="fish">F.I.SH <span>*</span></label>
-                        <input type="text" id="fish" placeholder="To’liq ism kiritilishi shart">
+                        <input required type="text" id="fish" placeholder="To’liq ism kiritilishi shart">
                         <div class="duble">
                             <div class="first">
                                 <label for="email">Email <span>*</span></label>
-                                <input type="email" id="email" placeholder="Elektron manzilingizni kiriting">
-                                
+                                <input required type="email" id="email" placeholder="Elektron manzilingizni kiriting">
+
                                 <label for="passwordd2">Parol <span>*</span></label>
-                                <input type="password" id="passwordd2" placeholder="Parolni kiriting">
+                                <input required type="password" id="passwordd2" placeholder="Parolni kiriting">
                             </div>
                             <div class="second">
                                 <label for="tel">Telefon <span>*</span></label>
-                                <input type="tel" id="tel" placeholder="Telefon raqamingizni kiriting">
-                                
+                                <input required type="tel" id="tel" placeholder="Telefon raqamingizni kiriting">
+
                                 <label for="passwordd3">Parol <span>*</span></label>
-                                <input type="password" id="passwordd3" placeholder="Parolni qayta kiriting">
+                                <input required type="password" id="passwordd3" placeholder="Parolni qayta kiriting">
                             </div>
                         </div>
 
@@ -106,7 +106,7 @@
                     <form action="#">
                         <label for="forget"> Parolingizni qayta tiklash uchun elektron manzilingizni kiriting va 
                             qayta tiklash yozuvini bosing</label>
-                        <input type="email" id="forget" placeholder="Elektron manzilingizni kiriting">
+                        <input required type="email" id="forget" placeholder="Elektron manzilingizni kiriting">
 
                         <a href="#" class="btn btn-block mt-4">Ro'yxatdan o'tish</a>
                         <a href="#"></a>
@@ -131,11 +131,11 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <form action="#">
+                    <form action="#" aria-required>
                         <label for="fast-fish">F.I.SH <span>*</span></label>
-                        <input type="text" id="fast-fish" placeholder="">
+                        <input required type="text" id="fast-fish" placeholder="">
                         <label for="fast-tel">Telefon <span>*</span></label>
-                        <input type="tel" id="fast-tel" placeholder="">
+                        <input required type="tel" id="fast-tel" placeholder="">
                         <label for="fast-sharh">Sharh <span>*</span></label>
                         <textarea name="" id="fast-sharh" cols="30" rows="5"></textarea>
 
@@ -162,8 +162,7 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <form action="#">
-                        <div>Sizning buyurtmangiz qabul qilindi. Tez orada bizning <br>
-                            mutaxassislarimiz siz bilan bog’lanishadi</div>
+                        <div>Sizning buyurtmangiz qabul qilindi. Tez orada bizning <br> mutaxassislarimiz siz bilan bog’lanishadi</div>
                         <a href="#" class="btn mt-4">Yopish</a>
                     </form>
                 </div>
@@ -178,15 +177,15 @@
             <div class="modal" id="card1">
                 <div class="modal-dialog">
                     <div class="modal-content">
-    
+
                         <!-- Modal Header -->
                         <div class="modal-header">
-    
+
                             <button type="button" class="close" data-dismiss="modal">
                             <img src="img/x.png" alt="x">
                         </button>
                         </div>
-    
+
                         <!-- Modal body -->
                         <div class="modal-body">
                             <div class="row">
@@ -241,14 +240,14 @@
                                     <div class="m-footer">
                                         <form action="#" class="myform">
                                             <button type="button" class="minus">-</button>
-                                            <input type="tel" value="1" class="count">
+                                            <input required type="tel" value="1" class="count">
                                             <button type="button" class="plus">+</button>
                                         </form>
                                         <button type="button" class="btn btn1">Savatchaga
                                         qo’shish</button>
                                         <button type="button" class="btn btn2">Tezkor xarid
                                         qilish</button>
-    
+
                                     </div>
                                 </div>
                             </div>
@@ -258,7 +257,7 @@
             </div>
         </a>
     </div>
-   
+
 
     <script src="js/jquery-3.5.1.slim.min.js "></script>
     <script src="js/jQuery.min.js "></script>
