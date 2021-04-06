@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #otaaa {
     margin-top: 15px;
     display: flex;
@@ -1361,4 +1362,1362 @@
             }
         }
     }
+=======
+#otaaa {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #kichikM,
+    #kichik2M {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #BCBCBC;
+        text-decoration: none;
+    }
+}
+
+.section-difficult {
+    .container {
+        max-width: 84vw !important;
+        .row {
+            .col-lg-3 {
+                .songngi,
+                .topSongi {
+                    background: white;
+                    width: 100% !important;
+                    padding: 0px !important;
+                    .ones {
+            
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 10px;
+                        width: 100%;
+                    }
+                    .cards {
+                        .right-d {
+                            margin-left: 10px;
+                            .gray {
+                    
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 16px;
+                                color: #A5A5A5;
+                            }
+                            .black {
+                    
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 23px;
+                            }
+                        }
+                    }
+                }
+                .topSongi {
+                    background: white;
+                    padding: 0px 10px;
+                    .dropovn {
+                        padding: 10px;
+                        width: 100% !important;
+                        position: relative !important;
+                        height: 100% !important;
+                        .drop {
+                            position: relative !important;
+                            cursor: pointer;
+                            border-radius: 3px;
+                            padding: 10px !important;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .pp {
+                    
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #575757;
+                                text-decoration: none;
+                            }
+                        }
+                        .oneslider {
+                            width: 100%;
+                            display: none;
+                            .tt {
+                                text-decoration: none;
+                                cursor: pointer;
+                                margin-top: 3px;
+                                width: 100%;
+                                padding: 8px 0px;
+                                margin-left: 10px;
+                    
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #616161;
+                                &:hover {
+                                    background: #EAEAEA;
+                                    color: black;
+                                }
+                            }
+                            .otacha {
+                                padding-right: 15px;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+                            .bolacha {
+                                display: none;
+                                .ichki {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-left: 20px;
+                                    .tt {
+                                        margin-left: 20px;
+                                        text-decoration: none;
+                                        cursor: pointer;
+                                        margin-top: 3px;
+                                        width: 100%;
+                                        padding: 8px 0px;
+                                        margin-left: 10px;
+                            
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 16px;
+                                        line-height: 19px;
+                                        color: #616161 !important;
+                                    }
+                                }
+                            }
+                        }
+                        .twoslider {
+                            display: none;
+                            .saralash {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                .thisprice {
+                        
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    color: #616161;
+                                }
+                            }
+                        }
+                        .threeslider {
+                            display: none;
+                            .uch,
+                            .uchikki,
+                            .uchikki2,
+                            .uchuch {
+                                text-align: center;
+                                width: 24%;
+                                margin-left: 1%;
+                                padding: 5px;
+                                background-color: #EAEAEA;
+                    
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #676767;
+                            }
+                            .uchikki,
+                            .uchikki2 {
+                                width: 40%;
+                            }
+                            .uchikki2 {
+                                width: 50%;
+                            }
+                        }
+                        .fourslider {
+                            display: none;
+                            .starwith {
+                                padding: 4px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
+                }
+            }
+            .col-lg-9 {
+                .rowone {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    .sort-father {
+                        display: flex;
+                        align-items: center;
+                    }
+                    .sort {
+            
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                    .bosil,
+                    .bosil-2 {
+                        position: relative !important;
+                        cursor: pointer;
+                        padding: 0px 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 200px;
+                        height: 40px;
+                        background: #E4E4E4;
+                        .p-element {
+                
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #676767;
+                        }
+                    }
+                    .bosil-2 {
+                        width: 60px;
+                    }
+                    .bosil-2-element {
+                        width: 60px !important;
+                    }
+                    .bosil-element,
+                    .bosil-2-element {
+                        width: 203px;
+                        z-index: 11;
+                        position: absolute;
+                        display: none;
+                        padding: 5px 10px;
+                        background-color: #E4E4E4;
+                        div {
+                            cursor: pointer;
+                
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #676767;
+                            padding: 5px 0px;
+                        }
+                    }
+                    .ozgarish {
+                        display: flex;
+                        align-items: center;
+                        div:nth-child(1) {
+                            margin-right: 13px;
+                        }
+                        div:nth-child(2) {
+                            margin-right: 13px;
+                            margin-top: -1px;
+                        }
+                    }
+                }
+                .row {
+                    .col-lg-3 {
+                        .divat {
+                            &:hover {
+                                .icon-heart {
+                                    opacity: 1;
+                                    transition: 0.5s;
+                                }
+                                .postion-text {
+                                    opacity: 1;
+                                    transition: 0.5s;
+                                }
+                            }
+                            padding: 15px 20px;
+                            position: relative;
+                            background: white;
+                            .position-icon {
+                                position: absolute;
+                                top: 7px;
+                                right: 10px;
+                                &:hover {
+                                    background-color: #007cff;
+                                }
+                            }
+                            .postion-text {
+                                position: absolute;
+                                top: 19px;
+                                left: 17px;
+                                color: white;
+                                padding: 3px 5px;
+                                background-color: #FF0000;
+                    
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 19px;
+                                opacity: 0;
+                            }
+                            .img-card {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-top: 20px;
+                                img {
+                                    width: 80%;
+                                }
+                            }
+                            .centr {
+                                .stp,
+                                .stpgor {
+                                    margin-top: 5px;
+                        
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    color: #A5A5A5;
+                                }
+                                .stpgor {
+                                    display: none;
+                                }
+                                .tormz,
+                                .tormztwo {
+                                    margin-top: 5px;
+                        
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    line-height: 23px;
+                                }
+                                .tormztwo {
+                                    display: none;
+                                }
+                                .stars {
+                                    margin-top: 5px;
+                                    img {
+                                        width: 16px;
+                                        height: 15px;
+                                    }
+                                }
+                                .textblok,
+                                .muhokama {
+                                    display: none;
+                        
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 18px;
+                                    line-height: 18px;
+                                    color: #A5A5A5;
+                                    margin-top: 10px;
+                                }
+                                .buy-with-price {
+                                    margin-top: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    p {
+                            
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 20px;
+                                        line-height: 23px;
+                                    }
+                                    .icon-joy {
+                                        cursor: pointer;
+                                        width: 27px;
+                                        height: 27px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border-radius: 50%;
+                                        &:hover .icon {
+                                            background-color: white !important;
+                                        }
+                                        &:hover {
+                                            background-color: #007CFF;
+                                        }
+                                    }
+                                }
+                            }
+                            .threeblock {
+                                display: none;
+                                text-align: center;
+                                position: relative;
+                                .position-iconF {
+                                    position: absolute;
+                                    top: 10px;
+                                    right: -10px;
+                                    &:hover {
+                                        background-color: #007cff;
+                                    }
+                                }
+                                .priceblock {
+                                    text-align: center;
+                        
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    line-height: 23px;
+                                    margin-top: 20px;
+                                }
+                                del {
+                                    margin-top: 10px;
+                        
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    text-decoration-line: line-through;
+                                    color: #A5A5A5;
+                                }
+                                button {
+                                    margin-top: 10px;
+                                    width: 80%;
+                                }
+                                .vvv {
+                                    margin-top: 10px;
+                                    margin-bottom: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    .selectt {
+                            
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        color: #A5A5A5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .col-lg-12 {
+                        width: 100%;
+                        background: white;
+                        .divat {
+                            position: relative !important;
+                            background: white;
+                            .position-icon {
+                                display: none;
+                            }
+                            .postion-text {
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+                                color: white;
+                                padding: 3px 5px;
+                                background-color: #FF0000;
+                    
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 19px;
+                            }
+                            .img-card {
+                                width: 25%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                // border: 1px solid red;
+                                margin-top: 20px;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .centr {
+                                margin: auto 0;
+                                width: 50%;
+                                padding: 0px 150px 20px 20px;
+                                .stp,
+                                .stpgor {
+                                    margin-top: 10px;
+                        
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    color: #A5A5A5;
+                                }
+                                .tormz,
+                                .tormztwo {
+                        
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    line-height: 23px;
+                                    margin-top: 10px;
+                                }
+                                .stars {
+                                    margin-top: 10px;
+                                    img {
+                                        width: 16px;
+                                        height: 15px;
+                                    }
+                                }
+                                .textblok,
+                                .muhokama {
+                                    display: block;
+                        
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 21px;
+                                    color: #A5A5A5;
+                                    margin-top: 10px;
+                                }
+                                .textblok {
+                                    width: 100%;
+                                    // border: 1px solid red;
+                                    height: 45%;
+                                }
+                                .buy-with-price {
+                                    display: none;
+                                    margin-top: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    p {
+                            
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 20px;
+                                        line-height: 23px;
+                                    }
+                                    .icon-joy {
+                                        cursor: pointer;
+                                        width: 27px;
+                                        height: 27px;
+                                        display: flex;
+                                        margin-top: -10px !important;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border-radius: 50%;
+                                        &:hover .icon {
+                                            background-color: white !important;
+                                        }
+                                        &:hover {
+                                            background-color: #007CFF;
+                                        }
+                                    }
+                                }
+                            }
+                            .threeblock {
+                                width: 25% !important;
+                                display: block;
+                                text-align: center;
+                                margin: auto 0;
+                                .position-iconF {
+                                    position: absolute;
+                                    top: -45px;
+                                    right: -25px;
+                                    &:hover {
+                                        background-color: #007cff;
+                                    }
+                                }
+                                .priceblock {
+                                    text-align: center;
+                        
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    line-height: 23px;
+                                    margin-top: 20px;
+                                }
+                                del {
+                                    margin-top: 10px;
+                        
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    text-decoration-line: line-through;
+                                    color: #A5A5A5;
+                                }
+                                button {
+                                    margin-top: 10px;
+                                    width: 80%;
+                                }
+                                .vvv {
+                                    margin-top: 15px;
+                                    margin-bottom: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 0px 20px;
+                                    .selectt {
+                            
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        color: #A5A5A5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .row-p {
+                    // margin-top: 20px;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0px 10px;
+                    .paginations {
+                        ul {
+                            margin-top: 10px;
+                            li {
+                                list-style: none !important;
+                                margin-left: 15px;
+                                a {
+                                    color: black;
+                                    text-decoration: none;
+                                    box-shadow: none !important;
+                                    background: #EFEFEF;
+                                    border-radius: 3px;
+                                    &.active {
+                                        background-color: #FF0000;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                        div {
+                
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #676767;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1200px) and (max-width:1450px) {
+    .section-difficult {
+        .container {
+            .row {
+                .col-lg-3 {
+                    .buy-with-price {
+                        .icon-joy {
+                            margin-top: -15px !important;
+                        }
+                    }
+                    .songngi,
+                    .topSongi {
+                        .ones {
+                            font-size: 14px;
+                            line-height: 19px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            padding-left: 10px;
+                            width: 100%;
+                        }
+                        .cards {
+                            .right-d {
+                                .gray {
+                                    font-size: 12px;
+                                }
+                                .stars {
+                                    margin-top: 3px;
+                                    display: flex;
+                                    img {
+                                        width: 75%;
+                                    }
+                                }
+                                .black {
+                                    margin-top: 3px !important;
+                                    font-size: 17px;
+                                    line-height: 18px;
+                                    text-align: start;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+    .section-difficult {
+        .container {
+            .row {
+                .col-lg-3 {
+                    .songngi,
+                    .topSongi {
+                        .ones {
+                            font-size: 14px;
+                            line-height: 19px;
+                            text-align: center;
+                        }
+                        .cards {
+                            .right-d {
+                                margin-left: 0px;
+                                .gray {
+                                    font-size: 12px;
+                                }
+                                .stars {
+                                    margin-top: 3px;
+                                    display: flex;
+                                    img {
+                                        width: 15px;
+                                        height: 15px;
+                                    }
+                                }
+                                .black {
+                                    font-weight: 400;
+                                    font-size: 13px;
+                                    line-height: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .topSongi {
+                        .dropovn {
+                            .drop {
+                                position: relative !important;
+                                cursor: pointer;
+                                border-radius: 3px;
+                                // padding: 10px !important;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                .pp {
+                                    font-size: 13px;
+                                }
+                            }
+                            .oneslider {
+                                width: 100%;
+                                display: none;
+                                .tt {
+                                    font-size: 13px;
+                                }
+                            }
+                            .twoslider {
+                                display: none;
+                                .saralash {
+                                    text-align: center;
+                                    display: block;
+                                    button {
+                                        font-size: 13px;
+                                        height: 30px !important;
+                                    }
+                                    .thisprice {
+                                        margin-top: 5px;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                            .threeslider {
+                                display: none;
+                                .uch,
+                                .uchikki,
+                                .uchikki2,
+                                .uchuch {
+                                    font-weight: 450;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                }
+                                .uchikki,
+                                .uchikki2 {
+                                    width: 40%;
+                                }
+                                .uchikki2 {
+                                    width: 50%;
+                                }
+                                .uchuch {
+                                    width: 30%;
+                                }
+                            }
+                            .fourslider {
+                                display: none;
+                                .starwith {
+                                    padding: 4px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+                            }
+                        }
+                    }
+                }
+                .col-lg-9 {
+                    .row {
+                        .col-lg-3 {
+                            .divat {
+                                padding: 10px !important;
+                                .postion-text {
+                                    font-size: 11px;
+                                    padding: 0px 5px;
+                                }
+                                .img-card {
+                                    margin-top: 5px;
+                                    img {
+                                        width: 80%;
+                                    }
+                                }
+                                .centr {
+                                    .stp,
+                                    .stpgor {
+                                        font-size: 12px;
+                                    }
+                                    .tormz,
+                                    .tormztwo {
+                                        margin-top: 3px;
+                                        font-weight: 450;
+                                        font-size: 15px;
+                                        line-height: 18px;
+                                    }
+                                    .tormztwo {
+                                        display: none;
+                                    }
+                                    .stars {
+                                        margin-top: 5px;
+                                        img {
+                                            width: 13px;
+                                            height: 12px;
+                                        }
+                                    }
+                                    .textblok,
+                                    .muhokama {
+                                        font-size: 13px;
+                                        line-height: 13px;
+                                        margin-top: 10px;
+                                    }
+                                    .buy-with-price {
+                                        margin-top: 10px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        p {
+                                            margin-top: 18px;
+                                            font-size: 14px;
+                                            line-height: 17px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .col-lg-12 {
+                            .divat {
+                                .img-card {
+                                    margin-top: 0px;
+                                }
+                                .centr {
+                                    padding: 0px 100px 20px 20px;
+                                    .tormz,
+                                    .tormztwo {
+                                        margin-top: 5px;
+                            
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        line-height: 20px;
+                                        margin-top: 5px;
+                                    }
+                                    .stars {
+                                        margin-top: 0px;
+                                    }
+                                    .textblok,
+                                    .muhokama {
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                    }
+                                }
+                                .threeblock {
+                                    .position-iconF {
+                                        position: absolute;
+                                        top: -10px;
+                                        right: -10px;
+                                        &:hover {
+                                            background-color: #007cff;
+                                        }
+                                    }
+                                    del {
+                                        font-size: 16px;
+                                    }
+                                    .vvv {
+                                        padding: 0px 0px;
+                                        .selectt {
+                                            font-size: 12px;
+                                            line-height: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .section-difficult {
+        .container {
+            max-width: 96vw !important;
+        }
+    }
+}
+
+@media(max-width:750px) {
+    .section-difficult {
+        .container {
+            .row {
+                .col-lg-9 {
+                    .rowone {
+                        display: block;
+                        .sort-father {
+                            justify-content: center;
+                        }
+                        .sort {
+                            font-size: 16px;
+                        }
+                        .bosil,
+                        .bosil-2 {
+                            width: 150px;
+                            height: 40px;
+                            background: #E4E4E4;
+                            .p-element {
+                                font-size: 14px;
+                                line-height: 19px;
+                            }
+                        }
+                        .bosil-2 {
+                            width: 60px;
+                        }
+                        .bosil-2-element {
+                            width: 60px;
+                        }
+                        .bosil-element,
+                        .bosil-2-element {
+                            width: 150px;
+                            z-index: 11;
+                            position: absolute;
+                            display: none;
+                            padding: 5px 10px;
+                            background-color: #E4E4E4;
+                        }
+                        .ozgarish {
+                            margin-top: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            div:nth-child(1) {
+                                margin-right: 13px;
+                            }
+                            div:nth-child(2) {
+                                margin-right: 13px;
+                                margin-top: -1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 390px) {
+    .section-difficult {
+        .container {
+            max-width: 94vw !important;
+            .row {
+                .col-lg-3 {
+                    .songngi,
+                    .topSongi {
+                        .ones {
+                            text-align: center;
+                        }
+                        .cards {
+                            .right-d {
+                                margin-left: 0px;
+                                .gray {
+                                    font-size: 15px;
+                                }
+                                .stars {
+                                    margin-top: 3px;
+                                    display: flex;
+                                    img {
+                                        width: 20px;
+                                        height: 20px;
+                                        margin-left: 1px;
+                                    }
+                                }
+                                .black {
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    line-height: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .topSongi {
+                        .dropovn {
+                            .drop {
+                                .pp {
+                                    font-size: 16px;
+                                }
+                            }
+                            .oneslider {
+                                width: 100%;
+                                display: none;
+                                .tt {
+                                    font-size: 16px;
+                                }
+                            }
+                            .twoslider {
+                                display: none;
+                                .saralash {
+                                    display: block;
+                                    button {
+                                        display: flex;
+                                        align-items: center;
+                                        font-size: 14px;
+                                        height: 30px !important;
+                                    }
+                                    .thisprice {
+                                        margin-top: 5px;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                            .threeslider {
+                                display: none;
+                                .uch,
+                                .uchikki,
+                                .uchikki2,
+                                .uchuch {
+                                    font-weight: 450;
+                                    font-size: 16px;
+                                    line-height: 16px;
+                                }
+                                .uchikki,
+                                .uchikki2 {
+                                    width: 40%;
+                                }
+                                .uchikki2 {
+                                    width: 50%;
+                                }
+                                .uchuch {
+                                    width: 30%;
+                                }
+                            }
+                            .fourslider {
+                                display: none;
+                                .starwith {
+                                    padding: 4px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:430px) {
+    .section-difficult {
+        .container {
+            max-width: 96vw !important;
+            .row {
+                .col-lg-9 {
+                    .rowone {
+                        display: block;
+                        .sort {
+                            font-weight: 450;
+                            font-size: 13px;
+                            margin-left: 10px !important;
+                        }
+                        .bosil,
+                        .bosil-2 {
+                            width: 100px;
+                            height: 40px;
+                            .p-element {
+                                font-size: 13px;
+                            }
+                        }
+                        .bosil-2 {
+                            width: 40px;
+                        }
+                        .bosil-2-element {
+                            width: 40px !important;
+                        }
+                        .bosil-element,
+                        .bosil-2-element {
+                            width: 100px;
+                            div {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:850px) {
+    .section-difficult {
+        .container {
+            max-width: 84vw !important;
+            .row {
+                .col-lg-9 {
+                    .row {
+                        .col-lg-12 {
+                            .divat {
+                                .img-card {
+                                    margin-top: 0px;
+                                }
+                                .centr {
+                                    padding: 0px 100px 20px 20px;
+                                    .stp,
+                                    .stpgor {
+                                        font-size: 13px;
+                                    }
+                                    .tormz,
+                                    .tormztwo {
+                                        margin-top: 5px;
+                                        font-size: 18px;
+                                        line-height: 21px;
+                                    }
+                                    .textblok,
+                                    .muhokama {
+                                        display: block;
+                            
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 15px;
+                                        line-height: 19px;
+                                        margin-top: 5px;
+                                    }
+                                }
+                                .threeblock {
+                                    .position-iconF {
+                                        position: absolute;
+                                        top: -27px;
+                                        right: -25px;
+                                        &:hover {
+                                            background-color: #007cff;
+                                        }
+                                    }
+                                    .vvv {
+                                        .selectt {
+                                
+                                            font-style: normal;
+                                            font-weight: normal;
+                                            font-size: 12px;
+                                            line-height: 15px;
+                                            color: #A5A5A5;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:680px) {
+    .section-difficult {
+        .container {
+            max-width: 84vw !important;
+            .col-lg-9 {
+                .row {
+                    .col-lg-12 {
+                        .divat {
+                            width: 100%;
+                            .postion-text {
+                                font-size: 12px;
+                            }
+                            .centr {
+                                width: 40% !important;
+                                padding: 7px !important;
+                                .stp,
+                                .stpgor {
+                                    margin-top: 5px;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                }
+                                .tormz,
+                                .tormztwo {
+                                    margin-top: 5px;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                }
+                                .textblok,
+                                .muhokama {
+                                    display: block;
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                    margin-top: 10px;
+                                }
+                            }
+                            .threeblock {
+                                text-align: center;
+                                margin: auto;
+                                width: 30%;
+                                .priceblock {
+                                    text-align: center;
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    margin-top: 10px;
+                                }
+                                del {
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                }
+                                button {
+                                    margin-top: 10px;
+                                    width: 90%;
+                                    font-size: 12px;
+                                }
+                                .vvv {
+                                    margin-top: 15px;
+                                    margin-bottom: 20px;
+                                    padding: 0px !important;
+                                    .selectt {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .section-difficult {
+        .container {
+            max-width: 96vw !important;
+            .col-lg-9 {
+                .row {
+                    .col-lg-12 {
+                        width: 100%;
+                        background: white;
+                        .divat {
+                            position: relative !important;
+                            .img-card {
+                                margin-top: 0px;
+                                img {
+                                    width: 110%;
+                                }
+                            }
+                            .centr {
+                                margin: auto 0 !important;
+                                width: 50% !important;
+                                padding: 6px !important;
+                                .stp,
+                                .stpgor {
+                                    margin-top: 5px !important;
+                                    font-size: 12px !important;
+                                    line-height: 14px !important;
+                                }
+                                .tormz,
+                                .tormztwo {
+                                    margin-top: 5px !important;
+                                    font-weight: 450 !important;
+                                    font-size: 14px !important;
+                                    line-height: 15px !important;
+                                }
+                                .stars {
+                                    margin-top: 5px;
+                                    img {
+                                        width: 12px;
+                                        height: 11px;
+                                    }
+                                }
+                                .textblok,
+                                .muhokama {
+                                    display: block;
+                                    font-size: 12px !important;
+                                    line-height: 14px !important;
+                                    margin-top: 5px !important;
+                                }
+                            }
+                            .threeblock {
+                                width: 25% !important;
+                                display: block !important;
+                                text-align: center !important;
+                                margin: auto 0 !important;
+                                .position-iconF {
+                                    position: absolute !important;
+                                    top: 0px !important;
+                                    right: 0px !important;
+                                }
+                                .priceblock {
+                                    text-align: center;
+                                    font-weight: 400 !important;
+                                    font-size: 14px !important;
+                                    line-height: 17px !important;
+                                }
+                                del {
+                                    margin-top: 5px !important;
+                                    font-size: 12px !important;
+                                    line-height: 16px !important;
+                                }
+                                button {
+                                    margin-top: 10px !important;
+                                    width: 94% !important;
+                                    font-size: 11px !important;
+                                    height: 30px !important;
+                                    line-height: 12px !important;
+                                    display: flex !important;
+                                    align-items: center !important;
+                                }
+                                .vvv {
+                                    margin-top: 15px !important;
+                                    margin-bottom: 15px !important;
+                                    display: flex !important;
+                                    align-items: center !important;
+                                    justify-content: space-between;
+                                    padding: 0px 20px;
+                                    .selectt {
+                                        font-size: 12px !important;
+                                        line-height: 16px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+>>>>>>> f6bcbc6a42480dfd001e681c00631055f199ceb4
 }

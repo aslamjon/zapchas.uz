@@ -1,6 +1,9 @@
 function addSavat() {
     let addSavatH = `
+<<<<<<< HEAD
+=======
     <a href="savatcha.html" class="text-decoration-none">
+>>>>>>> 0bf30bd2d1fc6050ab79b9f63039c403b1860895
     <div class="cart-order">
     <img src="img/product-24-1-300x300 1.png" alt="Error">
     <div class="content">
@@ -18,7 +21,10 @@ function addSavat() {
         </div>
     </div>
 </div>
+<<<<<<< HEAD
+=======
     </a>
+>>>>>>> 0bf30bd2d1fc6050ab79b9f63039c403b1860895
     `
     document.getElementById("addSavatPlace").innerHTML += addSavatH
 }
@@ -26,4 +32,11 @@ function addSavat() {
 function tozalash() {
     document.getElementById('AllData').innerHTML = 'Tozanalndi !';
 
+<<<<<<< HEAD
+}
+
+function chizish() {
+    window.location = '../selectedProducts.html'
+=======
+>>>>>>> 0bf30bd2d1fc6050ab79b9f63039c403b1860895
 }

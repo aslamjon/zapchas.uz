@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #otaaa {
     margin-top: 15px;
     display: flex;
@@ -499,3 +500,502 @@
         }
     }
 }
+=======
+
+    #otaaa {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #kichikAb,
+        #kichik2Ab {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #BCBCBC;
+            text-decoration: none;
+        }
+    }
+.savatcha-page2 {
+    .sp2,
+    .sp2-1 {
+        padding: 15px;
+        margin-top: 15px;
+    }
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title,
+        a {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            color: #000000;
+        }
+        a {
+            color: #ffffff;
+            background: #007cff;
+            border-radius: 3px;
+            padding: 7px 15px;
+        }
+    }
+    .sp2-body {
+        form {
+            .inputt {
+                label {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #000000;
+                    margin: 10px 0 5px 0;
+                }
+                input {
+                    background: #f7f7f7;
+                    border-radius: 3px;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    padding: 10px;
+                    &::placeholder {
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #717171;
+                    }
+                }
+                a {
+                    color: #ffffff;
+                    background: #007cff;
+                    border-radius: 3px;
+                    padding: 7px 15px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 23px;
+                    margin-top: 10px;
+                }
+            }
+            .radio-sp2 {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                transform: translateX(-1200px);
+                transition: 0.3s;
+            }
+            .first-head {
+                //
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                color: #000000;
+                margin: 15px 0;
+            }
+            .first-body {
+                .container-check {
+                    display: block;
+                    position: relative;
+                    padding-left: 35px;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    font-size: 22px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #616161;
+                    /* Hide the browser's default checkbox */
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+                    /* Create a custom checkbox */
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 25px;
+                        width: 25px;
+                        background-color: #eee;
+                        border-radius: 50%;
+                        /* Create the checkmark/indicator (hidden when not checked) */
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                            /* Style the checkmark/indicator */
+                            left: 10px;
+                            top: 7px;
+                            width: 5px;
+                            height: 10px;
+                            border: solid white;
+                            border-width: 0 3px 3px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+                    }
+                    /* On mouse-over, add a grey background color */
+                    &:hover {
+                        input ~ .checkmark {
+                            background-color: #ccc;
+                        }
+                    }
+                    /* When the checkbox is checked, add a blue background */
+                    input:checked ~ .checkmark {
+                        background-color: #2196f3;
+                    }
+                    /* Show the checkmark when checked */
+                    input:checked ~ .checkmark:after {
+                        display: block;
+                    }
+                }
+                .sum {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: #000000;
+                    margin-left: 35px;
+                    margin-bottom: 20px;
+                }
+            }
+            .data {
+                transform: translateX(-1200px);
+                transition: 0.3s;
+                .first-head {
+                    span {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 23px;
+                    }
+                }
+                .content {
+                    display: flex;
+                    label {
+                        display: block;
+                        font-weight: 500;
+                        font-size: 16spx;
+                        line-height: 21px;
+                        color: #000000;
+                        margin: 10px 0;
+                        span {
+                            color: red;
+                        }
+                    }
+                    input,
+                    select {
+                        background: #f7f7f7;
+                        border-radius: 3px;
+                        padding: 10px;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                    }
+                    .one,
+                    .two {
+                        width: 48%;
+                    }
+                    .two {
+                        margin-left: 2%;
+                    }
+                }
+                .c-footer {
+                    margin-top: 15px;
+                    #c-textarea {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 21px;
+                        color: #000000;
+                        span {
+                            color: red;
+                        }
+                    }
+                    textarea {
+                        background: #f7f7f7;
+                        border-radius: 3px;
+                        width: 100%;
+                        padding: 10px;
+                        border: none;
+                        outline: none;
+                        margin-bottom: 15px;
+                        &::placeholder {
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #717171;
+                        }
+                    }
+                    .c-label {
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #a5a5a5;
+                        span {
+                            color: rgba(255, 208, 0, 0.815);
+                        }
+                        .checkmark {
+                            border-radius: 5px;
+                            border: 1px solid #b1b1b1;
+                            &:after {
+                                left: 9px;
+                                top: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sp2-1 {
+        .title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+            text-transform: uppercase;
+            color: #676767;
+        }
+        .price,
+        .shipping {
+            font-size: 16px;
+            line-height: 19px;
+            color: #676767;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .sum {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 28px;
+                color: #000000;
+            }
+        }
+        .shipping {
+            border-top: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        .total {
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 42px;
+            padding: 5px 0;
+        }
+        a {
+            display: block;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            color: #ffffff;
+            background: #007cff;
+            border-radius: 3px;
+            padding: 10px;
+        }
+        .buyurtmachi {
+            margin-bottom: 15px;
+            .b-title {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+                text-transform: uppercase;
+                color: #676767;
+            }
+            .user-icon,
+            .user-icon-mail {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                background-color: #a5a5a5;
+                mask: {
+                    position: center center;
+                    size: 90%;
+                    repeat: no-repeat;
+                }
+                -webkit-mask: {
+                    position: center center;
+                    size: 90%;
+                    repeat: no-repeat;
+                }
+            }
+            .user-icon {
+                mask-image: url("../img/user.svg");
+                -webkit-mask-image: url("../img/user.svg");
+            }
+            .user-icon-mail {
+                mask-image: url("../img/Mail.svg");
+                -webkit-mask-image: url("../img/Mail.svg");
+            }
+            .user-name,
+            .user-mail {
+                display: flex;
+                margin: 10px 0;
+                .text {
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #a5a5a5;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .savatcha-page2 {
+        .sp2-1 {
+            .buyurtmachi {
+                .user-name,
+                .user-mail {
+                    .text {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .savatcha-page2 {
+        max-width: 92vw !important;
+        .sp2 {
+            .sp2-body {
+                .data {
+                    .first-head {
+                        span {
+                            font-size: 16px;
+                        }
+                    }
+                    .c-footer {
+                        .c-label {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .sp2-1 {
+            .price,
+            .shipping {
+                font-size: 14px;
+                .sum {
+                    font-size: 16px;
+                }
+            }
+            .total {
+                font-size: 22px;
+            }
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 891px) {
+    .savatcha-page2 {
+        .sp2-1 {
+            .title {
+                font-size: 16px;
+            }
+            .total {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width: 813px) {
+    .savatcha-page2 {
+        .sp2-1 {
+            .title {
+                font-size: 13px;
+            }
+            .price,
+            .shipping {
+                font-size: 12px;
+            }
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .savatcha-page2 {
+        .sp2-1 {
+            .title {
+                font-size: 16px;
+            }
+            .price,
+            .shipping {
+                font-size: 15px;
+            }
+            a {
+                font-size: 16px;
+            }
+            .buyurtmachi {
+                .user-name,
+                .user-mail {
+                    .text {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 569px) {
+    .savatcha-page2 {
+        .sp2 {
+            .head{
+                a{
+                    font-size: 16px;
+                }
+            }
+            .sp2-body {
+                .inputt {
+                    label {
+                        font-size: 16px;
+                    }
+                }
+                form {
+                    .inputt{
+                        a{
+                            font-size: 16px;
+                        }
+                    }
+                    .first-head {
+                        font-size: 14px;
+                        display: flex;
+                        .user_for_savatcha {
+                            height: 25px;
+                        }
+                        img {
+                            width: 23px;
+                            height: 23px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                .data {
+                    .content {
+                        display: block;
+                        .one,
+                        .two {
+                            width: 100%;
+                            margin-left: 0;
+                        }
+                    }
+                    .c-footer {
+                        .c-label {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+>>>>>>> f6bcbc6a42480dfd001e681c00631055f199ceb4
