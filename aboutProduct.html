@@ -127,7 +127,7 @@
                                 </div>
 
                                 <!-- Modal body -->
-                                <div class="modal-body">
+                                <div class="modal-body" id="addSavatPlace">
                                     <div class="cart-order">
                                         <img src="img/product-24-1-300x300 1.png" alt="Error">
                                         <div class="content">
@@ -224,15 +224,42 @@
 
     </header>
     <main class="container-sm main-section">
+      
+        <!-- The Modal -->
+        <div class="modal" id="fasterBuy">
+            <div class="modal-dialog">
+                <div class="modal-content">
+    
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <div class="fast-title">Ma’lumotlaringizni kiriting</div>
+                    </div>
+    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="#">
+                            <label for="fast-fish">F.I.SH <span>*</span></label>
+                            <input type="text" id="fast-fish" placeholder="">
+                            <label for="fast-tel">Telefon <span>*</span></label>
+                            <input type="tel" id="fast-tel" placeholder="">
+                            <label for="fast-sharh">Sharh <span>*</span></label>
+                            <textarea name="" id="fast-sharh" cols="30" rows="5"></textarea>
+    
+                            <a href="#" class="btn btn-block mt-4">Jo'natish</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-4 col-sm-12 order-sm-1">
                 <div class="def_img">
                     <img src="img/product-23-1 1.png" alt="Aslamjon" class="mainImg">
-                    <div class="zoom"></div>
+                    <div class="zoom" onclick="zoomIn('mainImg',4)"></div>
                 </div>
                 <div class="anotherImg">
-                    <img src="img/product-23-1 1.png" alt="Aslamojn">
-                    <img src="img/product-23-2 1.png" alt="Aslamojn">
+                    <img src="img/product-23-1 1.png" alt="Aslamojn" onclick="changeImg(this, 'mainImg')">
+                    <img src="img/product-23-2 1.png" alt="Aslamojn" onclick="changeImg(this, 'mainImg')">
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 order-md-2 order-sm-3">
@@ -264,7 +291,7 @@
                         <button type="button" class="plus">+</button>
                     </form>
                     <a href="#" class="btn1">Sotib olish</a>
-                    <a href="#" class="btn2">Savatchaga qo’shish</a>
+                    <a class="btn2" onclick="addSavat()">Savatchaga qo’shish</a>
                 </div>
 
             </div>
@@ -290,7 +317,7 @@
                         <div>BDX-750Z370-S</div>
                     </div>
                     <a href="#" class="btn btn-block btn1">Sotib olish</a>
-                    <a href="#" class="btn btn-block btn2">Tezkor xarid qilish</a>
+                    <a href="#" class="btn btn-block btn2" data-toggle="modal" data-target="#fasterBuy">Tezkor xarid qilish</a>
                 </div>
             </div>
         </div>
@@ -420,9 +447,93 @@
         <div class="tafsiya">
             <div class="title">TAFSIYA QILINGAN MAHSULOTLAR</div>
             <hr>
+
+            <!-- The Modal -->
+            <div class="modal" id="infocard">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+
+                            <button type="button" class="close" data-dismiss="modal">
+                                    <img src="img/x.png" alt="x">
+                                </button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 first-section">
+                                    <img src="img/product-24-1-300x300 1.png" alt="Error" class="main-img">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img src="img/product-24-1-300x300 1.png" alt="Error">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="img/product-24-1-300x300 1.png" alt="Error">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="img/product-24-1-300x300 1.png" alt="Error">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 second-section">
+                                    <div class="title">STP Generator Platinum</div>
+                                    <div class="stars d-flex">
+                                        <img src="img/star.png" alt="star">
+                                        <img src="img/star.png" alt="star">
+                                        <img src="img/star.png" alt="star">
+                                        <img src="img/star.png" alt="star">
+                                        <img src="img/star.png" alt="star">
+                                    </div>
+                                    <div class="about">
+                                        <div class="content">
+                                            SKU
+                                            <div>STP-577843-E</div>
+                                        </div>
+                                        <div class="content">
+                                            Brend
+                                            <div>TurboElectric</div>
+                                        </div>
+                                        <div class="content">
+                                            Davlat
+                                            <div>Fransiya</div>
+                                        </div>
+                                        <div class="content">
+                                            ID
+                                            <div>BDX-750Z370-S</div>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        Many philosophical debates that began in ancient times are still debated today. In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge.
+                                    </div>
+                                    <div class="price">
+                                        379 000 so’m
+                                        <span>450 000</span>
+                                    </div>
+                                    <div class="m-footer">
+                                        <form action="#" class="myform">
+                                            <button type="button" class="minus">-</button>
+                                            <input type="tel" value="1" class="count">
+                                            <button type="button" class="plus">+</button>
+                                        </form>
+                                        <button type="button" class="btn btn1" onclick="addSavat()">Savatchaga
+                                                qo’shish</button>
+                                        <button type="button" class="btn btn2"  data-toggle="modal" data-target="#fasterBuy">Tezkor xarid
+                                                qilish</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-3 col-sm-12">
                     <div class="card">
+                        <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
                         <img src="img/product-23-1 1.png" alt="by Aslmajon">
                         <div class="card-body">
                             <div class="model">STP-577843-E</div>
@@ -438,95 +549,14 @@
                         <div class="c-footer">
                             <div class="sum">379 000 so’m</div>
                             <a class="cartt">
-                                <div class="img" data-toggle="modal" data-target="#card1"></div>
-                                <!-- The Modal -->
-                                <div class="modal" id="card1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-
-                                            <!-- Modal Header -->
-                                            <div class="modal-header">
-
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                <img src="img/x.png" alt="x">
-                                            </button>
-                                            </div>
-
-                                            <!-- Modal body -->
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-md-4 col-sm-12 first-section">
-                                                        <img src="img/product-24-1-300x300 1.png" alt="Error" class="main-img">
-                                                        <div class="row">
-                                                            <div class="col-4">
-                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-8 col-sm-12">
-                                                        <div class="title">STP Generator Platinum</div>
-                                                        <div class="stars d-flex">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                        </div>
-                                                        <div class="about">
-                                                            <div class="content">
-                                                                SKU
-                                                                <div>STP-577843-E</div>
-                                                            </div>
-                                                            <div class="content">
-                                                                Brend
-                                                                <div>TurboElectric</div>
-                                                            </div>
-                                                            <div class="content">
-                                                                Davlat
-                                                                <div>Fransiya</div>
-                                                            </div>
-                                                            <div class="content">
-                                                                ID
-                                                                <div>BDX-750Z370-S</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="description">
-                                                            Many philosophical debates that began in ancient times are still debated today. In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge.
-                                                        </div>
-                                                        <div class="price">
-                                                            379 000 so’m
-                                                            <span>450 000</span>
-                                                        </div>
-                                                        <div class="m-footer">
-                                                            <form action="#" class="myform">
-                                                                <button type="button" class="minus">-</button>
-                                                                <input type="tel" value="1" class="count">
-                                                                <button type="button" class="plus">+</button>
-                                                            </form>
-                                                            <button type="button" class="btn btn1">Savatchaga
-                                                            qo’shish</button>
-                                                            <button type="button" class="btn btn2">Tezkor xarid
-                                                            qilish</button>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="img" onclick="addSavat()"></div>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-12">
                     <div class="card">
+                        <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
                         <img src="img/product-22-1-300x300 1.png" alt="by Aslmajon">
                         <div class="card-body">
                             <div class="model">STP-577843-E</div>
@@ -542,95 +572,14 @@
                         <div class="c-footer">
                             <div class="sum">379 000 so’m</div>
                             <a class="cartt">
-                                <div class="img" data-toggle="modal" data-target="#card1"></div>
-                                <!-- The Modal -->
-                                <div class="modal" id="card1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-
-                                            <!-- Modal Header -->
-                                            <div class="modal-header">
-
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                <img src="img/x.png" alt="x">
-                                            </button>
-                                            </div>
-
-                                            <!-- Modal body -->
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-md-4 col-sm-12 first-section">
-                                                        <img src="img/product-24-1-300x300 1.png" alt="Error" class="main-img">
-                                                        <div class="row">
-                                                            <div class="col-4">
-                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-8 col-sm-12">
-                                                        <div class="title">STP Generator Platinum</div>
-                                                        <div class="stars d-flex">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                        </div>
-                                                        <div class="about">
-                                                            <div class="content">
-                                                                SKU
-                                                                <div>STP-577843-E</div>
-                                                            </div>
-                                                            <div class="content">
-                                                                Brend
-                                                                <div>TurboElectric</div>
-                                                            </div>
-                                                            <div class="content">
-                                                                Davlat
-                                                                <div>Fransiya</div>
-                                                            </div>
-                                                            <div class="content">
-                                                                ID
-                                                                <div>BDX-750Z370-S</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="description">
-                                                            Many philosophical debates that began in ancient times are still debated today. In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge.
-                                                        </div>
-                                                        <div class="price">
-                                                            379 000 so’m
-                                                            <span>450 000</span>
-                                                        </div>
-                                                        <div class="m-footer">
-                                                            <form action="#" class="myform">
-                                                                <button type="button" class="minus">-</button>
-                                                                <input type="tel" value="1" class="count">
-                                                                <button type="button" class="plus">+</button>
-                                                            </form>
-                                                            <button type="button" class="btn btn1">Savatchaga
-                                                            qo’shish</button>
-                                                            <button type="button" class="btn btn2">Tezkor xarid
-                                                            qilish</button>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="img" onclick="addSavat()"></div>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-12">
                     <div class="card">
+                        <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
                         <img src="img/product-21-1-300x300 1.png" alt="by Aslmajon">
                         <div class="card-body">
                             <div class="model">STP-577843-E</div>
@@ -646,95 +595,14 @@
                         <div class="c-footer">
                             <div class="sum">379 000 so’m</div>
                             <a class="cartt">
-                                <div class="img" data-toggle="modal" data-target="#card1"></div>
-                                <!-- The Modal -->
-                                <div class="modal" id="card1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-
-                                            <!-- Modal Header -->
-                                            <div class="modal-header">
-
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                <img src="img/x.png" alt="x">
-                                            </button>
-                                            </div>
-
-                                            <!-- Modal body -->
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-md-4 col-sm-12 first-section">
-                                                        <img src="img/product-24-1-300x300 1.png" alt="Error" class="main-img">
-                                                        <div class="row">
-                                                            <div class="col-4">
-                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-8 col-sm-12">
-                                                        <div class="title">STP Generator Platinum</div>
-                                                        <div class="stars d-flex">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                        </div>
-                                                        <div class="about">
-                                                            <div class="content">
-                                                                SKU
-                                                                <div>STP-577843-E</div>
-                                                            </div>
-                                                            <div class="content">
-                                                                Brend
-                                                                <div>TurboElectric</div>
-                                                            </div>
-                                                            <div class="content">
-                                                                Davlat
-                                                                <div>Fransiya</div>
-                                                            </div>
-                                                            <div class="content">
-                                                                ID
-                                                                <div>BDX-750Z370-S</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="description">
-                                                            Many philosophical debates that began in ancient times are still debated today. In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge.
-                                                        </div>
-                                                        <div class="price">
-                                                            379 000 so’m
-                                                            <span>450 000</span>
-                                                        </div>
-                                                        <div class="m-footer">
-                                                            <form action="#" class="myform">
-                                                                <button type="button" class="minus">-</button>
-                                                                <input type="tel" value="1" class="count">
-                                                                <button type="button" class="plus">+</button>
-                                                            </form>
-                                                            <button type="button" class="btn btn1">Savatchaga
-                                                            qo’shish</button>
-                                                            <button type="button" class="btn btn2">Tezkor xarid
-                                                            qilish</button>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="img" onclick="addSavat()"></div>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-12">
                     <div class="card">
+                        <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
                         <img src="img/product-20-1-300x300 1.png" alt="by Aslmajon">
                         <div class="card-body">
                             <div class="model">STP-577843-E</div>
@@ -750,89 +618,7 @@
                         <div class="c-footer">
                             <div class="sum">379 000 so’m</div>
                             <a class="cartt">
-                                <div class="img" data-toggle="modal" data-target="#card1"></div>
-                                <!-- The Modal -->
-                                <div class="modal" id="card1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-
-                                            <!-- Modal Header -->
-                                            <div class="modal-header">
-
-                                                <button type="button" class="close" data-dismiss="modal">
-                                                <img src="img/x.png" alt="x">
-                                            </button>
-                                            </div>
-
-                                            <!-- Modal body -->
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-md-4 col-sm-12 first-section">
-                                                        <img src="img/product-24-1-300x300 1.png" alt="Error" class="main-img">
-                                                        <div class="row">
-                                                            <div class="col-4">
-                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-8 col-sm-12">
-                                                        <div class="title">STP Generator Platinum</div>
-                                                        <div class="stars d-flex">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                            <img src="img/star.png" alt="star">
-                                                        </div>
-                                                        <div class="about">
-                                                            <div class="content">
-                                                                SKU
-                                                                <div>STP-577843-E</div>
-                                                            </div>
-                                                            <div class="content">
-                                                                Brend
-                                                                <div>TurboElectric</div>
-                                                            </div>
-                                                            <div class="content">
-                                                                Davlat
-                                                                <div>Fransiya</div>
-                                                            </div>
-                                                            <div class="content">
-                                                                ID
-                                                                <div>BDX-750Z370-S</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="description">
-                                                            Many philosophical debates that began in ancient times are still debated today. In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge.
-                                                        </div>
-                                                        <div class="price">
-                                                            379 000 so’m
-                                                            <span>450 000</span>
-                                                        </div>
-                                                        <div class="m-footer">
-                                                            <form action="#" class="myform">
-                                                                <button type="button" class="minus">-</button>
-                                                                <input type="tel" value="1" class="count">
-                                                                <button type="button" class="plus">+</button>
-                                                            </form>
-                                                            <button type="button" class="btn btn1">Savatchaga
-                                                            qo’shish</button>
-                                                            <button type="button" class="btn btn2">Tezkor xarid
-                                                            qilish</button>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="img" onclick="addSavat()"></div>
                             </a>
                         </div>
                     </div>

@@ -142,6 +142,85 @@
         }
     }
 }
+#fasterBuy {
+    .modal-header {
+        border: none;
+        .fast-title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+            color: #000000;
+            margin: 0 auto;
+        }
+    }
+    .modal-body {
+        padding: 2rem;
+        form {
+            label {
+                display: block;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                margin: 12px 0;
+                span {
+                    color: red;
+                }
+            }
+            input,
+            textarea {
+                background: #e3e3e3;
+                border-radius: 3px;
+                border: none;
+                outline: none;
+                width: 100%;
+                padding: 10px;
+            }
+            a {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 23px;
+                color: #ffffff;
+                background: #007cff;
+                border-radius: 3px;
+                padding: 10px;
+            }
+        }
+    }
+}
+// fasterbuy modal
+@media (max-width: 576px){
+    #fasterBuy{
+        padding-left: 0 !important;
+        .modal-header{
+            .fast-title{
+                font-size: 22px;
+            }
+        }
+    }
+}
+@media (max-width: 382px){
+    #fasterBuy{
+        .modal-header{
+            .fast-title{
+                font-size: 17px;
+            }
+        }
+        .modal-body{
+            form{
+                label{
+                    font-size: 16px;
+                    margin: 10px 0;
+                }
+                a{
+                    padding: 8px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
 
 .cartt-modal {
     .cartt {
@@ -181,7 +260,7 @@
                 }
             }
         }
-        
+
         .modal {
             padding-right: 0;
             padding-left: 0 !important;
