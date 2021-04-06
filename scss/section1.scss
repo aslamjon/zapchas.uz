@@ -1,3 +1,4 @@
+
 .section-1 {
     margin-top: 20px;
     .xizmat {
@@ -68,6 +69,12 @@
                     padding: 15px;
                     background: #ffffff;
                     box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
+                    &:hover {
+                        .icon-heart {
+                            opacity: 1;
+                            transition: 0.5s;
+                        }
+                    }
                     .pin {
                         position: absolute;
                         top: 8px;

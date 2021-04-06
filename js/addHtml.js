@@ -1,5 +1,6 @@
 function addSavat() {
     let addSavatH = `
+    <a href="savatcha.html" class="text-decoration-none">
     <div class="cart-order">
     <img src="img/product-24-1-300x300 1.png" alt="Error">
     <div class="content">
@@ -17,6 +18,7 @@ function addSavat() {
         </div>
     </div>
 </div>
+    </a>
     `
     document.getElementById("addSavatPlace").innerHTML += addSavatH
 }

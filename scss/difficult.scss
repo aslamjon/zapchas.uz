@@ -1,4 +1,4 @@
-#otaaaM {
+#otaaa {
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -269,13 +269,23 @@
                 .row {
                     .col-lg-3 {
                         .divat {
+                            &:hover {
+                                .icon-heart {
+                                    opacity: 1;
+                                    transition: 0.5s;
+                                }
+                                .postion-text {
+                                    opacity: 1;
+                                    transition: 0.5s;
+                                }
+                            }
                             padding: 15px 20px;
                             position: relative;
                             background: white;
                             .position-icon {
                                 position: absolute;
-                                top: 10px;
-                                right: 14px;
+                                top: 7px;
+                                right: 10px;
                                 &:hover {
                                     background-color: #007cff;
                                 }
@@ -292,6 +302,7 @@
                                 font-weight: normal;
                                 font-size: 16px;
                                 line-height: 19px;
+                                opacity: 0;
                             }
                             .img-card {
                                 display: flex;
