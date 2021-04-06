@@ -1,3 +1,41 @@
+.header-map {
+    background-image: none !important;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    .google_map {
+        width: 100%;
+        height: 90vh;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .img-opasity {
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.76;
+        .text-big {
+            margin-top: 100px;
+            text-align: center !important;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 42px;
+        }
+        .text-small {
+            margin-top: 15px;
+            text-align: center !important;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #BCBCBC;
+        }
+    }
+}
+
 .section-google {
     .container {
         max-width: 84vw !important;
@@ -16,10 +54,13 @@
             }
             .col-lg-3 {
                 .card {
-                    border: none !important;
                     background-color: white;
                     padding: 40px;
                     height: 211px !important;
+                    border-color: transparent !important;
+                    &:hover {
+                        box-shadow: 1px 1px 8px #cec9c9, -1px -1px 8px #cec9c9;
+                    }
                     a {
                         display: flex;
                         justify-content: center;

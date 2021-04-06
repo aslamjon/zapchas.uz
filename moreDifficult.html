@@ -29,7 +29,7 @@
                     <img src="img/telegram.png" alt="Error">
                 </a>
                 <a href="#" class="ic">
-                    <img src="img/Instagram.svg" alt="Error">
+                    <img src="img/instagram.svg" alt="Error">
                 </a>
                 <a href="#" class="ic icf">
                     <img src="img/Vector (1).png" alt="Error">
@@ -105,7 +105,7 @@
                 <li class="nav-item">
                     <!-- Button to Open the Modal -->
                     <a class="nav-link cursor-pointer" data-toggle="modal" data-target="#myModal">
-                        <img src="img/Cart2.svg" alt="Error">
+                        <img src="img/Cart.svg" alt="Error">
                         <div class="cart">
                             <div class="first">Xarid savatchasi</div>
                             <div class="second">0.00 so'm</div>
@@ -128,7 +128,7 @@
                                 </div>
 
                                 <!-- Modal body -->
-                                <div class="modal-body">
+                                <div class="modal-body" id="addSavatPlace">
                                     <div class="cart-order">
                                         <img src="img/product-24-1-300x300 1.png" alt="Error">
                                         <div class="content">
@@ -219,7 +219,9 @@
         </div>
         <div class="img-opasity">
             <div class="text-big text-white"> BARCHA MAXSULOTLAR</div>
-            <div class="text-small text-white">Bosh sahifa / Xizmatlar</div>
+            <div id="otaaaM">
+                <a href="index.html" id="kichikM">Bosh sahifa /<a> <a href="#" id="kichik2M">Tanlangan mahsulotlar</a>
+            </div>
         </div>
     </header>
 
@@ -237,23 +239,33 @@
                             <div class="oneslider mt-2">
                                 <div class="d-flex">
                                     <img src="img/Ellipse 22.svg" alt="">
-                                    <div class="tt">Kategoriya nomi</div>
+                                    <div class="tt otacha">
+                                        <div>Kategoriya nomi</div>
+                                        <img src="img/toRightGray.svg" alt="right">
+                                    </div>
+
+                                </div>
+                                <div class="bolacha">
+                                    <div class="ichki">
+                                        <img src="img/Ellipse 22.svg" class="img-fluid" alt="nuqta">
+                                        <a href="#" class="tt">Kategoriya nomi</a>
+                                    </div>
                                 </div>
                                 <div class="d-flex">
                                     <img src="img/Ellipse 22.svg" alt="">
-                                    <div class="tt">Kategoriya nomi</div>
+                                    <a class="tt">Kategoriya nomi</a>
                                 </div>
                                 <div class="d-flex">
                                     <img src="img/Ellipse 22.svg" alt="">
-                                    <div class="tt">Kategoriya nomi</div>
+                                    <a class="tt">Kategoriya nomi</a>
                                 </div>
                                 <div class="d-flex">
                                     <img src="img/Ellipse 22.svg" alt="">
-                                    <div class="tt">Kategoriya nomi</div>
+                                    <a class="tt">Kategoriya nomi</a>
                                 </div>
                                 <div class="d-flex">
                                     <img src="img/Ellipse 22.svg" alt="">
-                                    <div class="tt">Kategoriya nomi</div>
+                                    <a class="tt">Kategoriya nomi</a>
                                 </div>
 
 
@@ -267,7 +279,7 @@
                             </div>
                             <div class="twoslider">
 
-                                <input type="range" class="form-range form-control-range my-3 cursor-pointer" id="customRange3">
+                                <input type="range" class="form-range form-control-range my-3 cursor-pointer custom-range" id="customRange3">
                                 <div class="saralash">
                                     <button class="btn btn-primary">Saralash</button>
                                     <div class="thisprice">Narx: 0 so’m - 25 000 000</div>
@@ -433,41 +445,125 @@
 
                 </div>
                 <div class="col-lg-9 col-md-12 col-sm-12 mt-4">
-                    <div class="rowone">
+                    <div class="rowone mt-3">
                         <div class="d-flex sort-father">
                             <span class="sort">Saralash</span>
                             <div class="drup ml-3">
                                 <div class="bosil" id="click-1">
-                                    <div class="p-element">Nomi bo’yicha</div>
+                                    <div class="p-element" id="pp-t">Nomi bo’yicha</div>
                                     <div><img src="img/Polygon 2.svg" class="img-fluid" alt=""></div>
                                 </div>
                                 <div class="bosil-element mt-3">
-                                    <div>Name</div>
-                                    <div>Name</div>
+                                    <div class="nameU">Name</div>
+                                    <div class="nameU1">Name</div>
                                 </div>
                             </div>
                             <div class="sort ml-5">Ko’rsatish</div>
                             <div class="drup ml-3">
                                 <div class="bosil-2" id="click-2">
-                                    <div class="p-element">16</div>
+                                    <div class="p-element" id="pp-r">16</div>
                                     <div><img src="img/Polygon 2.svg" class="img-fluid" alt=""></div>
                                 </div>
                                 <div class="bosil-2-element mt-3">
-                                    <div>24</div>
-                                    <div>36</div>
+                                    <div class="nameU2">24</div>
+                                    <div class="nameU3">36</div>
                                 </div>
                             </div>
                         </div>
                         <div class="ozgarish ">
                             <div><span class="icon-click click-all active"></span></div>
                             <div><span class="icon-click click-ver"></span></div>
-                            <div><span class="icon-click click-gor" onclick="chiz()"></span></div>
+                            <div><span class="icon-click click-gor"></span></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-6 mt-4" id="col9">
                             <div class="divat">
-                                <div class="position-icon icon icon-big "></div>
+                                <div class="position-icon icon icon-big" data-toggle="modal" data-target="#cardM"></div>
+                                <div class="modal" id="cardM">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                    <img src="img/x.png" alt="x">
+                                                </button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-12 first-section">
+                                                        <img src="img/product-24-1-300x300 1.png" alt="Error" class="main-img" id="rasmm">
+                                                        <div class="row">
+                                                            <div class="col-4 border" onclick="sorting1()">
+                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
+                                                            </div>
+                                                            <div class="col-4 border" onclick="sorting2()">
+                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
+                                                            </div>
+                                                            <div class="col-4 border" onclick="sorting3()">
+                                                                <img src="img/product-24-1-300x300 1.png" alt="Error">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-12">
+                                                        <div class="title">STP Generator Platinum</div>
+                                                        <div class="stars d-flex">
+                                                            <img src="img/star.png" alt="star">
+                                                            <img src="img/star.png" alt="star">
+                                                            <img src="img/star.png" alt="star">
+                                                            <img src="img/star.png" alt="star">
+                                                            <img src="img/star.png" alt="star">
+                                                        </div>
+                                                        <div class="about">
+                                                            <div class="content">
+                                                                SKU
+                                                                <div>STP-577843-E</div>
+                                                            </div>
+                                                            <div class="content">
+                                                                Brend
+                                                                <div>TurboElectric</div>
+                                                            </div>
+                                                            <div class="content">
+                                                                Davlat
+                                                                <div>Fransiya</div>
+                                                            </div>
+                                                            <div class="content">
+                                                                ID
+                                                                <div>BDX-750Z370-S</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="description">
+                                                            Many philosophical debates that began in ancient times are still debated today. In one general sense, philosophy is associated with wisdom, intellectual culture and a search for knowledge.
+                                                        </div>
+                                                        <div class="price">
+                                                            379 000 so’m
+                                                            <span>450 000</span>
+                                                        </div>
+                                                        <div class="m-footer">
+                                                            <form action="#" class="myform">
+                                                                <button type="button" class="minus">-</button>
+                                                                <input type="tel" value="1" class="count">
+                                                                <button type="button" class="plus">+</button>
+                                                            </form>
+                                                            <button type="button" class="btn btn1" onclick="addSavat()">
+                                                            Savatchaga qo’shish
+                                                            </button>
+                                                            <button type="button" class="btn btn2" data-toggle="modal" data-target="#signup">
+                                                                    Tezkor xarid qilish
+                                                            </button>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="postion-text ">Chegirma</div>
                                 <div class="img-card ">
                                     <img src="img/tormozbig.png " class="img-fluid " id="imgg " alt=" ">
@@ -490,11 +586,11 @@
                                     </div>
                                     <div class="buy-with-price ">
                                         <p>379 000 so’m</p>
-                                        <div class="icon-joy "><span class="icon icon-buy "></span></div>
+                                        <div class="icon-joy "><span class="icon icon-buy " onclick="addSavat()"></span></div>
                                     </div>
                                 </div>
                                 <div class="threeblock ">
-                                    <div class="position-iconF icon icon-big "></div>
+                                    <div class="position-iconF icon icon-big " data-toggle="modal" data-target="#cardM"></div>
                                     <div class="priceblock ">379 000 so’m</div>
                                     <div> <del>450 000 so’m</del></div>
                                     <button type="button " class="btn btn-primary ">Sotib olish</button>
@@ -507,7 +603,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 mt-4" id="col-1">
                             <div class="divat">
-                                <div class="position-icon icon icon-big"></div>
+                                <div class="position-icon icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                 <div class="img-card">
                                     <img src="img/spector.png" class="img-fluid" id="imgg" alt="">
                                 </div>
@@ -529,11 +625,11 @@
                                     </div>
                                     <div class="buy-with-price">
                                         <p>379 000 so’m</p>
-                                        <div class="icon-joy"><span class="icon icon-buy"></span></div>
+                                        <div class="icon-joy"><span class="icon icon-buy" onclick="addSavat()"></span></div>
                                     </div>
                                 </div>
                                 <div class="threeblock">
-                                    <div class="position-iconF icon icon-big"></div>
+                                    <div class="position-iconF icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                     <div class="priceblock">379 000 so’m</div>
                                     <div> <del>450 000 so’m</del></div>
                                     <button type="button" class="btn btn-primary">Sotib olish</button>
@@ -546,8 +642,8 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 mt-4" id="col-2">
                             <div class="divat ">
-                                <div class="position-icon icon icon-big "></div>
-                                <div class="img-card ">
+                                <div class="position-icon icon icon-big" data-toggle="modal" data-target="#cardM"></div>
+                                <div class="img-card">
                                     <img src="img/product-21-1-300x300 1.png " class="img-fluid " id="imgg " alt=" ">
                                 </div>
                                 <div class="centr ">
@@ -568,11 +664,11 @@
                                     </div>
                                     <div class="buy-with-price ">
                                         <p>379 000 so’m</p>
-                                        <div class="icon-joy "><span class="icon icon-buy "></span></div>
+                                        <div class="icon-joy "><span class="icon icon-buy " onclick="addSavat()"></span></div>
                                     </div>
                                 </div>
                                 <div class="threeblock ">
-                                    <div class="position-iconF icon icon-big "></div>
+                                    <div class="position-iconF icon icon-big " data-toggle="modal" data-target="#cardM"></div>
                                     <div class="priceblock ">379 000 so’m</div>
                                     <div> <del>450 000 so’m</del></div>
                                     <button type="button " class="btn btn-primary ">Sotib olish</button>
@@ -585,7 +681,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 mt-4" id="col-3">
                             <div class="divat">
-                                <div class="position-icon icon icon-big"></div>
+                                <div class="position-icon icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                 <div class="img-card">
                                     <img src="img/product-20-1-300x300 1.png" class="img-fluid" id="imgg" alt="">
                                 </div>
@@ -607,11 +703,11 @@
                                     </div>
                                     <div class="buy-with-price">
                                         <p>379 000 so’m</p>
-                                        <div class="icon-joy"><span class="icon icon-buy"></span></div>
+                                        <div class="icon-joy"><span class="icon icon-buy" onclick="addSavat()"></span></div>
                                     </div>
                                 </div>
                                 <div class="threeblock">
-                                    <div class="position-iconF icon icon-big"></div>
+                                    <div class="position-iconF icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                     <div class="priceblock">379 000 so’m</div>
                                     <div> <del>450 000 so’m</del></div>
                                     <button type="button" class="btn btn-primary">Sotib olish</button>
@@ -626,7 +722,7 @@
                     <div class="row yoqbol">
                         <div class="col-lg-3 col-md-6 col-sm-6 mt-4" id="col9">
                             <div class="divat">
-                                <div class="position-icon icon icon-big "></div>
+                                <div class="position-icon icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                 <div class="postion-text ">Chegirma</div>
                                 <div class="img-card ">
                                     <img src="img/tormozbig.png " class="img-fluid " id="imgg " alt=" ">
@@ -649,11 +745,11 @@
                                     </div>
                                     <div class="buy-with-price ">
                                         <p>379 000 so’m</p>
-                                        <div class="icon-joy "><span class="icon icon-buy "></span></div>
+                                        <div class="icon-joy "><span class="icon icon-buy " onclick="addSavat()"></span></div>
                                     </div>
                                 </div>
                                 <div class="threeblock ">
-                                    <div class="position-iconF icon icon-big "></div>
+                                    <div class="position-iconF icon icon-big " data-toggle="modal" data-target="#cardM"></div>
                                     <div class="priceblock ">379 000 so’m</div>
                                     <div> <del>450 000 so’m</del></div>
                                     <button type="button " class="btn btn-primary ">Sotib olish</button>
@@ -666,7 +762,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 mt-4" id="col-1">
                             <div class="divat">
-                                <div class="position-icon icon icon-big"></div>
+                                <div class="position-icon icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                 <div class="img-card">
                                     <img src="img/spector.png" class="img-fluid" id="imgg" alt="">
                                 </div>
@@ -688,11 +784,11 @@
                                     </div>
                                     <div class="buy-with-price">
                                         <p>379 000 so’m</p>
-                                        <div class="icon-joy"><span class="icon icon-buy"></span></div>
+                                        <div class="icon-joy"><span class="icon icon-buy" onclick="addSavat()"></span></div>
                                     </div>
                                 </div>
                                 <div class="threeblock">
-                                    <div class="position-iconF icon icon-big"></div>
+                                    <div class="position-iconF icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                     <div class="priceblock">379 000 so’m</div>
                                     <div> <del>450 000 so’m</del></div>
                                     <button type="button" class="btn btn-primary">Sotib olish</button>
@@ -705,7 +801,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 mt-4" id="col-2">
                             <div class="divat ">
-                                <div class="position-icon icon icon-big "></div>
+                                <div class="position-icon icon icon-big " data-toggle="modal" data-target="#cardM"></div>
                                 <div class="img-card ">
                                     <img src="img/product-21-1-300x300 1.png " class="img-fluid " id="imgg " alt=" ">
                                 </div>
@@ -727,11 +823,11 @@
                                     </div>
                                     <div class="buy-with-price ">
                                         <p>379 000 so’m</p>
-                                        <div class="icon-joy "><span class="icon icon-buy "></span></div>
+                                        <div class="icon-joy "><span class="icon icon-buy " onclick="addSavat()"></span></div>
                                     </div>
                                 </div>
                                 <div class="threeblock ">
-                                    <div class="position-iconF icon icon-big "></div>
+                                    <div class="position-iconF icon icon-big " data-toggle="modal" data-target="#cardM"></div>
                                     <div class="priceblock ">379 000 so’m</div>
                                     <div> <del>450 000 so’m</del></div>
                                     <button type="button " class="btn btn-primary ">Sotib olish</button>
@@ -744,7 +840,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 mt-4" id="col-3">
                             <div class="divat">
-                                <div class="position-icon icon icon-big"></div>
+                                <div class="position-icon icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                 <div class="img-card">
                                     <img src="img/product-20-1-300x300 1.png" class="img-fluid" id="imgg" alt="">
                                 </div>
@@ -766,11 +862,11 @@
                                     </div>
                                     <div class="buy-with-price">
                                         <p>379 000 so’m</p>
-                                        <div class="icon-joy"><span class="icon icon-buy"></span></div>
+                                        <div class="icon-joy"><span class="icon icon-buy" onclick="addSavat()"></span></div>
                                     </div>
                                 </div>
                                 <div class="threeblock">
-                                    <div class="position-iconF icon icon-big"></div>
+                                    <div class="position-iconF icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                     <div class="priceblock">379 000 so’m</div>
                                     <div> <del>450 000 so’m</del></div>
                                     <button type="button" class="btn btn-primary">Sotib olish</button>
@@ -785,7 +881,7 @@
                     <div class="row yoqbol">
                         <div class="col-lg-3 col-md-6 col-sm-6 mt-4" id="col9">
                             <div class="divat">
-                                <div class="position-icon icon icon-big "></div>
+                                <div class="position-icon icon icon-big " data-toggle="modal" data-target="#cardM"></div>
                                 <div class="postion-text ">Chegirma</div>
                                 <div class="img-card ">
                                     <img src="img/tormozbig.png " class="img-fluid " id="imgg " alt=" ">
@@ -808,11 +904,11 @@
                                     </div>
                                     <div class="buy-with-price ">
                                         <p>379 000 so’m</p>
-                                        <div class="icon-joy "><span class="icon icon-buy "></span></div>
+                                        <div class="icon-joy "><span class="icon icon-buy " onclick="addSavat()"></span></div>
                                     </div>
                                 </div>
                                 <div class="threeblock ">
-                                    <div class="position-iconF icon icon-big "></div>
+                                    <div class="position-iconF icon icon-big " data-toggle="modal" data-target="#cardM"></div>
                                     <div class="priceblock ">379 000 so’m</div>
                                     <div> <del>450 000 so’m</del></div>
                                     <button type="button " class="btn btn-primary ">Sotib olish</button>
@@ -825,7 +921,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 mt-4" id="col-1">
                             <div class="divat">
-                                <div class="position-icon icon icon-big"></div>
+                                <div class="position-icon icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                 <div class="img-card">
                                     <img src="img/spector.png" class="img-fluid" id="imgg" alt="">
                                 </div>
@@ -847,11 +943,11 @@
                                     </div>
                                     <div class="buy-with-price">
                                         <p>379 000 so’m</p>
-                                        <div class="icon-joy"><span class="icon icon-buy"></span></div>
+                                        <div class="icon-joy"><span class="icon icon-buy" onclick="addSavat()"></span></div>
                                     </div>
                                 </div>
                                 <div class="threeblock">
-                                    <div class="position-iconF icon icon-big"></div>
+                                    <div class="position-iconF icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                     <div class="priceblock">379 000 so’m</div>
                                     <div> <del>450 000 so’m</del></div>
                                     <button type="button" class="btn btn-primary">Sotib olish</button>
@@ -864,7 +960,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 mt-4" id="col-2">
                             <div class="divat ">
-                                <div class="position-icon icon icon-big "></div>
+                                <div class="position-icon icon icon-big " data-toggle="modal" data-target="#cardM"></div>
                                 <div class="img-card ">
                                     <img src="img/product-21-1-300x300 1.png " class="img-fluid " id="imgg " alt=" ">
                                 </div>
@@ -886,11 +982,11 @@
                                     </div>
                                     <div class="buy-with-price ">
                                         <p>379 000 so’m</p>
-                                        <div class="icon-joy "><span class="icon icon-buy "></span></div>
+                                        <div class="icon-joy "><span class="icon icon-buy " onclick="addSavat()"></span></div>
                                     </div>
                                 </div>
                                 <div class="threeblock ">
-                                    <div class="position-iconF icon icon-big "></div>
+                                    <div class="position-iconF icon icon-big " data-toggle="modal" data-target="#cardM"></div>
                                     <div class="priceblock ">379 000 so’m</div>
                                     <div> <del>450 000 so’m</del></div>
                                     <button type="button " class="btn btn-primary ">Sotib olish</button>
@@ -903,7 +999,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 mt-4" id="col-3">
                             <div class="divat">
-                                <div class="position-icon icon icon-big"></div>
+                                <div class="position-icon icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                 <div class="img-card">
                                     <img src="img/product-20-1-300x300 1.png" class="img-fluid" id="imgg" alt="">
                                 </div>
@@ -925,11 +1021,11 @@
                                     </div>
                                     <div class="buy-with-price">
                                         <p>379 000 so’m</p>
-                                        <div class="icon-joy"><span class="icon icon-buy"></span></div>
+                                        <div class="icon-joy"><span class="icon icon-buy" onclick="addSavat()" </span></div>
                                     </div>
                                 </div>
                                 <div class="threeblock">
-                                    <div class="position-iconF icon icon-big"></div>
+                                    <div class="position-iconF icon icon-big" data-toggle="modal" data-target="#cardM"></div>
                                     <div class="priceblock">379 000 so’m</div>
                                     <div> <del>450 000 so’m</del></div>
                                     <button type="button" class="btn btn-primary">Sotib olish</button>
@@ -1121,15 +1217,69 @@
             </div>
         </div>
     </div>
+    <div class="modal" id="signup">
+        <div class="modal-dialog md-signup">
+            <div class="modal-content">
 
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="sighin-title">RO’YXATDAN O’TISH</div>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="#">
+                        <label for="fish">F.I.SH <span>*</span></label>
+                        <input type="text" id="fish" placeholder="To’liq ism kiritilishi shart">
+                        <div class="duble">
+                            <div class="first">
+                                <label for="email">Email <span>*</span></label>
+                                <input required type="email" id="email" placeholder="Elektron manzilingizni kiriting">
+
+                                <label for="passwordd2">Parol <span>*</span></label>
+                                <input required type="password" id="passwordd2" placeholder="Parolni kiriting">
+                            </div>
+                            <div class="second">
+                                <label for="tel">Telefon <span>*</span></label>
+                                <input required type="tel" id="tel" placeholder="Telefon raqamingizni kiriting">
+
+                                <label for="passwordd3">Parol <span>*</span></label>
+                                <input required type="password" id="passwordd3" placeholder="Parolni qayta kiriting">
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-block mt-4">Ro'yxatdan o'tish</a>
+                        <a href="#"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-3.5.1.slim.min.js "></script>
     <script src="js/jQuery.min.js "></script>
     <script src="js/popper.min.js "></script>
     <script src="js/bootstrap.min.js "></script>
     <script src="js/owl.carousel.js "></script>
     <script src="js/main.js "></script>
+    <script src="js/addHtml.js "></script>
     <script>
         $(document).ready(function() {
+            $(".nameU").click(function() {
+                let aV = $(".nameU").text();
+                $("#pp-t").text(aV);
+            });
+            $(".nameU1").click(function() {
+                let aV1 = $(".nameU1").text();
+                $("#pp-t").text(aV1);
+            });
+            $(".nameU2").click(function() {
+                let aV2 = $(".nameU2").text();
+                $("#pp-r").text(aV2);
+            });
+            $(".nameU3").click(function() {
+                let aV3 = $(".nameU3").text();
+                $("#pp-r").text(aV3);
+            });
             $("#oneId ").click(function() {
                 $(".oneslider ").toggleClass("d-block ");
                 $("#oneId ").toggleClass("rang ");
@@ -1207,6 +1357,10 @@
                 $(".buy-with-price").addClass("d-none");
                 $("#imgg").attr("src", "img/kattatormoz.png");
             });
+            $(".otacha").click(function() {
+                $(".bolacha").toggleClass("d-block");
+            });
+
 
         });
         $('#owl-causel-1').owlCarousel({
@@ -1232,7 +1386,26 @@
             }
         })
     </script>
+    <script>
+        let minus = document.querySelectorAll('.minus');
+        let plus = document.querySelectorAll('.plus');
+        let count = document.querySelectorAll('.count');
 
+        document.querySelectorAll('.count').forEach((value, index) => {
+            plus[index].onclick = function() {
+                document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) + 1;
+
+            }
+            minus[index].onclick = function() {
+                if (document.querySelectorAll('.count')[index].value > 1) {
+                    document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) - 1;
+                }
+            }
+        })
+    </script>
+
+
+</html>
 </body>
 
 </html>

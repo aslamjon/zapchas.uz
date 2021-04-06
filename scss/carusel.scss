@@ -29,6 +29,7 @@
                             }
                         }
                         .owl-carousel {
+                            margin-top: 40px;
                             margin-top: 15px;
                             .owl-nav {
                                 border: none !important;
@@ -54,6 +55,7 @@
                                     .card {
                                         position: relative;
                                         border: none !important;
+                                        // border: 1px solid rebeccapurple !important;
                                         .icon-big {
                                             position: absolute;
                                             top: 10px;
@@ -72,10 +74,12 @@
                                         }
                                         img {
                                             width: 80% !important;
-                                            margin-top: 20px;
+                                            margin-top: 40px;
                                         }
                                         .dataRull {
+                                            margin-top: 30px;
                                             padding: 20px;
+                                            // border: 1px solid red;
                                             width: 100%;
                                             .tro {
                                                 font-weight: normal;
@@ -185,12 +189,13 @@
                                 .col-lg-3 {
                                     .item {
                                         .card {
-                                            img {
+                                            .img-fluid {
                                                 width: 70% !important;
-                                                margin-top: 5px;
+                                                margin-top: 40px;
                                             }
                                             .dataRull {
                                                 padding: 10px;
+                                                margin-top: 20px !important;
                                                 .tro {
                                                     font-size: 12px;
                                                     line-height: 14px;
@@ -200,6 +205,11 @@
                                                     font-weight: 500;
                                                     font-size: 15px;
                                                     line-height: 18px;
+                                                }
+                                                .stars {
+                                                    img {
+                                                        margin-top: 5px !important;
+                                                    }
                                                 }
                                                 .price-savat {
                                                     width: 100%;
@@ -261,13 +271,16 @@
                                 }
                             }
                             .owl-carousel {
-                                margin-top: 15px;
+                                margin-top: 5px;
+                                .owl-nav {
+                                    top: -30px !important;
+                                }
                                 .col-lg-3 {
                                     .item {
                                         .card {
-                                            img {
+                                            .img-fluid {
                                                 width: 70% !important;
-                                                margin-top: 5px;
+                                                margin-top: 10px !important;
                                             }
                                             .dataRull {
                                                 padding: 10px;
@@ -280,6 +293,25 @@
                                                     font-weight: 500;
                                                     font-size: 15px;
                                                     line-height: 18px;
+                                                }
+                                                .stars {
+                                                    margin-top: -30px !important;
+                                                    img {
+                                                        width: 14px !important;
+                                                        height: 13px !important;
+                                                    }
+                                                    img:nth-child(2) {
+                                                        margin-left: 5px;
+                                                    }
+                                                    img:nth-child(3) {
+                                                        margin-left: 5px;
+                                                    }
+                                                    img:nth-child(4) {
+                                                        margin-left: 5px;
+                                                    }
+                                                    img:nth-child(5) {
+                                                        margin-left: 5px;
+                                                    }
                                                 }
                                                 .price-savat {
                                                     width: 100%;

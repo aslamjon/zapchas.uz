@@ -53,8 +53,10 @@
                 .right.active {
                     background: none;
                 }
-                &:last-child{
-                    a{margin-left: -10px;}
+                &:last-child {
+                    a {
+                        margin-left: -10px;
+                    }
                 }
             }
         }
@@ -63,7 +65,7 @@
         #section1Owl {
             .owl-item {
                 .item {
-                    padding: 10px;
+                    padding: 15px;
                     background: #ffffff;
                     box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
                     .pin {
@@ -139,24 +141,23 @@
                                 }
                                 &:hover {
                                     background: #007bff;
-                                    .img{
+                                    .img {
                                         background: #fff;
                                     }
                                 }
                             }
                         }
                     }
-
-                    
                 }
             }
-            .owl-nav{
+            .owl-nav {
                 display: block;
                 position: absolute;
                 top: 0;
                 right: 0;
-                .owl-prev,.owl-next{
-                    span{
+                .owl-prev,
+                .owl-next {
+                    span {
                         display: none;
                     }
                 }
@@ -166,8 +167,8 @@
             color: #000000;
         }
     }
-    #home{
-        #infocard{
+    #home {
+        #infocard {
             padding-right: 0;
             padding-left: 0 !important;
             padding: 10px !important;
@@ -439,15 +440,15 @@
     }
 }
 
-@media (max-width: 1531px){
-    .section-1{
-        .tab-content{ 
-            #section1Owl{ 
-                .owl-item{ 
-                    .item{ 
-                        .content{ 
-                            .first{ 
-                                .title{
+@media (max-width: 1531px) {
+    .section-1 {
+        .tab-content {
+            #section1Owl {
+                .owl-item {
+                    .item {
+                        .content {
+                            .first {
+                                .title {
                                     font-size: 18px;
                                 }
                             }
@@ -458,21 +459,22 @@
         }
     }
 }
-@media (max-width: 767px){
+
+@media (max-width: 767px) {
     .section-1 {
-        .tab-content{ 
-            #section1Owl{ 
-                .owl-item{ 
-                    .item{ 
-                        .content{ 
-                            .first{ 
-                                .title{
+        .tab-content {
+            #section1Owl {
+                .owl-item {
+                    .item {
+                        .content {
+                            .first {
+                                .title {
                                     font-size: 16px;
                                     line-height: 20px;
                                 }
                             }
-                            .second{
-                                .sum{
+                            .second {
+                                .sum {
                                     font-size: 17px;
                                 }
                             }
@@ -483,21 +485,22 @@
         }
     }
 }
-@media (max-width: 575px){
+
+@media (max-width: 575px) {
     .section-1 {
-        .tab-content{ 
-            #section1Owl{ 
-                .owl-item{ 
-                    .item{ 
-                        .content{ 
-                            .first{ 
-                                .title{
+        .tab-content {
+            #section1Owl {
+                .owl-item {
+                    .item {
+                        .content {
+                            .first {
+                                .title {
                                     font-size: 20px;
                                     line-height: 20px;
                                 }
                             }
-                            .second{
-                                .sum{
+                            .second {
+                                .sum {
                                     font-size: 20px;
                                 }
                             }
@@ -799,20 +802,21 @@
         }
     }
 }
-@media (max-width: 512px){
-    .section-1{
-        #home{
-            #infocard{
+
+@media (max-width: 512px) {
+    .section-1 {
+        #home {
+            #infocard {
                 .modal-dialog {
-                    .modal-body{ 
-                        .m-footer{
+                    .modal-body {
+                        .m-footer {
                             flex-wrap: wrap;
                             justify-content: space-between;
-                            .btn1{
+                            .btn1 {
                                 width: 70%;
                                 margin: 0;
                             }
-                            .btn2{
+                            .btn2 {
                                 width: 100%;
                                 margin-top: 15px;
                             }
@@ -859,7 +863,8 @@
 @media (max-width: 480px) {
     .section-1 {
         #home {
-            .modal,#infcard {
+            .modal,
+            #infcard {
                 .modal-dialog {
                     .modal-body {
                         .about {
@@ -869,7 +874,8 @@
                                 div {
                                     font-size: 12px;
                                 }
-                                &:last-child,&:first-child{
+                                &:last-child,
+                                &:first-child {
                                     margin-left: 0 !important;
                                 }
                             }
@@ -1008,15 +1014,16 @@
         }
     }
 }
-@media (max-width: 341px){
-    .section-1{
-        #home{
-            #infocard{ 
-                .modal-dialog{ 
-                    .modal-body{ 
-                        .about{ 
-                            .content{
-                                &:nth-child(3){
+
+@media (max-width: 341px) {
+    .section-1 {
+        #home {
+            #infocard {
+                .modal-dialog {
+                    .modal-body {
+                        .about {
+                            .content {
+                                &:nth-child(3) {
                                     margin-left: 0 !important;
                                 }
                             }
