@@ -29,6 +29,22 @@
         }
     }
 }
+#otaaa {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #kichikAb,
+    #kichik2Ab {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #BCBCBC;
+        text-decoration: none;
+    }
+}
 @media (min-width: 1000px) {
     .aboutP {
         background-position-x: 50% !important;
@@ -292,7 +308,7 @@
             }
         }
         .tab-content {
-            #home {
+            .tafsiya {
                 padding: 20px;
                 font-size: 14px;
                 line-height: 27px;
@@ -411,6 +427,124 @@
         margin-top: 15px;
         width: 68.5%;
         padding-bottom: 10px;
+        #infocard {
+            padding-right: 0;
+            padding-left: 0 !important;
+            padding: 10px !important;
+            .modal-dialog {
+                margin: 4.75rem auto !important;
+                .modal-header {
+                    padding: 1rem 1rem 0 1rem !important;
+                    button {
+                        border: none;
+                        outline: none;
+                    }
+                    border: none;
+                }
+                .modal-body {
+                    padding-bottom: 1.5rem !important;
+                    .first-section {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .row {
+                            // margin-top: 30px;
+                            .col-4 {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    .title {
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 28px;
+                        color: #000000;
+                    }
+                    .about {
+                        display: flex;
+                        .content {
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: #868686;
+                            background: #ededed;
+                            margin: 10px 5px;
+                            padding: 5px;
+                            &:first-child {
+                                margin-left: 0px;
+                            }
+                            &:last-child {
+                                margin-right: 0px;
+                            }
+                            div {
+                                font-weight: bold;
+                                font-size: 14px;
+                                line-height: 16px;
+                                color: #000000;
+                            }
+                        }
+                    }
+                    .description {
+                        font-size: 16px;
+                        line-height: 24px;
+                        /* or 150% */
+                        color: #868686;
+                        width: 88%;
+                    }
+                    .price {
+                        margin: 15px 0;
+                        font-weight: 900;
+                        font-size: 24px;
+                        line-height: 28px;
+                        color: #000000;
+                        span {
+                            font-size: 16px;
+                            line-height: 19px;
+                            /* identical to box height */
+                            text-decoration-line: line-through;
+                            color: #a5a5a5;
+                        }
+                    }
+                    .m-footer {
+                        display: flex;
+                        .myform {
+                            display: flex;
+                            button,
+                            input {
+                                width: 40px;
+                                height: 40px;
+                                margin: 0 !important;
+                                border: none;
+                                outline: none;
+                                background: #e3e3e3;
+                                text-align: center;
+                                font-size: 16px;
+                                line-height: 19px;
+                            }
+                        }
+                        .btn1,
+                        .btn2 {
+                            height: 40px;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 19px;
+                            /* identical to box height */
+                            color: #ffffff;
+                            padding: 6px;
+                            border-radius: 0;
+                        }
+                        .btn1 {
+                            background: #007cff;
+                            margin: 0 10px;
+                        }
+                        .btn2 {
+                            background: #575757;
+                        }
+                    }
+                }
+            }
+        }
         .title {
             font-weight: bold;
             font-size: 16px;
@@ -423,6 +557,17 @@
             position: relative;
             box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
             border:none;
+            .heart-ic{
+                position: absolute;
+                top: 25px;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                -webkit-mask-image: url("../img/Heart.svg");
+                mask-image: url("../img/Heart.svg");
+                opacity: 0;
+                transition: 0.3s;
+            }
             .chegir {
                 padding: 5px;
                 background: red;
@@ -642,6 +787,11 @@
                             }
                         }
                     }
+                }
+            }
+            &:hover{
+                .heart-ic{
+                    opacity: 1;
                 }
             }
         }
@@ -994,6 +1144,11 @@
                     }
                 }
             }
+            #infocard{
+                .second-section{
+                    display: block;
+                }
+            }
         }
     }
 }
@@ -1153,6 +1308,277 @@
         .tafsiya {
             .card {
                 height: 100%;
+            }
+        }
+    }
+}
+
+// modal
+@media (min-width: 768px) {
+    .main-section {
+        .tafsiya {
+            .modal {
+                .modal-dialog {
+                    max-width: 756px !important;
+                    margin: 1.75rem auto !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .main-section {
+        .tafsiya {
+            .modal,#infocard {
+                .modal-dialog {
+                    margin: 1.75rem auto !important;
+                    .modal-body {
+                        .first-section {
+                            .main-img {
+                                width: 90%;
+                                margin: 0 auto;
+                            }
+                        }
+                        .m-footer{
+                            .btn1,.btn2{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 512px) {
+    .main-section {
+        .tafsiya {
+            #infocard {
+                .modal-dialog {
+                    .modal-body {
+                        .m-footer {
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            .btn1 {
+                                width: 70%;
+                                margin: 0;
+                            }
+                            .btn2 {
+                                width: 100%;
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 498px) {
+    .main-section {
+        .tafsiya {
+            .modal {
+                .modal-dialog {
+                    margin: 0.75rem auto !important;
+                    .modal-body {
+                        .first-section {
+                            .main-img {
+                                width: 90%;
+                                margin: 0 auto;
+                            }
+                        }
+                        .m-footer {
+                            flex-wrap: wrap;
+                            .btn1 {
+                                display: block;
+                                width: 68%;
+                                margin: 0 0 0 10px;
+                            }
+                            .btn2 {
+                                width: 100%;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .main-section {
+        .tafsiya {
+            .modal,
+            #infcard {
+                .modal-dialog {
+                    .modal-body {
+                        .about {
+                            flex-wrap: wrap;
+                            .content {
+                                margin: 5px !important;
+                                div {
+                                    font-size: 12px;
+                                }
+                                &:last-child,
+                                &:first-child {
+                                    margin-left: 0 !important;
+                                }
+                            }
+                        }
+                        .description {
+                            width: 96%;
+                        }
+                        .m-footer {
+                            position: relative;
+                            .btn1 {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 67% !important;
+                            }
+                            .btn2 {
+                                width: 100%;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 434px) {
+    .main-section {
+        .tafsiya {
+            .modal {
+                .modal-dialog {
+                    .modal-body {
+                        .about {
+                            .content {
+                                padding: 5px;
+                                div {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        .description {
+                            width: 96%;
+                        }
+                        .m-footer {
+                            position: relative;
+                            .btn1 {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                            }
+                            .btn2 {
+                                width: 100%;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 422px) {
+    .main-section {
+        .tafsiya {
+            .modal {
+                .modal-dialog {
+                    .modal-body {
+                        .about {
+                            flex-wrap: wrap;
+                            .content {
+                                margin: 3px 3px;
+                            }
+                        }
+                        .m-footer {
+                            position: relative;
+                            .myform {
+                                width: 31%;
+                            }
+                            .btn1 {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 66%;
+                            }
+                            .btn2 {
+                                width: 100%;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 382px) {
+    .main-section {
+        .tafsiya {
+            .modal {
+                .modal-dialog {
+                    .modal-body {
+                        .stars {
+                            margin-bottom: 5px;
+                        }
+                        .about {
+                            flex-wrap: wrap;
+                            .content {
+                                margin: 3px 3px;
+                                &:last-child {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                        .m-footer {
+                            position: relative;
+                            .myform {
+                                width: 31%;
+                            }
+                            .btn1 {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 66%;
+                            }
+                            .btn2 {
+                                width: 100%;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 341px) {
+    .main-section {
+        .tafsiya {
+            #infocard {
+                .modal-dialog {
+                    .modal-body {
+                        .about {
+                            .content {
+                                &:nth-child(3) {
+                                    margin-left: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

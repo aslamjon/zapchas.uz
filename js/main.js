@@ -99,8 +99,12 @@ function openSelect(selectId, select_show, optionHide,self) {
             select.setAttribute('size', select.length - 1);
             option_hide.style.display = 'none';
         }
-        
-        select.style.marginTop = '8px';
+        if(window.innerWidth <= 401){
+            select.style.marginTop = '31px';
+        }
+        else{
+            select.style.marginTop = '37px';
+        }
         select.style.width = '100%';
         select.style.background = '#CECECE';
         select.style.padding = '10px';
@@ -192,4 +196,7 @@ document.querySelector('.leftBtnOfCarusel').onclick = function(){
 }
 document.querySelector('.rightBtnOfCarusel').onclick = function(){
     document.querySelector('.owl-next').click();
+}
+function href(url){
+    window.location = url;
 }

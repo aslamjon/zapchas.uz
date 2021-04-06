@@ -142,6 +142,84 @@
         }
     }
 }
+#fasterBuy {
+    .modal-header {
+        border: none;
+        .fast-title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+            color: #000000;
+            margin: 0 auto;
+        }
+    }
+    .modal-body {
+        padding: 2rem;
+        form {
+            label {
+                display: block;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                margin: 12px 0;
+                span {
+                    color: red;
+                }
+            }
+            input,
+            textarea {
+                background: #e3e3e3;
+                border-radius: 3px;
+                border: none;
+                outline: none;
+                width: 100%;
+                padding: 10px;
+            }
+            a {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 23px;
+                color: #ffffff;
+                background: #007cff;
+                border-radius: 3px;
+                padding: 10px;
+            }
+        }
+    }
+}
+// fasterbuy modal
+@media (max-width: 576px) {
+    #fasterBuy {
+        padding-left: 0 !important;
+        .modal-header {
+            .fast-title {
+                font-size: 22px;
+            }
+        }
+    }
+}
+@media (max-width: 382px) {
+    #fasterBuy {
+        .modal-header {
+            .fast-title {
+                font-size: 17px;
+            }
+        }
+        .modal-body {
+            form {
+                label {
+                    font-size: 16px;
+                    margin: 10px 0;
+                }
+                a {
+                    padding: 8px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
 
 .cartt-modal {
     .cartt {
@@ -181,7 +259,7 @@
                 }
             }
         }
-        
+
         .modal {
             padding-right: 0;
             padding-left: 0 !important;
@@ -510,6 +588,58 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+#checkedYourOrder {
+    margin-top: 30px;
+    .modal-header {
+        border: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .modal-body {
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            div {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 34px;
+                text-align: center;
+            }
+            a {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                color: #ffffff;
+                background: #575757;
+                border-radius: 3px;
+                width: 100px;
+                padding: 10px;
+            }
+        }
+    }
+}
+@media (min-width: 576px){
+    #checkedYourOrder{
+        .modal-dialog {
+            max-width: 545px;
+        }
+    }
+}
+@media (max-width: 558px){
+    #checkedYourOrder{
+        .modal-body{
+            form{
+                br{
+                    display: none;
                 }
             }
         }

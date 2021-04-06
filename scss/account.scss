@@ -14,6 +14,22 @@
         }
     }
 }
+#otaaa {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #kichikAb,
+    #kichik2Ab {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #BCBCBC;
+        text-decoration: none;
+    }
+}
 .account-main {
     display: flex;
     padding-top: 20px;
@@ -22,6 +38,7 @@
         height: 300px;
         display: block;
         background: #fff;
+        border: none;
         .title {
             font-weight: 500;
             font-size: 16px;
@@ -36,6 +53,7 @@
                 font-size: 16px;
                 line-height: 19px;
                 color: #616161;
+                padding: 10px 1rem;
             }
             a.active {
                 background: #f5f5f5;

@@ -1,3 +1,20 @@
+
+    #otaaa {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #kichikAb,
+        #kichik2Ab {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #BCBCBC;
+            text-decoration: none;
+        }
+    }
 .savatcha-page2 {
     .sp2,
     .sp2-1 {
@@ -60,6 +77,8 @@
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
+                transform: translateX(-1200px);
+                transition: 0.3s;
             }
             .first-head {
                 //
@@ -144,6 +163,8 @@
                 }
             }
             .data {
+                transform: translateX(-1200px);
+                transition: 0.3s;
                 .first-head {
                     span {
                         font-weight: 500;
