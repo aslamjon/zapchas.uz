@@ -2,7 +2,7 @@
 useed html, scss, js, css and other files
 
 View Project: https://aslamjon.github.io/zapchas.uz/<br> 
-View Project: <a href="https://aslamjon.github.io/zapchas.uz/" target="_blank">Zapchas.uz</a> 
+View Project: <a href="https://aslamjon.github.io/zapchas.uz/" target="_blank">Zapchas.uz</a>  <br>
 View about of Project: <a href="https://aslamjon.github.io/zapchas.uz/aboutMe.html" target="_blank">About</a> <br>
 View 404 of Project: <a href="https://aslamjon.github.io/zapchas.uz/404.html" target="_blank">404</a> <br>
 View aboutProduct of Project: <a href="https://aslamjon.github.io/zapchas.uz/aboutProduct.html" target="_blank">aboutProduct</a> <br>
