@@ -83,8 +83,8 @@
         .row {
             margin-top: 10px;
         }
-        .card{
-            .pin-sel{
+        .card {
+            .pin-sel {
                 width: 18px;
                 height: 18px;
                 position: absolute;
@@ -101,7 +101,7 @@
                 border: none !important;
                 height: 100%;
                 position: relative;
-                .heart-ic{
+                .heart-ic {
                     position: absolute;
                     top: 35px;
                     right: 13px;
@@ -338,8 +338,9 @@
                         }
                     }
                 }
-                &:hover{
-                    .chegirmaa,.heart-ic{
+                &:hover {
+                    .chegirmaa,
+                    .heart-ic {
                         opacity: 1;
                     }
                 }
@@ -475,7 +476,7 @@
 
 @media (max-width: 1400px) {
     .selected-products {
-        max-width: 94vw !important;
+        max-width: 84vw !important;
         .tafsiya {
             .colcha {
                 width: 23.5%;
