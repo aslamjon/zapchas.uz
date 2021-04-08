@@ -178,8 +178,26 @@ function changeImg(selfImg, mainImg){
     main.style.transition = '0.3s';
     setTimeout(function(){main.style.opacity = 1},500);
     setTimeout(function(){main.setAttribute('src',selfImg.getAttribute('src'));},500);
-    
-    
+    let anotherImg = document.querySelectorAll('.anotherImg');
+    anotherImg.forEach((value, index) => {
+        console.log(value.children[0]);
+        value.children
+        for (let i = 0; value.children.length > i;i++){
+            value.children[i].style.border = 'none';
+        }
+        
+    });
+    let col4 = document.querySelectorAll('.col-4');
+    col4.forEach((value, index) => {
+        console.log(value.children[0]);
+        value.children
+        for (let i = 0; value.children.length > i;i++){
+            value.children[i].style.border = 'none';
+        }
+        
+    });
+    selfImg.style.transition = '0.3s';
+    selfImg.style.border = '1px solid #a5a5a5';
 }
 function changeGreyStar(){
     let img1 = document.querySelectorAll('.starGrey1');

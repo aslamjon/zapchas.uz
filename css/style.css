@@ -6065,6 +6065,15 @@ header .search form .dvi {
 .search-page2 .tafsiya .card {
   padding: 10px;
 }
+.search-page2 .tafsiya .card a {
+  width: 100%;
+}
+.search-page2 .tafsiya .card a img {
+  width: 100%;
+}
+.search-page2 .tafsiya .card .c-footer .cartt {
+  width: 28px;
+}
 
 @media (min-width: 1366px) {
   .search-page2 {
@@ -6074,6 +6083,11 @@ header .search form .dvi {
 @media (max-width: 1366px) {
   .search-page2 {
     max-width: 84vw !important;
+  }
+}
+@media (max-width: 499px) {
+  .search-page2 {
+    max-width: 94vw !important;
   }
 }
 #otaaa {
@@ -8925,9 +8939,12 @@ header .search form .dvi {
   line-height: 19px;
   color: #616161;
   padding: 10px 1rem;
+  margin: 1px 0;
+  transition: 0.3s;
 }
 .account-main .nav-tabs li a.active {
   background: #f5f5f5;
+  border-bottom: 2px solid #007cff;
 }
 .account-main .tab-content {
   margin-left: 20px;
@@ -10417,6 +10434,10 @@ body {
 
 .carttImgForAcrive {
   background: #ffffff !important;
+}
+
+.borderImg {
+  border: 1px solid #a5a5a5;
 }
 
 .icon-heart {

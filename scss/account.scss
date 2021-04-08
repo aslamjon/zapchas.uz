@@ -55,9 +55,12 @@
                 line-height: 19px;
                 color: #616161;
                 padding: 10px 1rem;
+                margin: 1px 0;
+                transition: 0.3s;
             }
             a.active {
                 background: #f5f5f5;
+                border-bottom: 2px solid #007cff;
             }
         }
     }

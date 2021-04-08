@@ -1643,6 +1643,17 @@
     .tafsiya{
         .card{
             padding: 10px;
+            a{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .c-footer{ 
+                .cartt{
+                    width: 28px;
+                }
+            }
         }
     }
 }
@@ -1654,5 +1665,10 @@
 @media (max-width: 1366px){
     .search-page2{
         max-width: 84vw !important;
+    }
+}
+@media (max-width: 499px){
+    .search-page2{
+        max-width: 94vw !important;
     }
 }

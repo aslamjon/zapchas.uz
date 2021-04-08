@@ -561,10 +561,10 @@
                                                                 <input type="tel" value="1" class="count">
                                                                 <button type="button" class="plus">+</button>
                                                             </form>
-                                                            <button type="button" class="btn btn1" onclick="addSavat()">
+                                                            <button type="button" class="btn btn1" class="close" data-dismiss="modal" onclick="addSavat()">
                                                             Savatchaga qo’shish
                                                             </button>
-                                                            <button type="button" class="btn btn2" data-toggle="modal" data-target="#fasterBuy">
+                                                            <button type="button" class="btn btn2" data-toggle="modal" data-target="#fasterBuy" class="close" data-dismiss="modal">
                                                                     Tezkor xarid qilish
                                                             </button>
 
@@ -1429,23 +1429,6 @@
                     items: 8,
                     nav: true,
                     loop: false
-                }
-            }
-        })
-    </script>
-    <script>
-        let minus = document.querySelectorAll('.minus');
-        let plus = document.querySelectorAll('.plus');
-        let count = document.querySelectorAll('.count');
-
-        document.querySelectorAll('.count').forEach((value, index) => {
-            plus[index].onclick = function() {
-                document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) + 1;
-
-            }
-            minus[index].onclick = function() {
-                if (document.querySelectorAll('.count')[index].value > 1) {
-                    document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) - 1;
                 }
             }
         })
