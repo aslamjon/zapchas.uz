@@ -5551,7 +5551,8 @@ header .search form .dvi {
 .main-section .tafsiya .card .c-footer .cartt .modal .modal-dialog .modal-body .m-footer .btn2 {
   background: #575757;
 }
-.main-section .tafsiya .card:hover .heart-ic {
+.main-section .tafsiya .card:hover .heart-ic, .main-section .tafsiya .card:hover .icon-heart {
+  background: #007cff;
   opacity: 1;
 }
 .main-section .tafsiya .search-page .card-body .name {
@@ -6189,6 +6190,9 @@ header .search form .dvi {
   opacity: 0;
   transition: 0.3s;
 }
+.selected-products .tafsiya .colcha .card .heart-ic:hover {
+  background: #007cff;
+}
 .selected-products .tafsiya .colcha .card .chegirmaa {
   font-size: 16px;
   line-height: 19px;
@@ -6204,8 +6208,24 @@ header .search form .dvi {
 }
 .selected-products .tafsiya .colcha .card .pin {
   position: absolute;
-  top: 10.3px;
-  right: 15.41px;
+  top: 10px;
+  right: 13px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: #a5a5a5;
+  cursor: pointer;
+  -webkit-mask-image: url("../img/bigScreen.svg");
+  mask-image: url("../img/bigScreen.svg");
+  mask-position: center center;
+  mask-size: 75%;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-size: 75%;
+  -webkit-mask-repeat: no-repeat;
+}
+.selected-products .tafsiya .colcha .card .pin:hover {
+  background: #007cff;
 }
 .selected-products .tafsiya .colcha .card .otaa {
   display: flex;
@@ -8378,9 +8398,13 @@ header .search form .dvi {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
 }
 .section-footer .container .row-footer .gani .iconPlace img {
   width: 100%;
+}
+.section-footer .container .row-footer .gani .iconPlace:hover {
+  background: #007bff;
 }
 .section-footer .foooter {
   width: 100%;
@@ -10321,6 +10345,14 @@ body {
   background-color: #EAEAEA;
 }
 
+.carttActive {
+  background: #007bff;
+}
+
+.carttImgForAcrive {
+  background: #ffffff !important;
+}
+
 .icon-heart {
   position: absolute;
   top: 40px;
@@ -10343,6 +10375,9 @@ body {
 #heart {
   mask-image: url("/img/Heart.svg");
   -webkit-mask-image: url("/img/Heart.svg");
+}
+#heart:hover {
+  background: #007cff;
 }
 
 .icon {

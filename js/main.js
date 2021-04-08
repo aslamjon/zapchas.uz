@@ -174,7 +174,12 @@ function zoomIn(mainImg,px){
 }
 function changeImg(selfImg, mainImg){
     let main = document.querySelector('.'+mainImg);
-    main.setAttribute('src',selfImg.getAttribute('src'))
+    main.style.opacity = 0
+    main.style.transition = '0.3s';
+    setTimeout(function(){main.style.opacity = 1},500);
+    setTimeout(function(){main.setAttribute('src',selfImg.getAttribute('src'));},500);
+    
+    
 }
 function changeGreyStar(){
     let img1 = document.querySelectorAll('.starGrey1');
@@ -190,13 +195,82 @@ function changeGreyStar(){
     })
 }
 changeGreyStar();
+if (document.querySelector('.leftBtnOfCarusel') !== null){
+    document.querySelector('.leftBtnOfCarusel').onclick = function(){
+        document.querySelector('.owl-prev').click();
+    }
+    document.querySelector('.rightBtnOfCarusel').onclick = function(){
+        document.querySelector('.owl-next').click();
+    }
+}
 
-document.querySelector('.leftBtnOfCarusel').onclick = function(){
-    document.querySelector('.owl-prev').click();
-}
-document.querySelector('.rightBtnOfCarusel').onclick = function(){
-    document.querySelector('.owl-next').click();
-}
 function href(url){
     window.location = url;
 }
+if (window.location.pathname == '/index.html') timeOfDiscount(8);
+function timeOfDiscount(setday){
+    let day = document.getElementById('day');
+    let hours = document.getElementById('hours');
+    let minut = document.getElementById('minut');
+    let sec = document.getElementById('sec');
+    day.innerHTML = setday;
+    console.log(sec.innerHTML);
+    if ((sec.innerHTML == 00) && (minut.innerHTML == 00) && (hours.innerHTML == 00)){
+        day.innerHTML--;
+        hours.innerHTML = 24;
+    }
+    if ((sec.innerHTML == 00) && (minut.innerHTML == 00) && (hours.innerHTML == 24)){
+        hours.innerHTML--;
+        minut.innerHTML = 60;
+    }
+    if ((sec.innerHTML == 00) && (minut.innerHTML == 60)){
+        minut.innerHTML--;
+        sec.innerHTML = 60;
+    }
+    let timer = setInterval(function(){
+        sec.innerHTML--;
+        if(sec.innerHTML == 0){
+            minut.innerHTML--;
+            sec.innerHTML = 60;
+        }
+        if(minut.innerHTML == 0){
+            hours.innerHTML--;
+            minut.innerHTML = 60;
+        }
+        if (hours.innerHTML == 0){
+            day.innerHTML--;
+            hours.innerHTML = 24;
+        }
+        if ((sec.innerHTML == 0) && (minut.innerHTML == 0) && (hours.innerHTML == 0) && (day.innerHTML == 0)){
+            day.style.color = 'red';
+            hours.style.color = 'red';
+            minut.style.color = 'red';
+            sec.style.color = 'red';
+            clearInterval(timer);
+        }
+    },1000);
+}
+function cartOnclick(){
+    let cartt = document.querySelectorAll('.cartt');
+    cartt.forEach((value,index) => {
+        value.onclick = function(){
+            value.classList.toggle('carttActive');
+            value.children[0].classList.toggle('carttImgForAcrive');
+        }
+    });
+    let iconPlace = document.querySelectorAll('.iconPlace');
+    iconPlace.forEach((value,index) => {
+        value.onclick = function(){
+            value.classList.toggle('carttActive');
+            value.children[0].classList.toggle('carttImgForAcrive');
+        }       
+    });
+    let iconJoy = document.querySelectorAll('.icon-joy');
+    iconJoy.forEach((value,index) => {
+        value.onclick = function(){
+            value.classList.toggle('carttActive');
+            value.children[0].classList.toggle('carttImgForAcrive');
+        }       
+    });
+}
+cartOnclick();

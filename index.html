@@ -377,12 +377,12 @@
                         </li>
                         <li class="">
                             <a class="leftBtnOfCarusel">
-                                <img src="img/Left3.png" alt="Error">
+                                <img src="img/Left3.png" class="cursor-pointer" alt="Error">
                             </a>
                         </li>
                         <li class="">
                             <a class="rightBtnOfCarusel">
-                                <img src="img/Right.png" alt="Error">
+                                <img src="img/Right.png" class="cursor-pointer" alt="Error">
                             </a>
                         </li>
                     </ul>
@@ -412,13 +412,13 @@
                                                 <img src="img/product-24-1-300x300 1.png" alt="Error" class="main-img">
                                                 <div class="row">
                                                     <div class="col-4">
-                                                        <img src="img/product-24-1-300x300 1.png" alt="Error">
+                                                        <img src="img/product-20-1-300x300 1.png" onclick="changeImg(this, 'main-img')" class="cursor-pointer" alt="Error">
                                                     </div>
                                                     <div class="col-4">
-                                                        <img src="img/product-24-1-300x300 1.png" alt="Error">
+                                                        <img src="img/product-21-1-300x300 1.png" onclick="changeImg(this, 'main-img')" class="cursor-pointer" alt="Error">
                                                     </div>
                                                     <div class="col-4">
-                                                        <img src="img/product-24-1-300x300 1.png" alt="Error">
+                                                        <img src="img/product-24-1-300x300 1.png" onclick="changeImg(this, 'main-img')" class="cursor-pointer" alt="Error">
                                                     </div>
                                                 </div>
                                             </div>
@@ -641,19 +641,19 @@
                         <div class="content">Chegirmali mahsulotlar vaqti tugashiga oz qoldi</div>
                         <div class="clock">
                             <div class="day">
-                                <div class="num">00</div>
+                                <div class="num" id="day">00</div>
                                 <div class="text">Kun</div>
                             </div>
                             <div class="hours">
-                                <div class="num">00</div>
+                                <div class="num" id="hours">00</div>
                                 <div class="text">Soat</div>
                             </div>
                             <div class="minut">
-                                <div class="num">00</div>
+                                <div class="num" id="minut">00</div>
                                 <div class="text">Daqiqa</div>
                             </div>
                             <div class="sec">
-                                <div class="num">00</div>
+                                <div class="num" id="sec">00</div>
                                 <div class="text">Soniya</div>
                             </div>
                         </div>

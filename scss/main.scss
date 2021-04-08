@@ -34,7 +34,12 @@ body {
 .rang {
     background-color: #EAEAEA;
 }
-
+.carttActive{
+    background: rgb(0, 123, 255);
+}
+.carttImgForAcrive{
+    background: #ffffff !important;
+}
 .icon-heart {
     position: absolute;
     top: 40px;
@@ -61,6 +66,9 @@ body {
 #heart {
     mask-image: url('/img/Heart.svg');
     -webkit-mask-image: url('/img/Heart.svg');
+    &:hover{
+        background: #007cff;
+    }
 }
 
 .icon {

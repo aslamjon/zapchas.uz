@@ -111,6 +111,9 @@
                     mask-image: url("../img/Heart.svg");
                     opacity: 0;
                     transition: 0.3s;
+                    &:hover{
+                        background: #007cff;
+                    }
                 }
                 .chegirmaa {
                     font-size: 16px;
@@ -125,10 +128,31 @@
                     opacity: 0;
                     transition: 0.3s;
                 }
+                
                 .pin {
                     position: absolute;
-                    top: 10.3px;
-                    right: 15.41px;
+                    top: 10px;
+                    right: 13px;
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    background-color: #a5a5a5;
+                    cursor: pointer;
+                    -webkit-mask-image: url("../img/bigScreen.svg");
+                    mask-image: url("../img/bigScreen.svg");
+                    mask: {
+                        position: center center;
+                        size: 75%;
+                        repeat: no-repeat;
+                    }
+                    -webkit-mask: {
+                        position: center center;
+                        size: 75%;
+                        repeat: no-repeat;
+                    }
+                    &:hover {
+                        background: #007cff;
+                    }
                 }
                 .otaa {
                     // border: 1px solid red;

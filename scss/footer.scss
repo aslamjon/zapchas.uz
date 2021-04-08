@@ -482,8 +482,12 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    transition: 0.3s;
                     img {
                         width: 100%;
+                    }
+                    &:hover{
+                        background: rgb(0, 123, 255);
                     }
                 }
             }

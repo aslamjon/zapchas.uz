@@ -798,7 +798,8 @@
                 }
             }
             &:hover {
-                .heart-ic {
+                .heart-ic,.icon-heart {
+                    background: #007cff;
                     opacity: 1;
                 }
             }
