@@ -267,7 +267,27 @@
             <div class="col-md-4 col-sm-12 order-sm-1">
                 <div class="def_img">
                     <img src="img/product-23-1 1.png" alt="Aslamjon" class="mainImg">
-                    <div class="zoom" onclick="zoomIn('mainImg',4)"></div>
+                    <div class="zoom" onclick="zoomModal('mainImg','modal-imgg')"  data-toggle="modal" data-target="#forzoomImg"></div>
+                    
+                    <!-- The Modal -->
+                    <div class="modal" id="forzoomImg">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+    
+                                    <button type="button" class="close" data-dismiss="modal">
+                                    <img src="img/x.png" alt="x">
+                                </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <div id="modal-imgg">
+                                        <img src="" alt="Error">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="anotherImg">
                     <img src="img/product-23-1 1.png" alt="Aslamojn" onclick="changeImg(this, 'mainImg')">

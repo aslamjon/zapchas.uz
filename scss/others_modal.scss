@@ -645,3 +645,15 @@
         }
     }
 }
+#forzoomImg{
+    padding-right: 0 !important;
+    .modal-header{
+        border: none;
+        padding-bottom: 0;
+    }
+    .modal-body{
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -172,6 +172,11 @@ function zoomIn(mainImg,px){
     img.style.width = img.clientWidth+px+'px';
     // console.log(img.clientWidth);
 }
+function zoomModal(mainImg,modalImg){
+    let main = document.querySelector('.'+mainImg);
+    let mImg = document.getElementById(modalImg);
+    mImg.children[0].setAttribute('src',main.getAttribute('src'))
+}
 function changeImg(selfImg, mainImg){
     let main = document.querySelector('.'+mainImg);
     main.style.opacity = 0

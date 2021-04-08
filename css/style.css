@@ -10408,6 +10408,17 @@ header .search form .dvi {
     display: none;
   }
 }
+#forzoomImg {
+  padding-right: 0 !important;
+}
+#forzoomImg .modal-header {
+  border: none;
+  padding-bottom: 0;
+}
+#forzoomImg .modal-body img {
+  width: 100%;
+}
+
 @font-face {
   font-family: "Roboto-Black";
   src: url("../Roboto/Roboto-Black.ttf") format("truetype");
