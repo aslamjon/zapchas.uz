@@ -274,3 +274,18 @@ function cartOnclick(){
     });
 }
 cartOnclick();
+function likeOnclick(){
+    let like = document.querySelectorAll('.heart-ic');
+    let like2 = document.querySelectorAll('.icon-heart');
+    like.forEach((value,index) => {
+        value.onclick = function(){
+            value.classList.toggle('likeActive');
+        }
+    })
+    like2.forEach((value,index) => {
+        value.onclick = function(){
+            value.classList.toggle('likeActive');
+        }
+    })
+}
+likeOnclick();

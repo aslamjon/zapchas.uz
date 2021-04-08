@@ -7690,6 +7690,67 @@ header .search form .dvi {
 .savatcha-page2 .sp2-body form .data .c-footer {
   margin-top: 15px;
 }
+.savatcha-page2 .sp2-body form .data .c-footer .container-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  line-height: 19px;
+  color: #616161;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Show the checkmark when checked */
+}
+.savatcha-page2 .sp2-body form .data .c-footer .container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.savatcha-page2 .sp2-body form .data .c-footer .container-check .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  /* Create the checkmark/indicator (hidden when not checked) */
+}
+.savatcha-page2 .sp2-body form .data .c-footer .container-check .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  /* Style the checkmark/indicator */
+  left: 10px;
+  top: 7px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.savatcha-page2 .sp2-body form .data .c-footer .container-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.savatcha-page2 .sp2-body form .data .c-footer .container-check input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+.savatcha-page2 .sp2-body form .data .c-footer .container-check input:checked ~ .checkmark:after {
+  display: block;
+}
 .savatcha-page2 .sp2-body form .data .c-footer #c-textarea {
   font-weight: 500;
   font-size: 16px;
@@ -7718,7 +7779,7 @@ header .search form .dvi {
   line-height: 24px;
   color: #a5a5a5;
 }
-.savatcha-page2 .sp2-body form .data .c-footer .c-label span {
+.savatcha-page2 .sp2-body form .data .c-footer .c-label a {
   color: rgba(255, 208, 0, 0.815);
 }
 .savatcha-page2 .sp2-body form .data .c-footer .c-label .checkmark {
@@ -10345,6 +10406,11 @@ body {
   background-color: #EAEAEA;
 }
 
+.likeActive {
+  background: #007cff !important;
+  opacity: 1 !important;
+}
+
 .carttActive {
   background: #007bff;
 }
@@ -10364,6 +10430,7 @@ body {
   background-color: #898989;
   z-index: 2;
   cursor: pointer;
+  transition: 0.3s;
   mask-position: center center;
   mask-size: 90%;
   mask-repeat: no-repeat;
@@ -10377,6 +10444,7 @@ body {
   -webkit-mask-image: url("/img/Heart.svg");
 }
 #heart:hover {
+  opacity: 1;
   background: #007cff;
 }
 

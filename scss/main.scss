@@ -34,6 +34,10 @@ body {
 .rang {
     background-color: #EAEAEA;
 }
+.likeActive{
+    background: #007cff !important;
+    opacity: 1 !important;
+}
 .carttActive{
     background: rgb(0, 123, 255);
 }
@@ -51,6 +55,7 @@ body {
     background-color: #898989;
     z-index: 2;
     cursor: pointer;
+    transition: 0.3s;
     mask: {
         position: center center;
         size: 90%;
@@ -67,6 +72,7 @@ body {
     mask-image: url('/img/Heart.svg');
     -webkit-mask-image: url('/img/Heart.svg');
     &:hover{
+        opacity: 1;
         background: #007cff;
     }
 }
