@@ -26,7 +26,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
-        color: #BCBCBC;
+        color: #bcbcbc;
         text-decoration: none;
     }
 }
@@ -173,9 +173,15 @@
         }
         #haveOrder {
             background: #fff;
-            padding: 10px;
+            padding: 15px;
             margin-bottom: 10px;
             .last-body {
+                width: 100%;
+                .freeSpace{
+                    td{
+                        padding: 10px;
+                    }
+                }
                 .head,
                 .first,
                 .second {
@@ -187,15 +193,20 @@
                 }
                 .head {
                     background: #333333;
-                    div {
+                    div,
+                    th {
                         font-weight: bold;
                         font-size: 18px;
                         line-height: 23px;
                         color: #ffffff;
-                        div {
-                            font-size: 16px;
-                            line-height: 19px;
-                        }
+                        background: #333333;
+                    }
+                    div {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                    th {
+                        padding: 10px;
                     }
                     .wait,
                     .cansle,
@@ -214,19 +225,24 @@
                 }
                 .first {
                     background: #dedede;
-                    div {
+                    td {
+                        margin: 10px 0;
+                        padding: 10px;
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 19px;
                         text-transform: uppercase;
+                        background: #dedede;
                     }
                 }
                 .second {
-                    div {
-                        font-weight: 500;
-                        font-size: 16px;
-                        line-height: 19px;
+                    td {
+                        margin: 10px 0;
+                        padding: 10px;
                         div {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 19px;
                             span {
                                 font-size: 14px;
                                 line-height: 16px;
@@ -253,6 +269,7 @@
         }
         .tab-content {
             width: 73%;
+            width: 80%;
         }
     }
     .account-main {
@@ -302,6 +319,38 @@
                     width: 49%;
                 }
             }
+            #haveOrder {
+                .forscroll {
+                    overflow-x: auto;
+                    margin-top: 15px;
+                    .last-body {
+                        width: 150%;
+                        .head{
+                            th{
+                                font-size: 16px;
+                                div{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        .first{
+                            margin-top: 10px;
+                            td{
+                                font-size: 15px;
+                            }
+                        }
+                        .second{
+                            td{
+                                font-size: 15px;
+                                div{
+                                    font-size: 15px;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -330,7 +379,7 @@
                     min-width: 484px;
                     max-width: 665px;
                     .head {
-                        div {
+                        th {
                             font-size: 16px;
                             div {
                                 font-size: 14px;
@@ -368,7 +417,10 @@
             display: flex;
             height: auto;
             flex-wrap: nowrap;
-            overflow: auto;
+            overflow-x: auto;
+            .nav-item{
+                margin-bottom: 0;
+            }
             .title,
             .nav-link {
                 min-width: 180px;
@@ -439,5 +491,18 @@
 @media (max-width: 576px) {
     .custom-container {
         max-width: 96vw !important;
+    }
+}
+@media (max-width: 490px){
+    .account-main{
+        .tab-content{
+            #haveOrder{
+                .forscroll{
+                    .last-body{
+                        width: 620px;
+                    }
+                }
+            }
+        }
     }
 }
