@@ -3730,6 +3730,10 @@ header .search form .dvi {
   padding: 15px;
   background: #ffffff;
   box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
+  transition: 0.5s;
+}
+.section-1 .tab-content #section1Owl .owl-item .item:hover {
+  box-shadow: 5px 5px 20px #e5e5e5, -5px -5px 20px #e5e5e5;
 }
 .section-1 .tab-content #section1Owl .owl-item .item:hover .icon-heart {
   opacity: 1;
@@ -4444,10 +4448,10 @@ header .search form .dvi {
   position: relative;
   box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
   border: none;
+  transition: 0.5s;
 }
 .section-3 .chegirma .item .card:hover .icon-heart {
   opacity: 1;
-  transition: 0.5s;
 }
 .section-3 .chegirma .item .card:hover .chegirma__text {
   opacity: 1;
@@ -5369,6 +5373,7 @@ header .search form .dvi {
   position: relative;
   box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
   border: none;
+  transition: 0.5s;
 }
 .main-section .tafsiya .card .heart-ic {
   position: absolute;
@@ -5584,6 +5589,9 @@ header .search form .dvi {
 }
 .main-section .tafsiya .card .c-footer .cartt .modal .modal-dialog .modal-body .m-footer .btn2 {
   background: #575757;
+}
+.main-section .tafsiya .card:hover {
+  box-shadow: 5px 5px 20px #e5e5e5, -5px -5px 20px #e5e5e5;
 }
 .main-section .tafsiya .card:hover .heart-ic,
 .main-section .tafsiya .card:hover .icon-heart {
