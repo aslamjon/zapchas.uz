@@ -6610,7 +6610,8 @@ header {
       background-repeat: no-repeat;
       background-size: cover;
       width: 41px !important;
-      height: 22px !important; }
+      height: 22px !important;
+      outline: none !important; }
       .section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-next span {
         display: none !important; }
     .section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-prev {
@@ -6619,7 +6620,8 @@ header {
       background-size: cover !important;
       width: 41px !important;
       height: 22px !important;
-      margin-right: 10px; }
+      margin-right: 10px;
+      outline: none !important; }
       .section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-prev span {
         display: none !important; }
 
