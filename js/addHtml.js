@@ -11,7 +11,7 @@ function addSavat() {
             <div class="sum" onclick="location.href='savatcha.html'">379 000 so’m</div>
             <form action="#">
                 <button type="button" class="minus">-</button>
-                <input type="tel" value="1" class="count">
+                <input type="tel" disabled value="1" class="count text-black">
                 <button type="button" class="plus">+</button>
             </form>
         </div>
@@ -19,6 +19,21 @@ function addSavat() {
 </div>
     `
     document.getElementById("addSavatPlace").innerHTML += addSavatH;
+    let minus = document.querySelectorAll('.minus');
+    let plus = document.querySelectorAll('.plus');
+    let count = document.querySelectorAll('.count');
+
+    document.querySelectorAll('.count').forEach((value, index) => {
+        plus[index].onclick = function () {
+            document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) + 1;
+
+        }
+        minus[index].onclick = function () {
+            if (document.querySelectorAll('.count')[index].value > 1) {
+                document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) - 1;
+            }
+        }
+    })
 }
 
 function tozalash() {

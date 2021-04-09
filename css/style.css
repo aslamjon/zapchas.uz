@@ -9156,9 +9156,6 @@ header .search form .dvi {
 .account-main .tab-content #haveOrder .last-body .first,
 .account-main .tab-content #haveOrder .last-body .second {
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 10px 0;
 }
 .account-main .tab-content #haveOrder .last-body .head {
