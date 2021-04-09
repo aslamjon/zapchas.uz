@@ -17,36 +17,39 @@
 @import 'account';
 @import 'carusel';
 @import 'others_modal';
-
 @font-face {
     font-family: "Roboto-Black";
     src: url("../Roboto/Roboto-Black.ttf") format('truetype');
 }
-    
 
 body {
     margin: 0;
     padding: 0;
     background-color: #fafafa;
-    font-family: "Roboto-Black",sans-serif;
+    font-family: "Roboto-Black", sans-serif;
 }
 
 .rang {
     background-color: #EAEAEA;
 }
-.likeActive{
+
+.likeActive {
     background: #007cff !important;
     opacity: 1 !important;
 }
-.carttActive{
+
+.carttActive {
     background: rgb(0, 123, 255);
 }
-.carttImgForAcrive{
+
+.carttImgForAcrive {
     background: #ffffff !important;
 }
-.borderImg{
+
+.borderImg {
     border: 1px solid #a5a5a5;
 }
+
 .icon-heart {
     position: absolute;
     top: 40px;
@@ -74,15 +77,15 @@ body {
 #heart {
     mask-image: url('/img/Heart.svg');
     -webkit-mask-image: url('/img/Heart.svg');
-    &:hover{
+    &:hover {
         opacity: 1;
         background: #007cff;
     }
 }
 
 .icon {
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
     display: inline-block;
     background-color: #898989;
     cursor: pointer;
@@ -173,7 +176,6 @@ body {
                         font-size: 16px !important;
                         line-height: 19px !important;
                         color: #616161 !important;
-                        
                         text-decoration: none;
                         &.active {
                             background-color: black;
@@ -185,7 +187,6 @@ body {
             .text-songi {
                 font-weight: 500;
                 font-size: 26px;
-                
                 line-height: 30px;
                 padding-bottom: 5px;
             }
@@ -202,7 +203,6 @@ body {
                         background-size: cover;
                         width: 35.22px;
                         height: 22px;
-                        
                         color: white;
                         outline: none !important;
                         font-weight: 600;
@@ -221,14 +221,12 @@ body {
                     p {
                         font-weight: 600;
                         font-size: 20px;
-                        
                         line-height: 20px;
                     }
                     div {
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 18px;
-                        
                     }
                 }
             }
@@ -252,7 +250,6 @@ body {
                     }
                     .dataInterier {
                         text-align: center;
-                        
                         font-weight: 500;
                         font-size: 26px;
                         line-height: 30px;
@@ -319,7 +316,6 @@ body {
                                             font-weight: normal;
                                             font-size: 14px;
                                             line-height: 16px;
-                                            
                                             color: #A5A5A5;
                                         }
                                         .chambarag {
@@ -327,7 +323,6 @@ body {
                                             font-weight: 500;
                                             font-size: 20px;
                                             line-height: 23px;
-                                            
                                         }
                                         .stars {
                                             display: flex;
@@ -357,7 +352,6 @@ body {
                                                 font-weight: 500;
                                                 font-size: 20px;
                                                 line-height: 23px;
-                                                
                                             }
                                             .iconPlace {
                                                 margin-left: auto;
@@ -426,7 +420,6 @@ body {
                     font-size: 26px;
                     line-height: 30px;
                     border-bottom: 2px solid rgb(228, 215, 215);
-                    
                 }
                 .cardMiniWidth {
                     position: relative;
@@ -445,7 +438,6 @@ body {
                         font-weight: 500;
                         font-size: 20px;
                         line-height: 23px;
-                        
                     }
                     .bigAbsolute {
                         position: absolute;
@@ -463,7 +455,6 @@ body {
                 font-weight: 500;
                 font-size: 26px;
                 line-height: 30px;
-                
             }
             #owl-causel-1 {
                 .item {
@@ -539,12 +530,10 @@ body {
                         font-weight: bold;
                         font-size: 46px;
                         line-height: 54px;
-                        
                     }
                     .mtext2 {
                         font-weight: 500;
                         font-size: 20px;
-                        
                         line-height: 33px;
                     }
                     .btnDanger {

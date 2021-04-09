@@ -1,15 +1,14 @@
 function addSavat() {
     let addSavatH = `
-    <a href="savatcha.html" class="text-decoration-none">
-    <div class="cart-order">
-    <img src="img/product-24-1-300x300 1.png" alt="Error">
+    <div class="cart-order cursor-pointer">
+    <img src="img/product-24-1-300x300 1.png" alt="Error" onclick="location.href='savatcha.html'">
     <div class="content">
-        <div class="c-title">STP Generator Platinum</div>
-        <div class="text">
+        <div class="c-title" onclick="location.href='savatcha.html'">STP Generator Platinum</div>
+        <div class="text" onclick="location.href='savatcha.html'">
             Many philosophical debates that began in ancient times are still debated today. In one general sense.
         </div>
         <div class="c-footer">
-            <div class="sum">379 000 so’m</div>
+            <div class="sum" onclick="location.href='savatcha.html'">379 000 so’m</div>
             <form action="#">
                 <button type="button" class="minus">-</button>
                 <input type="tel" value="1" class="count">
@@ -18,7 +17,6 @@ function addSavat() {
         </div>
     </div>
 </div>
-    </a>
     `
     document.getElementById("addSavatPlace").innerHTML += addSavatH;
 }

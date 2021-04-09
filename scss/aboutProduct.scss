@@ -798,7 +798,8 @@
                 }
             }
             &:hover {
-                .heart-ic,.icon-heart {
+                .heart-ic,
+                .icon-heart {
                     background: #007cff;
                     opacity: 1;
                 }
@@ -1639,36 +1640,64 @@
     }
 }
 
-.search-page2{
-    .tafsiya{
-        .card{
+.search-place {
+    margin-top: 70px;
+    padding: 0 !important;
+    .tafsiya {
+        form {
+            margin-right: 0 !important;
+            input:focus {
+                background-color: transparent !important;
+            }
+        }
+    }
+}
+
+.search-page2 {
+    max-width: 84vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    .tafsiya {
+        .card {
             padding: 10px;
-            a{
+            &:hover {
+                box-shadow: 5px 5px 20px #e5e5e5, -5px -5px 20px #e5e5e5;
+                transition: 0.5s;
+            }
+            a {
                 width: 100%;
-                img{
+                img {
                     width: 100%;
                 }
             }
-            .c-footer{ 
-                .cartt{
+            .c-footer {
+                .cartt {
                     width: 28px;
                 }
             }
         }
     }
 }
-@media (min-width: 1366px){
-    .search-page2{
+
+@media (min-width: 1366px) {
+    .search-page2 {
         max-width: 84vw !important;
     }
 }
-@media (max-width: 1366px){
-    .search-page2{
+
+@media (max-width: 1366px) {
+    .search-page2 {
         max-width: 84vw !important;
     }
 }
-@media (max-width: 499px){
-    .search-page2{
-        max-width: 94vw !important;
+
+@media (max-width: 576px) {
+    .search-page2 {
+        max-width: 96vw !important;
+    }
+    .search-place {
+        max-width: 96vw !important;
     }
 }

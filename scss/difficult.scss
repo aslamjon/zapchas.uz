@@ -37,6 +37,7 @@
                         width: 100%;
                     }
                     .cards {
+                        border: 1px solid transparent;
                         .right-d {
                             margin-left: 10px;
                             .gray {
@@ -52,6 +53,10 @@
                                 font-size: 20px;
                                 line-height: 23px;
                             }
+                        }
+                        &:hover {
+                            transform: scale(0.95);
+                            transition: 0.3s linear;
                         }
                     }
                 }
@@ -257,7 +262,12 @@
                 .row {
                     .col-lg-3 {
                         .divat {
+                            width: 100% !important;
+                            height: 100% !important;
+                            cursor: pointer;
                             &:hover {
+                                box-shadow: 5px 5px 20px #e5e5e5, -5px -5px 20px #e5e5e5;
+                                transition: 0.5s;
                                 .icon-heart {
                                     opacity: 1;
                                     transition: 0.5s;
@@ -376,7 +386,7 @@
                                 .position-iconF {
                                     position: absolute;
                                     top: 10px;
-                                    right: -10px;
+                                    right: 10px !important;
                                     &:hover {
                                         background-color: #007cff;
                                     }

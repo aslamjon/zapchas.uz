@@ -94,6 +94,10 @@
             }
         }
         .colcha {
+            &:hover {
+                box-shadow: 5px 5px 20px #e5e5e5, -5px -5px 20px #e5e5e5;
+                transition: 0.5s;
+            }
             width: 18.55%;
             margin: 0.7%;
             .card {
@@ -111,7 +115,7 @@
                     mask-image: url("../img/Heart.svg");
                     opacity: 0;
                     transition: 0.3s;
-                    &:hover{
+                    &:hover {
                         background: #007cff;
                     }
                 }
@@ -128,7 +132,6 @@
                     opacity: 0;
                     transition: 0.3s;
                 }
-                
                 .pin {
                     position: absolute;
                     top: 10px;
@@ -260,9 +263,6 @@
                                             .col-4 {
                                                 cursor: pointer;
                                                 border-color: transparent !important;
-                                                &:hover {
-                                                    border-color: #A5A5A5 !important;
-                                                }
                                                 img {
                                                     width: 100%;
                                                 }

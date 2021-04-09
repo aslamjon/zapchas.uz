@@ -70,6 +70,23 @@
         }
     }
 }
+
+#checkedYourOrder {
+    .bat {
+        width: 35%;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        padding: 5px 0px;
+        background-color: #575757 !important;
+        font-weight: 300 !important;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 1px !important;
+    }
+}
+
 #signup {
     label {
         span {
@@ -85,9 +102,11 @@
         }
     }
 }
+
 .md-signup {
     max-width: 600px;
 }
+
 @media (max-width: 518px) {
     #signup {
         .modal-content {
@@ -142,6 +161,7 @@
         }
     }
 }
+
 #fasterBuy {
     .modal-header {
         border: none;
@@ -188,6 +208,7 @@
         }
     }
 }
+
 // fasterbuy modal
 @media (max-width: 576px) {
     #fasterBuy {
@@ -199,6 +220,7 @@
         }
     }
 }
+
 @media (max-width: 382px) {
     #fasterBuy {
         .modal-header {
@@ -259,7 +281,6 @@
                 }
             }
         }
-
         .modal {
             padding-right: 0;
             padding-left: 0 !important;
@@ -627,32 +648,35 @@
         }
     }
 }
-@media (min-width: 576px){
-    #checkedYourOrder{
+
+@media (min-width: 576px) {
+    #checkedYourOrder {
         .modal-dialog {
             max-width: 545px;
         }
     }
 }
-@media (max-width: 558px){
-    #checkedYourOrder{
-        .modal-body{
-            form{
-                br{
+
+@media (max-width: 558px) {
+    #checkedYourOrder {
+        .modal-body {
+            form {
+                br {
                     display: none;
                 }
             }
         }
     }
 }
-#forzoomImg{
+
+#forzoomImg {
     padding-right: 0 !important;
-    .modal-header{
+    .modal-header {
         border: none;
         padding-bottom: 0;
     }
-    .modal-body{
-        img{
+    .modal-body {
+        img {
             width: 100%;
         }
     }
