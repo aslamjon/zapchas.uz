@@ -784,6 +784,14 @@
         .container {
             // INTERIER, EXTERIER, DVIGITEL, CAROUSEL
             .row {
+                .col-md-2 {
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+            }
+            .row {
                 .col-md-3 {
                     .card {
                         .dataInterier {

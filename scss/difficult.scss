@@ -629,6 +629,14 @@
 
 @media(min-width:1200px) and (max-width:1450px) {
     .section-difficult {
+        .icon-heart {
+            opacity: 1 !important;
+        }
+        .icon-like {
+            opacity: 1 !important;
+            width: 30px !important;
+            height: 30px !important;
+        }
         .container {
             .row {
                 .col-lg-3 {
@@ -1071,6 +1079,14 @@
 
 @media(min-width:992px) and (max-width:1200px) {
     .section-difficult {
+        .icon-heart {
+            opacity: 1 !important;
+        }
+        .icon-like {
+            opacity: 1 !important;
+            width: 25px !important;
+            height: 25px !important;
+        }
         .container {
             .row {
                 .col-lg-3 {
@@ -1109,7 +1125,6 @@
                                 position: relative !important;
                                 cursor: pointer;
                                 border-radius: 3px;
-                                // padding: 10px !important;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
@@ -1283,63 +1298,91 @@
     }
 }
 
-@media(max-width:576px) {
-    .section-difficult {
-        .container {
-            max-width: 96vw !important;
-        }
+@media(max-width:992px) {
+    .icon-heart {
+        opacity: 1 !important;
+    }
+    .icon-like {
+        opacity: 1 !important;
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+@media(max-width:768px) {
+    .icon-heart {
+        opacity: 1 !important;
+    }
+    .icon-like {
+        opacity: 1 !important;
+        width: 30px !important;
+        height: 30px !important;
     }
 }
 
 @media(max-width:750px) {
     .section-difficult {
         .container {
-            .row {
-                .col-lg-9 {
-                    .rowone {
-                        display: block;
-                        .sort-father {
-                            justify-content: center;
-                        }
-                        .sort {
-                            font-size: 16px;
-                        }
-                        .bosil,
-                        .bosil-2 {
-                            width: 150px;
-                            height: 40px;
-                            background: #E4E4E4;
-                            .p-element {
-                                font-size: 14px;
-                                line-height: 19px;
+            max-width: 84vw !important;
+            .col-lg-9 {
+                .row {
+                    .col-lg-12 {
+                        .divat {
+                            width: 100%;
+                            .postion-text {
+                                font-size: 12px;
                             }
-                        }
-                        .bosil-2 {
-                            width: 60px;
-                        }
-                        .bosil-2-element {
-                            width: 60px;
-                        }
-                        .bosil-element,
-                        .bosil-2-element {
-                            width: 150px;
-                            z-index: 11;
-                            position: absolute;
-                            display: none;
-                            padding: 5px 10px;
-                            background-color: #E4E4E4;
-                        }
-                        .ozgarish {
-                            margin-top: 20px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            div:nth-child(1) {
-                                margin-right: 13px;
+                            .centr {
+                                width: 40% !important;
+                                padding: 7px !important;
+                                .stp,
+                                .stpgor {
+                                    margin-top: 5px;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                }
+                                .tormz,
+                                .tormztwo {
+                                    margin-top: 5px;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                }
+                                .textblok,
+                                .muhokama {
+                                    display: block;
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                    margin-top: 10px;
+                                }
                             }
-                            div:nth-child(2) {
-                                margin-right: 13px;
-                                margin-top: -1px;
+                            .threeblock {
+                                text-align: center;
+                                margin: auto;
+                                width: 30%;
+                                .priceblock {
+                                    text-align: center;
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    margin-top: 10px;
+                                }
+                                del {
+                                    font-size: 13px;
+                                    line-height: 16px;
+                                }
+                                button {
+                                    margin-top: 10px;
+                                    width: 90%;
+                                    font-size: 12px;
+                                }
+                                .vvv {
+                                    margin-top: 15px;
+                                    margin-bottom: 20px;
+                                    padding: 0px !important;
+                                    .selectt {
+                                        font-size: 12px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -1494,6 +1537,14 @@
 
 @media(max-width:850px) {
     .section-difficult {
+        .icon-heart {
+            opacity: 1 !important;
+        }
+        .icon-like {
+            opacity: 1 !important;
+            width: 30px !important;
+            height: 30px !important;
+        }
         .container {
             max-width: 84vw !important;
             .row {
@@ -1626,7 +1677,7 @@
     }
 }
 
-@media(max-width:500px) {
+@media(max-width:576px) {
     .section-difficult {
         .container {
             max-width: 96vw !important;
@@ -1704,6 +1755,7 @@
                                     line-height: 12px !important;
                                     display: flex !important;
                                     align-items: center !important;
+                                    justify-content: center !important;
                                 }
                                 .vvv {
                                     margin-top: 15px !important;
@@ -1718,6 +1770,36 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+                .row-p {
+                    padding: -5px !important;
+                    .paginations {
+                        ul {
+                            margin-top: 10px;
+                            li {
+                                list-style: none !important;
+                                margin-left: 15px;
+                                a {
+                                    color: black;
+                                    text-decoration: none;
+                                    box-shadow: none !important;
+                                    background: #EFEFEF;
+                                    border-radius: 3px;
+                                    &.active {
+                                        background-color: #FF0000;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                        div {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #676767;
                         }
                     }
                 }
