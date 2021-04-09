@@ -453,8 +453,8 @@
                 <div class="col-lg-9 col-md-12 col-sm-12 mt-4">
                     <div class="rowone mt-3 wow fadeInUp">
                         <div class="d-flex sort-father">
-                            <span class="sort">Saralash</span>
-                            <div class="drup ml-3">
+                            <span class="sort sort-sara">Saralash</span>
+                            <div class="drup ml-1">
                                 <div class="bosil" id="click-1">
                                     <div class="p-element" id="pp-t">Nomi bo’yicha</div>
                                     <div><img src="img/Polygon 2.svg" class="img-fluid" alt=""></div>
@@ -464,8 +464,8 @@
                                     <div class="nameU1">Name</div>
                                 </div>
                             </div>
-                            <div class="sort ml-5">Ko’rsatish</div>
-                            <div class="drup ml-3">
+                            <div class="sort">Ko’rsatish</div>
+                            <div class="drup ml-1">
                                 <div class="bosil-2" id="click-2">
                                     <div class="p-element" id="pp-r">16</div>
                                     <div><img src="img/Polygon 2.svg" class="img-fluid" alt=""></div>
@@ -880,7 +880,6 @@
                                 <div class="img-card " onclick="location.href='aboutProduct.html'">
                                     <img src="img/tormozbig.png " class="img-fluid " id="imgg " alt=" ">
                                 </div>
-                                <div class="postion-text ">Chegirma</div>
                                 <span class="icon-heart" id="heart" onclick="like()"></span>
                                 <div class="centr " onclick="location.href='aboutProduct.html'">
                                     <div class="stp " onclick="location.href='aboutProduct.html'">STP-577843-E</div>
@@ -1304,7 +1303,7 @@
                 $("#col-2").removeClass("col-lg-12 col-md-12 col-sm-12");
                 $("#col-3").removeClass("col-lg-12 col-md-12 col-sm-12");
                 $(".divat").removeClass("d-flex");
-                $(".icon-heart").addClass("d-block");
+                $(".icon-heart").removeClass("d-none");
             });
             $(".click-all").click(function() {
                 $(".textblok").removeClass("d-block");
@@ -1324,7 +1323,7 @@
                 // $("#col-3").addClass("col-lg-3");
                 $("#col-3").removeClass("col-lg-12 col-md-12 col-sm-12");
                 $(".divat").removeClass("d-flex");
-                $(".icon-heart").removeClass("d-block");
+                $(".icon-heart").removeClass("d-none");
 
             });
             $(".click-gor").click(function() {
