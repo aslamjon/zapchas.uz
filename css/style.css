@@ -7132,7 +7132,7 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    color: #BCBCBC;
+    color: #bcbcbc;
     text-decoration: none; }
 
 .account-main {
@@ -7269,49 +7269,63 @@ header {
           padding: 5px 15px; }
     .account-main .tab-content #haveOrder {
       background: #fff;
-      padding: 10px;
+      padding: 15px;
       margin-bottom: 10px; }
-      .account-main .tab-content #haveOrder .last-body .head,
-      .account-main .tab-content #haveOrder .last-body .first,
-      .account-main .tab-content #haveOrder .last-body .second {
-        padding: 10px;
-        margin: 10px 0; }
-      .account-main .tab-content #haveOrder .last-body .head {
-        background: #333333; }
-        .account-main .tab-content #haveOrder .last-body .head div {
-          font-weight: bold;
-          font-size: 18px;
-          line-height: 23px;
-          color: #ffffff; }
-          .account-main .tab-content #haveOrder .last-body .head div div {
+      .account-main .tab-content #haveOrder .last-body {
+        width: 100%; }
+        .account-main .tab-content #haveOrder .last-body .freeSpace td {
+          padding: 10px; }
+        .account-main .tab-content #haveOrder .last-body .head,
+        .account-main .tab-content #haveOrder .last-body .first,
+        .account-main .tab-content #haveOrder .last-body .second {
+          padding: 10px;
+          margin: 10px 0; }
+        .account-main .tab-content #haveOrder .last-body .head {
+          background: #333333; }
+          .account-main .tab-content #haveOrder .last-body .head div,
+          .account-main .tab-content #haveOrder .last-body .head th {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            color: #ffffff;
+            background: #333333; }
+          .account-main .tab-content #haveOrder .last-body .head div {
             font-size: 16px;
             line-height: 19px; }
-        .account-main .tab-content #haveOrder .last-body .head .wait,
-        .account-main .tab-content #haveOrder .last-body .head .cansle,
-        .account-main .tab-content #haveOrder .last-body .head .succ {
-          font-weight: bold;
-          font-size: 14px;
-          line-height: 19px;
-          color: #f9dd3e; }
-        .account-main .tab-content #haveOrder .last-body .head .cansle {
-          color: #ff0000; }
-        .account-main .tab-content #haveOrder .last-body .head .succ {
-          color: #05f300; }
-      .account-main .tab-content #haveOrder .last-body .first {
-        background: #dedede; }
-        .account-main .tab-content #haveOrder .last-body .first div {
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 19px;
-          text-transform: uppercase; }
-      .account-main .tab-content #haveOrder .last-body .second div {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px; }
-        .account-main .tab-content #haveOrder .last-body .second div div span {
-          font-size: 14px;
-          line-height: 16px;
-          color: #a5a5a5; }
+          .account-main .tab-content #haveOrder .last-body .head th {
+            padding: 10px; }
+          .account-main .tab-content #haveOrder .last-body .head .wait,
+          .account-main .tab-content #haveOrder .last-body .head .cansle,
+          .account-main .tab-content #haveOrder .last-body .head .succ {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 19px;
+            color: #f9dd3e; }
+          .account-main .tab-content #haveOrder .last-body .head .cansle {
+            color: #ff0000; }
+          .account-main .tab-content #haveOrder .last-body .head .succ {
+            color: #05f300; }
+        .account-main .tab-content #haveOrder .last-body .first {
+          background: #dedede; }
+          .account-main .tab-content #haveOrder .last-body .first td {
+            margin: 10px 0;
+            padding: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            background: #dedede; }
+        .account-main .tab-content #haveOrder .last-body .second td {
+          margin: 10px 0;
+          padding: 10px; }
+          .account-main .tab-content #haveOrder .last-body .second td div {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px; }
+            .account-main .tab-content #haveOrder .last-body .second td div span {
+              font-size: 14px;
+              line-height: 16px;
+              color: #a5a5a5; }
 
 @media (min-width: 1400px) {
   .custom-container {
@@ -7320,7 +7334,8 @@ header {
   .custom-container .nav-tabs {
     min-width: 192px; }
   .custom-container .tab-content {
-    width: 73%; }
+    width: 73%;
+    width: 80%; }
 
   .account-main .tab-content #home .first,
   .account-main .tab-content #home .second,
@@ -7347,7 +7362,24 @@ header {
     .account-main .tab-content #home .second,
     .account-main .tab-content #home .third,
     .account-main .tab-content #home .fourth {
-      width: 49%; } }
+      width: 49%; }
+    .account-main .tab-content #haveOrder .forscroll {
+      overflow-x: auto;
+      margin-top: 15px; }
+      .account-main .tab-content #haveOrder .forscroll .last-body {
+        width: 150%; }
+        .account-main .tab-content #haveOrder .forscroll .last-body .head th {
+          font-size: 16px; }
+          .account-main .tab-content #haveOrder .forscroll .last-body .head th div {
+            font-size: 14px; }
+        .account-main .tab-content #haveOrder .forscroll .last-body .first {
+          margin-top: 10px; }
+          .account-main .tab-content #haveOrder .forscroll .last-body .first td {
+            font-size: 15px; }
+        .account-main .tab-content #haveOrder .forscroll .last-body .second td {
+          font-size: 15px; }
+          .account-main .tab-content #haveOrder .forscroll .last-body .second td div {
+            font-size: 15px; } }
 @media (max-width: 918px) {
   .account-main .tab-content #home .first label,
   .account-main .tab-content #home .second label,
@@ -7360,9 +7392,9 @@ header {
     overflow: auto;
     min-width: 484px;
     max-width: 665px; }
-    .account-main .tab-content #haveOrder .last-body .head div {
+    .account-main .tab-content #haveOrder .last-body .head th {
       font-size: 16px; }
-      .account-main .tab-content #haveOrder .last-body .head div div {
+      .account-main .tab-content #haveOrder .last-body .head th div {
         font-size: 14px; }
     .account-main .tab-content #haveOrder .last-body .first div,
     .account-main .tab-content #haveOrder .last-body .second div {
@@ -7383,7 +7415,9 @@ header {
       display: flex;
       height: auto;
       flex-wrap: nowrap;
-      overflow: auto; }
+      overflow-x: auto; }
+      .account-main .nav-tabs .nav-item {
+        margin-bottom: 0; }
       .account-main .nav-tabs .title,
       .account-main .nav-tabs .nav-link {
         min-width: 180px; }
@@ -7426,6 +7460,9 @@ header {
 @media (max-width: 576px) {
   .custom-container {
     max-width: 96vw !important; } }
+@media (max-width: 490px) {
+  .account-main .tab-content #haveOrder .forscroll .last-body {
+    width: 620px; } }
 #otaaa {
   margin-top: 15px;
   display: flex;
