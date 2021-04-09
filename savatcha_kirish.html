@@ -587,11 +587,9 @@
     </script>
     <script>
         $('#owl-causel-1').owlCarousel({
-
             loop: true,
             margin: 10,
             responsiveClass: true,
-
             responsive: {
                 0: {
                     items: 2,
@@ -607,7 +605,16 @@
                     loop: false
                 }
             }
-        })
+        });
+        
+    </script>
+    <script>
+        let inter = setInterval(function(){
+            if ((document.querySelector('.sp2-1').offsetHeight) != (document.querySelector('.sp2').offsetHeight)) {
+            document.querySelector('.sp2').style.minHeight = document.querySelector('.sp2-1').offsetHeight + 'px';
+        }
+        },1000);
+        
     </script>
 
 </body>
