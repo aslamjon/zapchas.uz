@@ -77,6 +77,7 @@
                 justify-content: space-between;
                 flex-wrap: wrap;
                 transform: translateX(-3000px);
+                display: none;
                 transition: 0.3s;
             }
             .first-head {
@@ -163,6 +164,7 @@
             .data {
                 transform: translateX(-1200px);
                 transition: 0.3s;
+                display: none;
                 .first-head {
                     span {
                         font-weight: 500;

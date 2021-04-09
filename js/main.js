@@ -142,9 +142,14 @@ function openSelect(selectId, select_show, optionHide, self) {
 function openData(dataId, dataId2, self) {
     let d1 = document.getElementsByClassName(dataId)[0];
     let d2 = document.getElementsByClassName(dataId2)[0];
-    d1.style.transform = 'translateX(0px)';
-    d2.style.transform = 'translateX(0px)';
-    self.style.display = 'none';
+    d1.style.display = 'flex';
+    d2.style.display = 'block';
+    setTimeout(function(){
+        d1.style.transform = 'translateX(0px)';
+        d2.style.transform = 'translateX(0px)';
+        self.style.display = 'none';
+    },300);
+    
 }
 
 function clearCart(cart) {

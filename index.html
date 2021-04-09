@@ -19,22 +19,29 @@
     <div class="top-nav">
         <div class="left">
             <div class="left-content">
-                <span>
+                <a href="#">
                     <img src="img/Vector.png" alt="Error">
                     +998 99 889 88 77
-                </span>
+                </a>
                 <a href="#" class="mail">
                     <img src="img/Mail.svg" alt="Error"> info@zapchas.uz
                 </a>
-                <a href="#" class="ic">
-                    <img src="img/telegram.png" alt="Error">
-                </a>
-                <a href="#" class="ic">
-                    <img src="img/Instagram.svg" alt="Error">
-                </a>
-                <a href="#" class="ic icf">
-                    <img src="img/Vector (1).png" alt="Error">
-                </a>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="ic">
+                        <img src="img/telegram.png" alt="Error">
+                    </a>
+                    <a href="#" class="ic">
+                        <img src="img/Instagram.svg" alt="Error">
+                    </a>
+                    <a href="#" class="ic icf">
+                        <img src="img/Vector (1).png" alt="Error">
+                    </a>
+                </div>
+                <select name="" id="" class="custom-select-sm cursor-pointer">
+                    <option>RU</option>
+                    <option>UZ</option>
+                    <option>ENG</option>
+                </select>
             </div>
         </div>
         <div class="senter">
@@ -144,7 +151,7 @@
                                                 <div class="sum " onclick="location.href='savatcha.html'">379 000 so’m</div>
                                                 <form action="#">
                                                     <button type="button" class="minus">-</button>
-                                                    <input type="tel" value="1" class="count">
+                                                    <input type="tel" disabled value="1" class="count text-black">
                                                     <button type="button" class="plus">+</button>
                                                 </form>
                                             </div>
@@ -161,7 +168,7 @@
                                                 <div class="sum " onclick="location.href='savatcha.html'">379 000 so’m</div>
                                                 <form action="#">
                                                     <button type="button" class="minus">-</button>
-                                                    <input type="tel" value="1" class="count">
+                                                    <input type="tel" disabled value="1" class="count text-black">
                                                     <button type="button" class="plus">+</button>
                                                 </form>
                                             </div>
@@ -178,7 +185,7 @@
                                                 <div class="sum " onclick="location.href='savatcha.html'">379 000 so’m</div>
                                                 <form action="#">
                                                     <button type="button" class="minus">-</button>
-                                                    <input type="tel" value="1" class="count">
+                                                    <input type="tel" disabled value="1" class="count text-black">
                                                     <button type="button" class="plus">+</button>
                                                 </form>
                                             </div>
@@ -192,8 +199,8 @@
                                         Jami:
                                         <div class="total-sum">1 137 000 so’m</div>
                                     </div>
-                                    <a href="aboutProduct.html" class="btn btn-block btn1">Buyurtma berish</a>
-                                    <a href="savatcha_kirish.html" class="btn btn-block btn2">1 harakatda buyurtma
+                                    <a href="savatcha.html" class="btn btn-block btn1">Buyurtma berish</a>
+                                    <a data-dismiss="modal"  data-toggle="modal" data-target="#fasterBuy" class="close btn btn-block btn2 opacity-1">1 harakatda buyurtma
                                         berish</a>
                                 </div>
 
@@ -454,7 +461,7 @@
                                                 <div class="m-footer">
                                                     <form action="#" class="myform">
                                                         <button type="button" class="minus">-</button>
-                                                        <input type="tel" value="1" class="count">
+                                                        <input type="tel" disabled value="1" class="count text-black">
                                                         <button type="button" class="plus">+</button>
                                                     </form>
                                                     <button type="button" class="btn btn1" onclick="addSavat()" class="close" data-dismiss="modal">Savatchaga
