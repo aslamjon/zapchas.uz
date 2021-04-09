@@ -187,7 +187,8 @@ function changeImg(selfImg, mainImg) {
         console.log(value.children[0]);
         value.children
         for (let i = 0; value.children.length > i; i++) {
-            value.children[i].style.border = 'none';
+            // value.children[i].style.border = 'none';
+            value.children[i].classList.remove('borderImg');
         }
 
     });
@@ -196,12 +197,13 @@ function changeImg(selfImg, mainImg) {
         console.log(value.children[0]);
         value.children
         for (let i = 0; value.children.length > i; i++) {
-            value.children[i].style.border = 'none';
+            // value.children[i].style.border = 'none';
+            value.children[i].classList.remove('borderImg');
         }
 
     });
     selfImg.style.transition = '0.3s';
-    selfImg.style.border = '1px solid #a5a5a5';
+    selfImg.classList.toggle('borderImg');
 }
 
 function changeGreyStar() {

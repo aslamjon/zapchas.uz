@@ -416,6 +416,12 @@ nav {
             }
         }
     }
+    nav{
+        .navbar-brand{
+            margin: 0;
+            margin-left: 2%;
+        }
+    }
 }
 
 @media (max-width: 867px) {
@@ -631,8 +637,6 @@ nav {
                         width: 26%;
                         height: 50%;
                         margin-top: 20px;
-                    }
-                    .content {
                     }
                 }
             }
@@ -1113,6 +1117,28 @@ nav {
                         margin: 0 10px 0 0;
                         font-size: 14px;
                     }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 819px){
+    nav{ 
+        .first-collapse{ 
+            .first-ul{ 
+                li{
+                    a{font-size: 13px;}
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 817px){
+    nav{ 
+        .first-collapse{ 
+            .first-ul{ 
+                li{
+                    a{margin: 0 10px 0 0 !important;}
                 }
             }
         }
