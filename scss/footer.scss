@@ -27,6 +27,9 @@
                         color: white;
                         outline: none !important;
                         font-weight: 600;
+                        // span {
+                        //     display: none !important;
+                        // }
                     }
                 }
             }
@@ -268,55 +271,6 @@
             }
         }
         // Ommabop brendlar carusel
-        .row {
-            .col-md-2 {
-                text-align: center;
-                font-weight: 500;
-                font-size: 26px;
-                line-height: 30px;
-            }
-            #owl-causel-1 {
-                .item {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 95% !important;
-                    height: 107px !important;
-                    background-color: white;
-                    img {
-                        width: 60% !important;
-                    }
-                    .romb {
-                        width: 40% !important;
-                    }
-                    .mers {
-                        width: 50% !important;
-                    }
-                }
-                .owl-nav {
-                    margin-top: 20px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    .owl-prev,
-                    .owl-next {
-                        background-image: url(../img/slideBagRight.png);
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        width: 41px !important;
-                        height: 22px !important;
-                        outline: none !important;
-                        color: white;
-                    }
-                    .owl-prev {
-                        background-image: url(../img/slideBagLeft.png) !important;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        margin-right: 10px;
-                    }
-                }
-            }
-        }
         // MOTOR MOYLARI va HAYDOVCHI KABINASI
         .row {
             .col-lg-6 {
@@ -364,6 +318,69 @@
                         outline: none !important;
                         background-color: #ff0000;
                         margin-top: 13px;
+                    }
+                }
+            }
+        }
+        .row {
+            .col-md-2 {
+                text-align: center;
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 30px;
+            }
+            #owl-causel-1 {
+                .item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 95% !important;
+                    height: 107px !important;
+                    // border: 1px solid rebeccapurple;
+                    background-color: white;
+                    &:hover {
+                        img {
+                            transform: scale(1.05);
+                            transition: 1s;
+                        }
+                    }
+                    img {
+                        width: 60% !important;
+                    }
+                    .romb {
+                        width: 40% !important;
+                    }
+                    .mers {
+                        width: 50% !important;
+                    }
+                }
+                .owl-nav {
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .owl-next {
+                        background-image: url(../img/Right1.png) !important;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 41px !important;
+                        height: 22px !important;
+                        outline: none !important;
+                        span {
+                            display: none !important;
+                        }
+                    }
+                    .owl-prev {
+                        background-image: url(../img/Left1.png) !important;
+                        background-repeat: no-repeat !important;
+                        background-size: cover !important;
+                        width: 41px !important;
+                        height: 22px !important;
+                        margin-right: 10px;
+                        outline: none !important;
+                        span {
+                            display: none !important;
+                        }
                     }
                 }
             }

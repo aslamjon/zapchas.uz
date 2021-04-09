@@ -8348,51 +8348,6 @@ header .search form .dvi {
   top: 10px;
   right: 10px;
 }
-.section-Azizbek .container .row .col-md-2 {
-  text-align: center;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 30px;
-}
-.section-Azizbek .container .row #owl-causel-1 .item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 95% !important;
-  height: 107px !important;
-  background-color: white;
-}
-.section-Azizbek .container .row #owl-causel-1 .item img {
-  width: 60% !important;
-}
-.section-Azizbek .container .row #owl-causel-1 .item .romb {
-  width: 40% !important;
-}
-.section-Azizbek .container .row #owl-causel-1 .item .mers {
-  width: 50% !important;
-}
-.section-Azizbek .container .row #owl-causel-1 .owl-nav {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-prev,
-.section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-next {
-  background-image: url(../img/slideBagRight.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 41px !important;
-  height: 22px !important;
-  outline: none !important;
-  color: white;
-}
-.section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-prev {
-  background-image: url(../img/slideBagLeft.png) !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-right: 10px;
-}
 .section-Azizbek .container .row .col-lg-6 {
   position: relative;
 }
@@ -8440,6 +8395,62 @@ header .search form .dvi {
   outline: none !important;
   background-color: #ff0000;
   margin-top: 13px;
+}
+.section-Azizbek .container .row .col-md-2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+}
+.section-Azizbek .container .row #owl-causel-1 .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95% !important;
+  height: 107px !important;
+  background-color: white;
+}
+.section-Azizbek .container .row #owl-causel-1 .item:hover img {
+  transform: scale(1.05);
+  transition: 1s;
+}
+.section-Azizbek .container .row #owl-causel-1 .item img {
+  width: 60% !important;
+}
+.section-Azizbek .container .row #owl-causel-1 .item .romb {
+  width: 40% !important;
+}
+.section-Azizbek .container .row #owl-causel-1 .item .mers {
+  width: 50% !important;
+}
+.section-Azizbek .container .row #owl-causel-1 .owl-nav {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-next {
+  background-image: url(../img/Right1.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 41px !important;
+  height: 22px !important;
+  outline: none !important;
+}
+.section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-next span {
+  display: none !important;
+}
+.section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-prev {
+  background-image: url(../img/Left1.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 41px !important;
+  height: 22px !important;
+  margin-right: 10px;
+  outline: none !important;
+}
+.section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-prev span {
+  display: none !important;
 }
 
 .section-footer {
@@ -10928,51 +10939,6 @@ body {
   top: 10px;
   right: 10px;
   cursor: pointer;
-}
-.section-Azizbek .container .row .col-md-2 {
-  text-align: center;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 30px;
-}
-.section-Azizbek .container .row #owl-causel-1 .item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 95% !important;
-  height: 107px !important;
-  background-color: white;
-}
-.section-Azizbek .container .row #owl-causel-1 .item img {
-  width: 60% !important;
-}
-.section-Azizbek .container .row #owl-causel-1 .item .romb {
-  width: 40% !important;
-}
-.section-Azizbek .container .row #owl-causel-1 .item .mers {
-  width: 50% !important;
-}
-.section-Azizbek .container .row #owl-causel-1 .owl-nav {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-prev,
-.section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-next {
-  background-image: url(../img/slideBagRight.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 41px !important;
-  height: 22px !important;
-  outline: none !important;
-  color: white;
-}
-.section-Azizbek .container .row #owl-causel-1 .owl-nav .owl-prev {
-  background-image: url(../img/slideBagLeft.png) !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-right: 10px;
 }
 .section-Azizbek .container .row .col-lg-6 {
   position: relative;

@@ -448,56 +448,6 @@ body {
                 }
             }
         }
-        // Ommabop brendlar carusel
-        .row {
-            .col-md-2 {
-                text-align: center;
-                font-weight: 500;
-                font-size: 26px;
-                line-height: 30px;
-            }
-            #owl-causel-1 {
-                .item {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 95% !important;
-                    height: 107px !important;
-                    background-color: white;
-                    img {
-                        width: 60% !important;
-                    }
-                    .romb {
-                        width: 40% !important;
-                    }
-                    .mers {
-                        width: 50% !important;
-                    }
-                }
-                .owl-nav {
-                    margin-top: 20px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    .owl-prev,
-                    .owl-next {
-                        background-image: url(../img/slideBagRight.png);
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        width: 41px !important;
-                        height: 22px !important;
-                        outline: none !important;
-                        color: white;
-                    }
-                    .owl-prev {
-                        background-image: url(../img/slideBagLeft.png) !important;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        margin-right: 10px;
-                    }
-                }
-            }
-        }
         // MOTOR MOYLARI va HAYDOVCHI KABINASI
         .row {
             .col-lg-6 {
