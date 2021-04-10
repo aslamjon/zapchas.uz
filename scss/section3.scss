@@ -26,6 +26,7 @@
     .chegirma {
         position: static;
         .item {
+            height: 100%;
             .card {
                 width: 100%;
                 height: 350px;
@@ -223,7 +224,34 @@
         clip-path: polygon(19% 0%, 100% 0, 100% 100%, 0% 100%);
     }
 }
-
+// card
+@media (max-width: 991px){
+    .section-3{
+        .chegirma{
+            .item{
+                .card{
+                    .content{
+                        .title{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// card
+@media (max-width: 767px){
+    .section-3{
+        .chegirma{
+            .item{
+                .card{
+                    height: 320px;
+                }
+            }
+        }
+    }
+}
 // card
 @media (max-width: 600px) {
     .section-3 {
@@ -239,7 +267,18 @@
         }
     }
 }
-
+// card
+@media (max-width: 575px){
+    .section-3{
+        .chegirma{
+            .item{
+                .card{
+                    height: 340px;
+                }
+            }
+        }
+    }
+}
 // card
 @media (min-width: 1500px) {
     .section-3 {

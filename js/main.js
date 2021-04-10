@@ -60,6 +60,8 @@ let plus = document.querySelectorAll('.plus');
 let count = document.querySelectorAll('.count');
 
 document.querySelectorAll('.count').forEach((value, index) => {
+    value.setAttribute('disabled',true);
+    value.classList.add('text-black');
     plus[index].onclick = function() {
         document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) + 1;
 
