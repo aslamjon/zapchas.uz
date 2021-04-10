@@ -562,7 +562,7 @@
             color: #000000;
         }
         .card {
-            height: 335px;
+            height: 100%;
             position: relative;
             box-shadow: 0px 0px 59px rgba(0, 0, 0, 0.03);
             border: none;
@@ -1077,9 +1077,6 @@
             .col-sm-12 {
                 margin: 5px 0;
             }
-            .card {
-                height: 470px;
-            }
         }
     }
 }
@@ -1127,26 +1124,6 @@
                 .card {
                     width: 70%;
                 }
-            }
-        }
-    }
-}
-
-@media (max-width: 410px) {
-    .main-section {
-        .tafsiya {
-            .card {
-                height: 445px;
-            }
-        }
-    }
-}
-
-@media (max-width: 384px) {
-    .main-section {
-        .tafsiya {
-            .card {
-                height: 364px;
             }
         }
     }
