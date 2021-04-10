@@ -192,24 +192,44 @@ body {
             }
             .owl-carousel {
                 .owl-nav {
+                    margin-top: 20px;
                     position: absolute;
-                    top: -30px;
-                    right: 20px;
-                    z-index: 1111;
-                    .owl-prev,
+                    top: -53px !important;
+                    right: 0 !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     .owl-next {
-                        background-image: url(../img/slideBag.png);
+                        background-image: url(../img/rightt.svg) !important;
                         background-repeat: no-repeat;
                         background-size: cover;
-                        width: 35.22px;
-                        height: 22px;
-                        color: white;
+                        width: 41px !important;
+                        height: 24px !important;
                         outline: none !important;
-                        font-weight: 600;
+                        span {
+                            display: none !important;
+                        }
+                    }
+                    .owl-prev {
+                        background-image: url(../img/leftt.svg) !important;
+                        background-repeat: no-repeat !important;
+                        background-size: cover !important;
+                        width: 41px !important;
+                        height: 24px !important;
+                        margin-right: 5px;
+                        outline: none !important;
+                        span {
+                            display: none !important;
+                        }
                     }
                 }
             }
             .col-md-4 {
+                &:hover {
+                    // transform: perspective(1000px) rotate(3deg);
+                    transform: translateY(-10px);
+                    transition: 0.5s;
+                }
                 .card-img-top {
                     width: 350% !important;
                     img {
@@ -422,11 +442,17 @@ body {
                     border-bottom: 2px solid rgb(228, 215, 215);
                 }
                 .cardMiniWidth {
+                    cursor: pointer;
                     position: relative;
                     background-color: white;
                     display: flex;
                     width: 100% !important;
                     height: 102px !important;
+                    &:hover {
+                        // transform: scale(1.02);
+                        transition: 0.3s linear;
+                        box-shadow: 1px 1px 15px #e7e5e5, -1px -1px 15px #e5e5e5;
+                    }
                     .rasmMin {
                         width: 30%;
                         height: 102px;
@@ -914,8 +940,11 @@ body {
             // MOTOR MOYLARI va HAYDOVCHI KABINASI
             .owl-carusel-2 {
                 ul {
+                    width: 100% !important;
                     top: 100% !important;
-                    left: 50%;
+                    left: 0;
+                    overflow-x: scroll;
+                    flex-wrap: nowrap;
                     li {
                         a {
                             padding: 3px 5px;
@@ -1005,8 +1034,39 @@ body {
                     }
                 }
             }
+            .row-br {
+                .col-md-4 {
+                    .brbot {
+                        font-size: 18px;
+                    }
+                    .cardMiniWidth {
+                        .rul {
+                            font-size: 16px !important;
+                        }
+                    }
+                }
+            }
             //  Carusel
             .owl-carusel-2 {
+                .text-songi {
+                    font-size: 18px;
+                }
+                ul {
+                    width: 100% !important;
+                    top: 100% !important;
+                    left: 0;
+                    overflow-x: scroll;
+                    flex-wrap: nowrap;
+                    li {
+                        a {
+                            padding: 3px 5px;
+                            &.active {
+                                background-color: black;
+                                color: white !important;
+                            }
+                        }
+                    }
+                }
                 .col-md-4 {
                     .card-img-top {
                         width: 100% !important;
