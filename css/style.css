@@ -3584,7 +3584,7 @@ nav .second-collapse ul {
     position: static;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 467px) {
   .top-nav .left .left-content div {
     display: none !important;
   }
@@ -3950,6 +3950,20 @@ nav .second-collapse ul li a .cart .second {
 @media (min-width: 768px) and (max-width: 817px) {
   nav .first-collapse .first-ul li a {
     margin: 0 10px 0 0 !important;
+  }
+}
+@media (max-width: 582px) {
+  .top-nav .left .left-content {
+    margin-left: 2%;
+  }
+}
+@media (max-width: 352px) {
+  .top-nav .left .mail {
+    margin: 0;
+    padding: 0 5px;
+  }
+  .top-nav .left select {
+    margin-left: 0;
   }
 }
 header {
@@ -5082,6 +5096,11 @@ header .search form .dvi {
   color: #676767;
 }
 
+@media (max-width: 350px) {
+  .section-2 .discount .clock .day, .section-2 .discount .clock .hours, .section-2 .discount .clock .minut, .section-2 .discount .clock .sec {
+    margin: 5px;
+  }
+}
 .section-3 {
   width: 100%;
   height: 90vh;

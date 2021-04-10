@@ -44,3 +44,15 @@
         }
     }
 }
+@media (max-width: 350px){
+    .section-2{
+        .discount{
+            .clock{
+                .day,.hours,.minut,.sec{
+                    margin: 5px;
+                }
+            }
+        }
+    }
+    
+}

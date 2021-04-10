@@ -511,7 +511,7 @@ nav {
         position: static;
     }
 }
-@media (max-width: 460px){
+@media (max-width: 467px){
     .top-nav{
         .left{
             .left-content{
@@ -1155,6 +1155,29 @@ nav {
                 li{
                     a{margin: 0 10px 0 0 !important;}
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 582px){
+    .top-nav{
+        .left{
+            .left-content{
+                margin-left: 2%;
+            }
+        }
+    }
+}
+@media (max-width: 352px){
+    .top-nav{
+        .left{
+            .mail{
+                margin: 0;
+                padding: 0 5px;
+            }
+            select{
+                margin-left: 0;
             }
         }
     }
