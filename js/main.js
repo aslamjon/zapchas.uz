@@ -353,7 +353,7 @@ function tabNav4() {
 function href(url) {
     window.location = url;
 }
-if (window.location.pathname == '/index.html') timeOfDiscount(8);
+if (window.location.pathname == '/index.html' || window.location.pathname == '/zapchas.uz/' || window.location.pathname == '/') timeOfDiscount(365);
 
 function timeOfDiscount(setday) {
     let day = document.getElementById('day');
