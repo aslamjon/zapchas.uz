@@ -38,6 +38,26 @@ $('#section1Owl').owlCarousel({
         }
     }
 });
+$('#section2Owl').owlCarousel({
+    items: 2,
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: false,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+});
 $('#tab-owl').owlCarousel({
     loop: true,
     margin: 10,
@@ -60,13 +80,13 @@ let plus = document.querySelectorAll('.plus');
 let count = document.querySelectorAll('.count');
 
 document.querySelectorAll('.count').forEach((value, index) => {
-    value.setAttribute('disabled',true);
+    value.setAttribute('disabled', true);
     value.classList.add('text-black');
-    plus[index].onclick = function() {
+    plus[index].onclick = function () {
         document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) + 1;
 
     }
-    minus[index].onclick = function() {
+    minus[index].onclick = function () {
         if (document.querySelectorAll('.count')[index].value > 1) {
             document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) - 1;
         }
@@ -146,12 +166,12 @@ function openData(dataId, dataId2, self) {
     let d2 = document.getElementsByClassName(dataId2)[0];
     d1.style.display = 'flex';
     d2.style.display = 'block';
-    setTimeout(function(){
+    setTimeout(function () {
         d1.style.transform = 'translateX(0px)';
         d2.style.transform = 'translateX(0px)';
         self.style.display = 'none';
-    },300);
-    
+    }, 300);
+
 }
 
 function clearCart(cart) {
@@ -187,8 +207,8 @@ function changeImg(selfImg, mainImg) {
     let main = document.querySelector('.' + mainImg);
     main.style.opacity = 0
     main.style.transition = '0.3s';
-    setTimeout(function() { main.style.opacity = 1 }, 500);
-    setTimeout(function() { main.setAttribute('src', selfImg.getAttribute('src')); }, 500);
+    setTimeout(function () { main.style.opacity = 1 }, 500);
+    setTimeout(function () { main.setAttribute('src', selfImg.getAttribute('src')); }, 500);
     let anotherImg = document.querySelectorAll('.anotherImg');
     anotherImg.forEach((value, index) => {
         console.log(value.children[0]);
@@ -216,7 +236,7 @@ function changeImg(selfImg, mainImg) {
 function changeGreyStar() {
     let img1 = document.querySelectorAll('.starGrey1');
     img1.forEach((value, index, array) => {
-        value.onclick = function() {
+        value.onclick = function () {
             for (let i = 0; i < array.length; i++) {
                 array[i].children[0].setAttribute('src', 'img/star-grey.svg');
             }
@@ -227,21 +247,159 @@ function changeGreyStar() {
     })
 }
 changeGreyStar();
-
-let leftBtn = document.querySelectorAll('.leftBtnOfCarusel');
-let rightBtn = document.querySelectorAll('.rightBtnOfCarusel');
-
-leftBtn.forEach((value,index) => {
-    if (value !== null) {
-        leftBtn[index].onclick = function() {
-            document.querySelector('.owl-prev').click();
+function bor(b1) {
+    for (let i = 0; b1.length > i; i++) {
+        b1[i].classList.remove("yuq");
+        b1[i].classList.add("bor");
+    }
+}
+function yuq(b1) {
+    for (let i = 0; b1.length > i; i++) {
+        b1[i].classList.remove("bor");
+        b1[i].classList.add("yuq");
+    }
+}
+let b1 = document.querySelectorAll('.Owl1');
+let b2 = document.querySelectorAll('.Owl2');
+let b3 = document.querySelectorAll('.Owl3');
+let b4 = document.querySelectorAll('.Owl4');
+let b5 = document.querySelectorAll('.Owl5');
+let b6 = document.querySelectorAll('.Owl6');
+tabNav1();
+function tabNav1() {
+    yuq(b2);
+    yuq(b3);
+    yuq(b4);
+    yuq(b5);
+    yuq(b6);
+    bor(b1);
+    for (let i = 0; b1.length > i; i++){
+        if (i%2 == 0){
+            b1[i].children[0].onclick = function(){
+                document.querySelectorAll('.owl-prev')[0].click();
+            }
         }
-        rightBtn[index].onclick = function() {
-            document.querySelector('.owl-next').click();
+        else{
+            b1[i].children[0].onclick = function(){
+                document.querySelectorAll('.owl-next')[0].click();
+            } 
         }
     }
-})
+}
+function tabNav2() {
+    yuq(b1);
+    yuq(b3);
+    yuq(b4);
+    yuq(b5);
+    yuq(b6);
+    bor(b2);
 
+    for (let i = 0; b2.length > i; i++){
+        if (i%2 == 0){
+            b2[i].children[0].onclick = function(){
+                document.querySelectorAll('.owl-prev')[1].click();
+            }
+        }
+        else{
+            b2[i].children[0].onclick = function(){
+                document.querySelectorAll('.owl-next')[1].click();
+            }
+        } 
+    }
+}
+function tabNav3() {
+    yuq(b1);
+    yuq(b2);
+    yuq(b4);
+    yuq(b5);
+    yuq(b6);
+    bor(b3);
+
+    for (let i = 0; b3.length > i; i++){
+        if (i%2 == 0){
+            b3[i].children[0].onclick = function(){
+                document.querySelectorAll('.owl-prev')[2].click();
+            }
+        }
+        else{
+            b3[i].children[0].onclick = function(){
+                document.querySelectorAll('.owl-next')[2].click();
+            }
+        }
+    }
+}
+function tabNav4() {
+    yuq(b1);
+    yuq(b2);
+    yuq(b3);
+    yuq(b5);
+    yuq(b6);
+    bor(b4);
+    for (let i = 0; b4.length > i; i++){
+        if (i%2 == 0){
+            b4[i].children[0].onclick = function(){
+                document.querySelectorAll('.owl-prev')[3].click();
+            }
+        }
+        else{
+            b4[i].children[0].onclick = function(){
+                document.querySelectorAll('.owl-next')[3].click();
+            } 
+        }
+    }
+}
+
+
+// function tabNav() {
+//     let tab = document.querySelector('.nav-tabs');
+//     for (let i = 0; 5 > i; i++) {
+//         let leftBtn = document.querySelectorAll('.leftBtnOfCarusel');
+//         let rightBtn = document.querySelectorAll('.rightBtnOfCarusel');
+
+//         let b1 = document.querySelectorAll('.Owl1');
+//         let b2 = document.querySelectorAll('.Owl2');
+//         let b3 = document.querySelectorAll('.Owl3');
+//         let b4 = document.querySelectorAll('.Owl4');
+//         let b5 = document.querySelectorAll('.Owl5');
+//         let b6 = document.querySelectorAll('.Owl6');
+
+//         if (tab.children[i].children[0].classList.contains("active") == true) {
+//             console.log(i);
+//             tab.children[i + 6].classList.remove('yuq');
+//             tab.children[i + 7].classList.remove('yuq');
+
+//             tab.children[i + 6].classList.add('bor');
+//             tab.children[i + 7].classList.add('bor');
+
+//             tab.children[i + 6].children[0].onclick = function () {
+//                 document.querySelectorAll('.owl-prev')[i].click();
+//             }
+//             tab.children[i + 7].children[0].onclick = function () {
+//                 document.querySelectorAll('.owl-next')[i].click();
+//             }
+//             if (i == 1) {
+//                 tab.children[i + 6].children[0].onclick = function () {
+//                     document.querySelectorAll('.owl-prev')[i + 1].click();
+//                 }
+//                 tab.children[i + 7].children[0].onclick = function () {
+//                     document.querySelectorAll('.owl-next')[i + 1].click();
+//                 }
+//             }
+//             // leftBtn.forEach((value, index) => {
+//             //     if (value !== null) {
+//             //         leftBtn[index].onclick = function () {
+//             //             console.log(leftBtn[index]);
+//             //             document.querySelectorAll('.owl-prev')[index].click();
+//             //         }
+//             //         rightBtn[index].onclick = function () {
+//             //             document.querySelectorAll('.owl-next')[index].click();
+//             //         }
+//             //     }
+//             // })
+//         }
+//     }
+// }
+// tabNav()
 
 
 function href(url) {
@@ -268,7 +426,7 @@ function timeOfDiscount(setday) {
         minut.innerHTML--;
         sec.innerHTML = 60;
     }
-    let timer = setInterval(function() {
+    let timer = setInterval(function () {
         sec.innerHTML--;
         if (sec.innerHTML == 0) {
             minut.innerHTML--;
@@ -295,21 +453,21 @@ function timeOfDiscount(setday) {
 function cartOnclick() {
     let cartt = document.querySelectorAll('.cartt');
     cartt.forEach((value, index) => {
-        value.onclick = function() {
+        value.onclick = function () {
             value.classList.toggle('carttActive');
             value.children[0].classList.toggle('carttImgForAcrive');
         }
     });
     let iconPlace = document.querySelectorAll('.iconPlace');
     iconPlace.forEach((value, index) => {
-        value.onclick = function() {
+        value.onclick = function () {
             value.classList.toggle('carttActive');
             value.children[0].classList.toggle('carttImgForAcrive');
         }
     });
     let iconJoy = document.querySelectorAll('.icon-joy');
     iconJoy.forEach((value, index) => {
-        value.onclick = function() {
+        value.onclick = function () {
             value.classList.toggle('carttActive');
             value.children[0].classList.toggle('carttImgForAcrive');
         }
@@ -322,17 +480,17 @@ function likeOnclick() {
     let like2 = document.querySelectorAll('.icon-heart');
     let like3 = document.querySelectorAll('.icon-like');
     like.forEach((value, index) => {
-        value.onclick = function() {
+        value.onclick = function () {
             value.classList.toggle('likeActive');
         }
     })
     like2.forEach((value, index) => {
-        value.onclick = function() {
+        value.onclick = function () {
             value.classList.toggle('likeActive');
         }
     })
     like3.forEach((value, index) => {
-        value.onclick = function() {
+        value.onclick = function () {
             value.classList.toggle('likeActive');
         }
     })

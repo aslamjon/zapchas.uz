@@ -373,16 +373,16 @@
                     <div class="">Eng ko'p sotilganlar</div>
                     <ul class="nav nav-tabs wow fadeInUp">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#home">Hammasi</a>
+                            <a class="nav-link active" onclick="tabNav1()" data-toggle="tab" href="#home">Hammasi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#menu1">Kategoriya</a>
+                            <a class="nav-link" onclick="tabNav2()" data-toggle="tab" href="#menu1">Kategoriya</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#menu2">Kategoriya</a>
+                            <a class="nav-link" onclick="tabNav3()" data-toggle="tab" href="#menu2">Kategoriya</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#menu3">Kategoriya</a>
+                            <a class="nav-link" onclick="tabNav4()" data-toggle="tab" href="#menu3">Kategoriya</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#menu4">Kategoriya</a>
@@ -390,12 +390,63 @@
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#menu5">Kategoriya</a>
                         </li>
-                        <li class="log2">
+                        <!-- btn -->
+                        <li class="log2 Owl1 yuq">
                             <a class="leftBtnOfCarusel">
                                 <img src="img/Left3.png" class="cursor-pointer" alt="Error">
                             </a>
                         </li>
-                        <li class="log2">
+                        <li class="log2 Owl1 yuq">
+                            <a class="rightBtnOfCarusel">
+                                <img src="img/Right.png" class="cursor-pointer" alt="Error">
+                            </a>
+                        </li>
+                        <li class="log2 Owl2 yuq">
+                            <a class="leftBtnOfCarusel">
+                                <img src="img/Left3.png" class="cursor-pointer" alt="Error">
+                            </a>
+                        </li>
+                        <li class="log2 Owl2 yuq">
+                            <a class="rightBtnOfCarusel">
+                                <img src="img/Right.png" class="cursor-pointer" alt="Error">
+                            </a>
+                        </li>
+                        <li class="log2 Owl3 yuq">
+                            <a class="leftBtnOfCarusel">
+                                <img src="img/Left3.png" class="cursor-pointer" alt="Error">
+                            </a>
+                        </li>
+                        <li class="log2 Owl3 yuq">
+                            <a class="rightBtnOfCarusel">
+                                <img src="img/Right.png" class="cursor-pointer" alt="Error">
+                            </a>
+                        </li>
+                        <li class="log2 Owl4 yuq">
+                            <a class="leftBtnOfCarusel">
+                                <img src="img/Left3.png" class="cursor-pointer" alt="Error">
+                            </a>
+                        </li>
+                        <li class="log2 Owl4 yuq">
+                            <a class="rightBtnOfCarusel">
+                                <img src="img/Right.png" class="cursor-pointer" alt="Error">
+                            </a>
+                        </li>
+                        <li class="log2 Owl5 yuq">
+                            <a class="leftBtnOfCarusel">
+                                <img src="img/Left3.png" class="cursor-pointer" alt="Error">
+                            </a>
+                        </li>
+                        <li class="log2 Owl5 yuq">
+                            <a class="rightBtnOfCarusel">
+                                <img src="img/Right.png" class="cursor-pointer" alt="Error">
+                            </a>
+                        </li>
+                        <li class="log2 Owl6 yuq">
+                            <a class="leftBtnOfCarusel">
+                                <img src="img/Left3.png" class="cursor-pointer" alt="Error">
+                            </a>
+                        </li>
+                        <li class="log2 Owl6 yuq">
                             <a class="rightBtnOfCarusel">
                                 <img src="img/Right.png" class="cursor-pointer" alt="Error">
                             </a>
@@ -663,17 +714,184 @@
                             </div>
                         </div>
                         <div class="mobilBottomBtn">
-                            <a class="leftBtnOfCarusel log1">
+                            <a class="leftBtnOfCarusel Owl1 log1">
                                 <img src="img/Left3.png" class="cursor-pointer" alt="Error">
                             </a>
-                            <a class="rightBtnOfCarusel log1">
+                            <a class="rightBtnOfCarusel Owl1 log1">
                                 <img src="img/Right.png" class="cursor-pointer" alt="Error">
                             </a>
                         </div>
                     </div>
 
                     <div id="menu1" class="container tab-pane fade"><br>
+                        <div class="owl-carousel owl-theme" id="section2Owl">
+                            <div class="item">
+                                <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
 
+                                <span class="icon-heart" id="heart" onclick="like()"></span>
+                                <a href="aboutProduct.html"><img src="img/product-24-1-300x300 1.png" alt="Error"
+                                        class="img"></a>
+
+                                <div class="content">
+                                    <div class="first">
+                                        <a href="aboutProduct.html" class="text-decoration-none">
+                                            <div class="model">
+                                                STP-577843-E
+                                            </div>
+                                            <div class="title">STP Generator Platinum</div>
+                                        </a>
+                                        <div class="stars d-flex">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </div>
+                                    </div>
+                                    <div class="second">
+                                        <div class="sum">379 000 so’m</div>
+                                        <a class="cartt" onclick="addSavat()">
+                                            <div class="img icon"></div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
+
+                                <span class="icon-heart" id="heart" onclick="like()"></span>
+                                <a href="aboutProduct.html"><img src="img/product-23-1 1.png" alt="Error"
+                                        class="img"></a>
+
+                                <div class="content">
+                                    <div class="first">
+                                        <a href="aboutProduct.html" class="text-decoration-none">
+                                            <div class="model">
+                                                STP-577843-E
+                                            </div>
+                                            <div class="title">STP Generator Platinum</div>
+                                        </a>
+                                        <div class="stars d-flex">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </div>
+                                    </div>
+                                    <div class="second">
+                                        <div class="sum">379 000 so’m</div>
+                                        <a class="cartt" onclick="addSavat()">
+                                            <div class="img icon"></div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
+
+                                <span class="icon-heart" id="heart" onclick="like()"></span>
+                                <a href="aboutProduct.html"><img src="img/product-22-1-300x300 1.png" alt="Error"
+                                        class="img"></a>
+
+                                <div class="content">
+                                    <div class="first">
+                                        <a href="aboutProduct.html" class="text-decoration-none">
+                                            <div class="model">
+                                                STP-577843-E
+                                            </div>
+                                            <div class="title">STP Generator Platinum</div>
+                                        </a>
+                                        <div class="stars d-flex">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </div>
+                                    </div>
+                                    <div class="second">
+                                        <div class="sum">379 000 so’m</div>
+                                        <a class="cartt" onclick="addSavat()">
+                                            <div class="img icon"></div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
+
+                                <span class="icon-heart" id="heart" onclick="like()"></span>
+                                <a href="aboutProduct.html"><img src="img/product-21-1-300x300 1.png" alt="Error"
+                                        class="img"></a>
+
+                                <div class="content">
+                                    <div class="first">
+                                        <a href="aboutProduct.html" class="text-decoration-none">
+                                            <div class="model">
+                                                STP-577843-E
+                                            </div>
+                                            <div class="title">STP Generator Platinum</div>
+                                        </a>
+                                        <div class="stars d-flex">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </div>
+                                    </div>
+                                    <div class="second">
+                                        <div class="sum">379 000 so’m</div>
+                                        <a class="cartt" onclick="addSavat()">
+                                            <div class="img icon"></div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <span class="icon-heart" id="heart" onclick="like()"></span>
+                                <div class="pin icon" data-toggle="modal" data-target="#infocard"></div>
+                                <a href="aboutProduct.html"><img src="img/product-20-1-300x300 1.png" alt="Error"
+                                        class="img"></a>
+                                <div class="content">
+                                    <div class="first">
+                                        <a href="aboutProduct.html" class="text-decoration-none">
+                                            <div class="model">
+                                                STP-577843-E
+                                            </div>
+                                            <div class="title">STP Generator Platinum</div>
+                                        </a>
+                                        <div class="stars d-flex">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                            <img src="img/star.png" alt="star">
+                                        </div>
+                                    </div>
+                                    <div class="second">
+                                        <div class="sum">379 000 so’m</div>
+                                        <a class="cartt" onclick="addSavat()">
+                                            <div class="img icon"></div>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobilBottomBtn">
+                            <a class="leftBtnOfCarusel Owl2 log1">
+                                <img src="img/Left3.png" class="cursor-pointer" alt="Error">
+                            </a>
+                            <a class="rightBtnOfCarusel Owl2 log1">
+                                <img src="img/Right.png" class="cursor-pointer" alt="Error">
+                            </a>
+                        </div>
                     </div>
                     <div id="menu2" class="container tab-pane fade"><br></div>
                     <div id="menu3" class="container tab-pane fade"><br></div>
