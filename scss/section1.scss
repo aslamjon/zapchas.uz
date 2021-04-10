@@ -25,6 +25,9 @@
     hr {
         background: #e7e7e7;
     }
+    .log1{
+        display: none;
+    }
     .tab {
         display: flex;
         justify-content: space-between;
@@ -493,6 +496,12 @@
                     }
                 }
             }
+        }
+        .log1{
+            display: inline-block;
+        }
+        .log2{
+            display: none;
         }
     }
 }

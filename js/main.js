@@ -227,14 +227,22 @@ function changeGreyStar() {
     })
 }
 changeGreyStar();
-if (document.querySelector('.leftBtnOfCarusel') !== null) {
-    document.querySelector('.leftBtnOfCarusel').onclick = function() {
-        document.querySelector('.owl-prev').click();
+
+let leftBtn = document.querySelectorAll('.leftBtnOfCarusel');
+let rightBtn = document.querySelectorAll('.rightBtnOfCarusel');
+
+leftBtn.forEach((value,index) => {
+    if (value !== null) {
+        leftBtn[index].onclick = function() {
+            document.querySelector('.owl-prev').click();
+        }
+        rightBtn[index].onclick = function() {
+            document.querySelector('.owl-next').click();
+        }
     }
-    document.querySelector('.rightBtnOfCarusel').onclick = function() {
-        document.querySelector('.owl-next').click();
-    }
-}
+})
+
+
 
 function href(url) {
     window.location = url;

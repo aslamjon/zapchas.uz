@@ -4375,6 +4375,9 @@ header .search form .dvi {
 .section-1 hr {
   background: #e7e7e7;
 }
+.section-1 .log1 {
+  display: none;
+}
 .section-1 .tab {
   display: flex;
   justify-content: space-between;
@@ -4733,6 +4736,12 @@ header .search form .dvi {
   }
   .section-1 .tab-content #section1Owl .owl-item .item .content .second .sum {
     font-size: 17px;
+  }
+  .section-1 .log1 {
+    display: inline-block;
+  }
+  .section-1 .log2 {
+    display: none;
   }
 }
 @media (max-width: 575px) {
