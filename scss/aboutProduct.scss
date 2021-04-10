@@ -1037,7 +1037,19 @@
         }
     }
 }
-
+@media (max-width: 840px){
+    .main-section{
+        .tafsiya{
+            .card{
+                .c-footer{
+                    .sum{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 768px) {
     .main-section {
         max-width: 95vw !important;
@@ -1127,13 +1139,21 @@
                 justify-content: center;
                 align-items: center;
                 .card {
-                    width: 70%;
+                    width: 100%;
                 }
             }
         }
     }
 }
-
+@media (max-width: 767px){
+    .main-section{
+        .tafsiya{
+            .col-sm-6{
+                margin-top: 15px;
+            }
+        }
+    }
+}
 // modal
 @media (min-width: 768px) {
     .main-section {
