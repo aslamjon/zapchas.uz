@@ -3966,6 +3966,10 @@ nav .second-collapse ul li a .cart .second {
     margin-left: 0;
   }
 }
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../Roboto/Roboto-Black.ttf") format("truetype");
+}
 header {
   height: 90vh;
   width: 100%;
@@ -4067,7 +4071,7 @@ header .search form .dvi {
   background: #fff !important;
   border: none;
   border-radius: 0;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
@@ -4097,7 +4101,7 @@ header .search form .dvi #open-select-show2,
 header .search form .dvi #open-select-show3,
 header .search form .dvi #open-select-show4 {
   overflow-y: hidden;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 19px;
   line-height: 23px;
   width: 95%;
@@ -4132,7 +4136,7 @@ header .search form .dvi #open-select-show4 {
   overflow-y: unset;
   justify-content: space-between;
   padding-right: 5px;
-  margin-top: 1px;
+  margin-top: -1px;
   margin-left: 4px;
   width: 90%;
 }
@@ -4244,6 +4248,36 @@ header .search form .s-btn {
   border: none;
   outline: none;
   padding: 10px 15px;
+}
+header .search form .year #s1, header .search form .year #s2, header .search form .year #s3, header .search form .year #s4,
+header .search form .brend #s1,
+header .search form .brend #s2,
+header .search form .brend #s3,
+header .search form .brend #s4,
+header .search form .model12 #s1,
+header .search form .model12 #s2,
+header .search form .model12 #s3,
+header .search form .model12 #s4,
+header .search form .dvi #s1,
+header .search form .dvi #s2,
+header .search form .dvi #s3,
+header .search form .dvi #s4 {
+  font-family: "Roboto-Black", sans-serif;
+}
+header .search form .year #s1 option, header .search form .year #s2 option, header .search form .year #s3 option, header .search form .year #s4 option,
+header .search form .brend #s1 option,
+header .search form .brend #s2 option,
+header .search form .brend #s3 option,
+header .search form .brend #s4 option,
+header .search form .model12 #s1 option,
+header .search form .model12 #s2 option,
+header .search form .model12 #s3 option,
+header .search form .model12 #s4 option,
+header .search form .dvi #s1 option,
+header .search form .dvi #s2 option,
+header .search form .dvi #s3 option,
+header .search form .dvi #s4 option {
+  font-weight: 100 !important;
 }
 
 @media (max-width: 1129px) {
@@ -5130,6 +5164,8 @@ header .search form .dvi {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/Vector 5.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-size: cover;
+  background-position-x: center;
   margin-top: 1.5rem;
   position: relative;
   padding-top: 60px;

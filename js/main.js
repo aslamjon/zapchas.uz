@@ -350,58 +350,6 @@ function tabNav4() {
 }
 
 
-// function tabNav() {
-//     let tab = document.querySelector('.nav-tabs');
-//     for (let i = 0; 5 > i; i++) {
-//         let leftBtn = document.querySelectorAll('.leftBtnOfCarusel');
-//         let rightBtn = document.querySelectorAll('.rightBtnOfCarusel');
-
-//         let b1 = document.querySelectorAll('.Owl1');
-//         let b2 = document.querySelectorAll('.Owl2');
-//         let b3 = document.querySelectorAll('.Owl3');
-//         let b4 = document.querySelectorAll('.Owl4');
-//         let b5 = document.querySelectorAll('.Owl5');
-//         let b6 = document.querySelectorAll('.Owl6');
-
-//         if (tab.children[i].children[0].classList.contains("active") == true) {
-//             console.log(i);
-//             tab.children[i + 6].classList.remove('yuq');
-//             tab.children[i + 7].classList.remove('yuq');
-
-//             tab.children[i + 6].classList.add('bor');
-//             tab.children[i + 7].classList.add('bor');
-
-//             tab.children[i + 6].children[0].onclick = function () {
-//                 document.querySelectorAll('.owl-prev')[i].click();
-//             }
-//             tab.children[i + 7].children[0].onclick = function () {
-//                 document.querySelectorAll('.owl-next')[i].click();
-//             }
-//             if (i == 1) {
-//                 tab.children[i + 6].children[0].onclick = function () {
-//                     document.querySelectorAll('.owl-prev')[i + 1].click();
-//                 }
-//                 tab.children[i + 7].children[0].onclick = function () {
-//                     document.querySelectorAll('.owl-next')[i + 1].click();
-//                 }
-//             }
-//             // leftBtn.forEach((value, index) => {
-//             //     if (value !== null) {
-//             //         leftBtn[index].onclick = function () {
-//             //             console.log(leftBtn[index]);
-//             //             document.querySelectorAll('.owl-prev')[index].click();
-//             //         }
-//             //         rightBtn[index].onclick = function () {
-//             //             document.querySelectorAll('.owl-next')[index].click();
-//             //         }
-//             //     }
-//             // })
-//         }
-//     }
-// }
-// tabNav()
-
-
 function href(url) {
     window.location = url;
 }
