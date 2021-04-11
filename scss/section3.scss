@@ -378,7 +378,7 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 900px) {
+@media (min-width: 769px) and (max-width: 932px) {
     .section-3 {
         .title__on_section {
             font-size: 80%;
@@ -434,6 +434,8 @@
         height: 80vh;
         .title__on_section {
             font-size: 60%;
+            width: 35%;
+            left: 32%;
         }
         .chegirma {
             top: 45px;
@@ -442,7 +444,7 @@
                     left: 25%;
                 }
                 .owl-next {
-                    right: 23%;
+                    right: 24%;
                 }
             }
         }

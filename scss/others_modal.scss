@@ -801,10 +801,12 @@
     }
 }
 @media (min-width: 768px) {
-    .modal {
-        .modal-dialog {
-            max-width: 756px !important;
-            margin: 1.75rem auto !important;
+    #infocard{
+        .modal {
+            .modal-dialog {
+                max-width: 756px !important;
+                margin: 1.75rem auto !important;
+            }
         }
     }
 }
