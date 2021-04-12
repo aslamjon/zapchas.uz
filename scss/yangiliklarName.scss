@@ -8,7 +8,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
-        color: #BCBCBC;
+        color: #bcbcbc;
         text-decoration: none;
     }
 }
@@ -44,12 +44,12 @@
                     font-weight: bold;
                     font-size: 28px;
                     line-height: 33px;
-                    color: #2B2B2B;
+                    color: #2b2b2b;
                 }
                 .divone {
                     padding: 30px 15px;
                     input {
-                        background: #F7F7F7;
+                        background: #f7f7f7;
                         color: black;
                         height: 55px;
                         position: relative !important;
@@ -71,6 +71,9 @@
                         font-size: 16px;
                         line-height: 19px;
                         color: #616161;
+                        &:first-child {
+                            margin-top: 1rem;
+                        }
                     }
                 }
                 .divthree {
@@ -86,12 +89,15 @@
                         width: 100%;
                     }
                 }
+                .divthree2 {
+                    display: none;
+                }
             }
         }
     }
 }
 
-@media(max-width:750px) {
+@media (max-width: 750px) {
     .section-news {
         .container {
             .row {
@@ -111,7 +117,7 @@
     }
 }
 
-@media(max-width:500px) {
+@media (max-width: 500px) {
     .section-news {
         .container {
             max-width: 96vw !important;
@@ -135,7 +141,7 @@
                         font-weight: bold;
                         font-size: 28px;
                         line-height: 33px;
-                        color: #2B2B2B;
+                        color: #2b2b2b;
                     }
                 }
             }
@@ -143,7 +149,7 @@
     }
 }
 
-@media(max-width:1100px) {
+@media (max-width: 1100px) {
     .section-news {
         .container {
             .row {
@@ -157,7 +163,7 @@
                         .position-eleent {
                             position: absolute;
                             top: 95px;
-                            right: 45px;
+                            right: 32px;
                         }
                     }
                 }
@@ -166,7 +172,7 @@
     }
 }
 
-@media(max-width:992px) {
+@media (max-width: 991px) {
     .section-news {
         .container {
             .row {
@@ -175,20 +181,56 @@
                 }
                 .col-lg-3 {
                     padding: 0 !important;
-                    order: 1;
                     .divone {
+                        position: relative;
                         padding: 30px 30px;
                         .position-eleent {
                             position: absolute;
-                            top: 95px;
+                            bottom: 0px;
                             right: 45px;
                         }
                     }
                     .divtwo {
                         padding: 30px 30px;
+                        .tarqal {
+                            display: flex;
+                            flex-wrap: wrap;
+                            a {
+                                margin-right: 15px;
+                                border: 1px solid;
+                                margin-top: 20px;
+                                padding: 5px;
+                                border-radius: 3px;
+                            }
+                        }
                     }
                     .divthree {
                         padding: 30px 30px;
+                    }
+                    .divthree1 {
+                        display: none;
+                    }
+                    .divthree2 {
+                        display: block;
+                        padding-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 460px) {
+    .section-news {
+        .container {
+            .row {
+                .col-lg-9 {
+                    .Zapchas {
+                        font-size: 25px;
+                    }
+                }
+                .col-lg-3 {
+                    .taytl {
+                        font-size: 22px;
                     }
                 }
             }

@@ -547,7 +547,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #BCBCBC;
+  color: #bcbcbc;
   text-decoration: none;
 }
 
@@ -584,13 +584,13 @@
   font-weight: bold;
   font-size: 28px;
   line-height: 33px;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 .section-news .container .row .col-lg-3 .divone {
   padding: 30px 15px;
 }
 .section-news .container .row .col-lg-3 .divone input {
-  background: #F7F7F7;
+  background: #f7f7f7;
   color: black;
   height: 55px;
   position: relative !important;
@@ -613,6 +613,9 @@
   line-height: 19px;
   color: #616161;
 }
+.section-news .container .row .col-lg-3 .divtwo a:first-child {
+  margin-top: 1rem;
+}
 .section-news .container .row .col-lg-3 .divthree {
   padding: 30px 15px;
 }
@@ -625,6 +628,9 @@
 }
 .section-news .container .row .col-lg-3 .divthree img {
   width: 100%;
+}
+.section-news .container .row .col-lg-3 .divthree2 {
+  display: none;
 }
 
 @media (max-width: 750px) {
@@ -660,7 +666,7 @@
     font-weight: bold;
     font-size: 28px;
     line-height: 33px;
-    color: #2B2B2B;
+    color: #2b2b2b;
   }
 }
 @media (max-width: 1100px) {
@@ -672,30 +678,56 @@
   .section-news .container .row .col-lg-3 .divone .position-eleent {
     position: absolute;
     top: 95px;
-    right: 45px;
+    right: 32px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .section-news .container .row .col-lg-9 {
     order: 2;
   }
   .section-news .container .row .col-lg-3 {
     padding: 0 !important;
-    order: 1;
   }
   .section-news .container .row .col-lg-3 .divone {
+    position: relative;
     padding: 30px 30px;
   }
   .section-news .container .row .col-lg-3 .divone .position-eleent {
     position: absolute;
-    top: 95px;
+    bottom: 0px;
     right: 45px;
   }
   .section-news .container .row .col-lg-3 .divtwo {
     padding: 30px 30px;
   }
+  .section-news .container .row .col-lg-3 .divtwo .tarqal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-news .container .row .col-lg-3 .divtwo .tarqal a {
+    margin-right: 15px;
+    border: 1px solid;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 3px;
+  }
   .section-news .container .row .col-lg-3 .divthree {
     padding: 30px 30px;
+  }
+  .section-news .container .row .col-lg-3 .divthree1 {
+    display: none;
+  }
+  .section-news .container .row .col-lg-3 .divthree2 {
+    display: block;
+    padding-top: 0px;
+  }
+}
+@media (max-width: 460px) {
+  .section-news .container .row .col-lg-9 .Zapchas {
+    font-size: 25px;
+  }
+  .section-news .container .row .col-lg-3 .taytl {
+    font-size: 22px;
   }
 }
 #otaaa {
