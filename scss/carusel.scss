@@ -602,10 +602,15 @@
                     margin-top: 20px;
                     .row {
                         margin-top: 20px;
+                        .fixedBy-Aslamjon{
+                            overflow-x: scroll;
+                            flex-wrap: nowrap;
+                        }
                         ul {
+                            width: 388px;
                             li {
                                 a {
-                                    font-size: 10px;
+                                    font-size: 14px;
                                     line-height: 15px;
                                     letter-spacing: 0.3px;
                                     padding-left: 6px !important;

@@ -10450,8 +10450,15 @@ header .search form .dvi {
   .section-Azizbek .container .row .col-lg-9 .row {
     margin-top: 20px;
   }
+  .section-Azizbek .container .row .col-lg-9 .row .fixedBy-Aslamjon {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+  .section-Azizbek .container .row .col-lg-9 .row ul {
+    width: 388px;
+  }
   .section-Azizbek .container .row .col-lg-9 .row ul li a {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 15px;
     letter-spacing: 0.3px;
     padding-left: 6px !important;
