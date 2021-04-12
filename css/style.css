@@ -10438,6 +10438,27 @@ header .search form .dvi {
     line-height: 19px;
   }
 }
+@media (max-width: 514px) {
+  .section-Azizbek .container .row .col-lg-9 .row .owl-carousel {
+    margin-top: 15px;
+  }
+  .section-Azizbek .container .row .col-lg-9 .row .owl-carousel .owl-nav {
+    position: absolute !important;
+    top: 92% !important;
+    right: 35% !important;
+    width: 100px !important;
+  }
+  .section-Azizbek .container .row .col-lg-9 .row .owl-carousel .owl-nav .owl-next,
+.section-Azizbek .container .row .col-lg-9 .row .owl-carousel .owl-nav .owl-prev {
+    background-image: url("../img/slideBagRight.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45px;
+    height: 22px;
+    color: white;
+    outline: none;
+  }
+}
 @media (max-width: 490px) {
   .section-Azizbek .container .row .col-lg-3 .card .dataInterier {
     font-size: 30px !important;
@@ -11337,7 +11358,7 @@ body {
 .icon-heart {
   position: absolute;
   top: 40px;
-  right: 9px;
+  right: 10px;
   width: 20px;
   height: 20px;
   display: inline-block;

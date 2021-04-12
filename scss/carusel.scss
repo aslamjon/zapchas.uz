@@ -584,6 +584,37 @@
         }
     }
 }
+@media(max-width: 514px) {
+    .section-Azizbek{
+        .container{
+            .row{
+                .col-lg-9{
+                    .row{
+                        .owl-carousel{
+                            margin-top: 15px;
+                            .owl-nav {
+                                position: absolute !important;
+                                top: 92% !important;
+                                right: 35% !important;
+                                width: 100px !important;
+                                .owl-next,
+                                .owl-prev {
+                                    background-image: url('../img/slideBagRight.png');
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    width: 45px;
+                                    height: 22px;
+                                    color: white;
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media(max-width: 490px) {
     .section-Azizbek {
@@ -640,6 +671,7 @@
                                     outline: none;
                                 }
                             }
+                            
                             .col-lg-3 {
                                 .item {
                                     width: 95% !important;
