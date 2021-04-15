@@ -14,8 +14,9 @@
 @import 'savatcha';
 @import 'savatcha2';
 @import 'footer';
+@import 'tabbb';
 @import 'account';
-@import 'carusel';
+// @import 'carusel';
 @import 'others_modal';
 @font-face {
     font-family: "Roboto-Black";
@@ -75,8 +76,8 @@ body {
 }
 
 #heart {
-    mask-image: url('/img/Heart.svg');
-    -webkit-mask-image: url('/img/Heart.svg');
+    mask-image: url('../img/Heart.svg');
+    -webkit-mask-image: url('../img/Heart.svg');
     &:hover {
         opacity: 1;
         background: #007cff;
@@ -124,38 +125,38 @@ body {
 }
 
 .icon-like {
-    mask-image: url('/img/likee.svg');
-    -webkit-mask-image: url('/img/likee.svg');
+    mask-image: url('../img/likee.svg');
+    -webkit-mask-image: url('../img/likee.svg');
 }
 
 .click-ver {
-    mask-image: url('/img/verclick.svg');
-    -webkit-mask-image: url('/img/verclick.svg');
+    mask-image: url('../img/verclick.svg');
+    -webkit-mask-image: url('../img/verclick.svg');
 }
 
 .click-gor {
-    mask-image: url('/img/gorclick.svg');
-    -webkit-mask-image: url('/img/gorclick.svg');
+    mask-image: url('../img/gorclick.svg');
+    -webkit-mask-image: url('../img/gorclick.svg');
 }
 
 .click-all {
-    mask-image: url('/img/kvclick.svg');
-    -webkit-mask-image: url('/img/kvclick.svg');
+    mask-image: url('../img/kvclick.svg');
+    -webkit-mask-image: url('../img/kvclick.svg');
 }
 
 .icon-buy {
-    mask-image: url('/img/buyicon.svg');
-    -webkit-mask-image: url('/img/buyicon.svg');
+    mask-image: url('../img/buyicon.svg');
+    -webkit-mask-image: url('../img/buyicon.svg');
 }
 
 .icon-big {
-    mask-image: url('/img/bigScreen.svg');
-    -webkit-mask-image: url('/img/bigScreen.svg');
+    mask-image: url('../img/bigScreen.svg');
+    -webkit-mask-image: url('../img/bigScreen.svg');
 }
 
 .icon-col {
-    mask-image: url('/img/collection.svg');
-    -webkit-mask-image: url('/img/collection.svg');
+    mask-image: url('../img/collection.svg');
+    -webkit-mask-image: url('../img/collection.svg');
 }
 
 .section-Azizbek {
