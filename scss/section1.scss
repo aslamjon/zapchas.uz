@@ -383,6 +383,14 @@
         }
     }
 }
+@media (max-width: 1200px) and (min-width: 992px){
+    .section-1 .tab-content #section1Owl .owl-item .item .content .first .title{
+        font-size: 17px;
+    }
+    .section-1 .tab-content #section1Owl .owl-item .item .content .second .sum {
+        font-size: 17px;
+    }
+}
 
 @media (max-width: 479px) {
     .section-1 {

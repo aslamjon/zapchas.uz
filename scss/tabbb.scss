@@ -186,6 +186,31 @@
                 }
             }
         }
+        .row-pap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btnPap {
+                text-decoration: none;
+                position: relative;
+                color: white;
+                width: 20%;
+                .imgBtn {
+                    width: 100%;
+                }
+                .textB {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 11;
+                    position: absolute;
+                }
+            }
+        }
     }
 }
 
@@ -339,6 +364,17 @@
                     }
                 }
             }
+            .row-pap {
+                .btnPap {
+                    .imgBtn {
+                        width: 100%;
+                    }
+                    .textB {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
         }
     }
 }
@@ -410,6 +446,13 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+            .row-pap {
+                .btnPap {
+                    .textB {
+                        font-size: 13px;
                     }
                 }
             }
@@ -486,6 +529,13 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+            .row-pap {
+                .btnPap {
+                    .textB {
+                        font-size: 11px !important;
                     }
                 }
             }
@@ -605,6 +655,14 @@
                     }
                 }
             }
+            .row-pap {
+                .btnPap {
+                    .textB {
+                        font-weight: 300 !important;
+                        font-size: 10px !important;
+                    }
+                }
+            }
         }
     }
 }
@@ -719,6 +777,14 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+            .row-pap {
+                .btnPap {
+                    .textB {
+                        font-weight: 300 !important;
+                        font-size: 8px !important;
                     }
                 }
             }
@@ -957,24 +1023,25 @@
         }
     }
 }
+
 @media(max-width:650px) {
-    .section-tabb{
-        .container{
-            .row{
-                .col-md-9{
-                    .father{
+    .section-tabb {
+        .container {
+            .row {
+                .col-md-9 {
+                    .father {
                         flex-wrap: nowrap;
                         overflow-x: scroll;
                         overflow-y: hidden;
                     }
                     ul {
                         width: 520px !important;
-                        display:flex;
+                        display: flex;
                         margin-top: 0;
                     }
-                    .nav{
+                    .nav {
                         margin-top: 0;
-                        li{
+                        li {
                             padding-bottom: 2px !important;
                         }
                     }
@@ -983,6 +1050,7 @@
         }
     }
 }
+
 @media(max-width:576px) {
     .section-tabb {
         .container {
@@ -994,7 +1062,7 @@
                         overflow-x: scroll;
                         ul {
                             width: 520px !important;
-                            display:flex;
+                            display: flex;
                         }
                     }
                     .tab-content {
@@ -1013,6 +1081,9 @@
                         }
                     }
                 }
+            }
+            .row-pap {
+                display: none;
             }
         }
     }

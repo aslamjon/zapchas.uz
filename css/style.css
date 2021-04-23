@@ -4414,6 +4414,11 @@ header .search form .dvi {
     min-height: 60px;
   }
 }
+@media (max-width: 362px) {
+  header .top-content form {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
 .section-1 {
   margin-top: 20px;
 }
@@ -4753,6 +4758,15 @@ header .search form .dvi {
 @media (min-width: 1444px) {
   .section-1 .tab-content .card {
     height: 390px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+  .section-1 .tab-content #section1Owl .owl-item .item .content .first .title {
+    font-size: 17px;
+  }
+
+  .section-1 .tab-content #section1Owl .owl-item .item .content .second .sum {
+    font-size: 17px;
   }
 }
 @media (max-width: 479px) {
@@ -9889,6 +9903,31 @@ header .search form .dvi {
 .section-tabb .container .row .col-md-9 .tab-content #firstC-9 .item .card .dataRull .price-savat .iconPlace:hover {
   background-color: #007CFF;
 }
+.section-tabb .container .row-pap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-tabb .container .row-pap .btnPap {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  width: 20%;
+}
+.section-tabb .container .row-pap .btnPap .imgBtn {
+  width: 100%;
+}
+.section-tabb .container .row-pap .btnPap .textB {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  position: absolute;
+}
 
 @media (max-width: 1370px) {
   .section-tabb .container .row {
@@ -10145,6 +10184,13 @@ header .search form .dvi {
 .section-tabb .container .row .col-md-9 .tab-content #firstC-9 .item .card .dataRull .price-savat .price {
     font-size: 13px;
   }
+  .section-tabb .container .row-pap .btnPap .imgBtn {
+    width: 100%;
+  }
+  .section-tabb .container .row-pap .btnPap .textB {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 @media (max-width: 1150px) {
   .section-tabb .container .row {
@@ -10262,6 +10308,9 @@ header .search form .dvi {
 .section-tabb .container .row .col-md-9 .tab-content #firstC-7 .item .card .dataRull .price-savat .price,
 .section-tabb .container .row .col-md-9 .tab-content #firstC-8 .item .card .dataRull .price-savat .price,
 .section-tabb .container .row .col-md-9 .tab-content #firstC-9 .item .card .dataRull .price-savat .price {
+    font-size: 13px;
+  }
+  .section-tabb .container .row-pap .btnPap .textB {
     font-size: 13px;
   }
 }
@@ -10384,6 +10433,9 @@ header .search form .dvi {
 .section-tabb .container .row .col-md-9 .tab-content #firstC-8 .item .card .dataRull .price-savat .price,
 .section-tabb .container .row .col-md-9 .tab-content #firstC-9 .item .card .dataRull .price-savat .price {
     font-size: 12px;
+  }
+  .section-tabb .container .row-pap .btnPap .textB {
+    font-size: 11px !important;
   }
 }
 @media (max-width: 999px) {
@@ -10609,6 +10661,10 @@ header .search form .dvi {
 .section-tabb .container .row .col-md-9 .tab-content #firstC-8 .item .card .dataRull .price-savat .price,
 .section-tabb .container .row .col-md-9 .tab-content #firstC-9 .item .card .dataRull .price-savat .price {
     font-size: 13px;
+  }
+  .section-tabb .container .row-pap .btnPap .textB {
+    font-weight: 300 !important;
+    font-size: 10px !important;
   }
 }
 @media (max-width: 830px) {
@@ -10836,6 +10892,10 @@ header .search form .dvi {
 .section-tabb .container .row .col-md-9 .tab-content #firstC-8 .item .card .dataRull .price-savat .price,
 .section-tabb .container .row .col-md-9 .tab-content #firstC-9 .item .card .dataRull .price-savat .price {
     font-size: 13px;
+  }
+  .section-tabb .container .row-pap .btnPap .textB {
+    font-weight: 300 !important;
+    font-size: 8px !important;
   }
 }
 @media (max-width: 767px) {
@@ -11281,6 +11341,9 @@ header .search form .dvi {
 .section-tabb .container .row .col-md-9 .tab-content #firstC-8 .owl-nav,
 .section-tabb .container .row .col-md-9 .tab-content #firstC-9 .owl-nav {
     right: 42% !important;
+  }
+  .section-tabb .container .row-pap {
+    display: none;
   }
 }
 @media (max-width: 450px) {

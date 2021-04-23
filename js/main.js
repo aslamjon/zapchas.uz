@@ -8,7 +8,8 @@ $('.chegirma').owlCarousel({
     autoplayHoverPause: true,
     responsive: {
         0: {
-            items: 1
+            items: 1,
+            autoplayTimeout: 3000
         },
         600: {
             items: 3
@@ -74,24 +75,503 @@ $('#tab-owl').owlCarousel({
         }
     }
 });
+$('#firstC').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        450: {
+            items: 2,
+            nav: true
+        },
+        700: {
+            items: 3,
+            nav: false
+        },
+        1000: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
+})
+$('#firstC-2').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        450: {
+            items: 2,
+            nav: true
+        },
+        700: {
+            items: 3,
+            nav: false
+        },
+        1000: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
+})
+$('#firstC-3').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        450: {
+            items: 2,
+            nav: true
+        },
+        700: {
+            items: 3,
+            nav: false
+        },
+        1000: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
+})
+$('#firstC-4').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        450: {
+            items: 2,
+            nav: true
+        },
+        700: {
+            items: 3,
+            nav: false
+        },
+        1000: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
+})
+$('#firstC-5').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        450: {
+            items: 2,
+            nav: true
+        },
+        700: {
+            items: 3,
+            nav: false
+        },
+        1000: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
+})
+$('#firstC-6').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        450: {
+            items: 2,
+            nav: true
+        },
+        700: {
+            items: 3,
+            nav: false
+        },
+        1000: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
+})
+$('#firstC-7').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        450: {
+            items: 2,
+            nav: true
+        },
+        700: {
+            items: 3,
+            nav: false
+        },
+        1000: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
+})
+$('#firstC-8').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        450: {
+            items: 2,
+            nav: true
+        },
+        700: {
+            items: 3,
+            nav: false
+        },
+        1000: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
+})
+$('#firstC-9').owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        450: {
+            items: 2,
+            nav: true
+        },
+        700: {
+            items: 3,
+            nav: false
+        },
+        1000: {
+            items: 4,
+            nav: true,
+            loop: false
+        }
+    }
+})
+$('#owl-carousel-2').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+})
+$('#owl-carousel-2-2').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+})
+$('#owl-carousel-2-3').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+})
+$('#owl-causel-1').owlCarousel({
 
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+
+    responsive: {
+        0: {
+            items: 2,
+            nav: true
+        },
+        600: {
+            items: 4,
+            nav: false
+        },
+        1000: {
+            items: 8,
+            nav: true,
+            loop: false
+        }
+    }
+})
+$('#owl-carusel-top').owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 5000,
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 4
+        }
+    }
+})
+$('#owl-carusel-top-2').owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 5000,
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+$('#owl-carusel-top-3').owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 5000,
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+}
+document.querySelector('.total-sum').innerHTML = `<span id="total-sum">1 137 000</span> so’m`;
 let minus = document.querySelectorAll('.minus');
 let plus = document.querySelectorAll('.plus');
 let count = document.querySelectorAll('.count');
+let total_sum = document.querySelector('#total-sum');
 
 document.querySelectorAll('.count').forEach((value, index) => {
     value.setAttribute('disabled', true);
     value.classList.add('text-black');
-    plus[index].onclick = function () {
+    plus[index].onclick = function() {
         document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) + 1;
-
+        
+        total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
+        total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
+        let res = String((Number(total_sum.innerHTML) + 379000));
+        let result = numberWithCommas(res);
+        for(i = 0; result.length > i; i+=3){
+            if(result.includes(',')){
+                result = result.replace(',',' ');
+            }
+        }
+        total_sum.innerHTML = result;
     }
-    minus[index].onclick = function () {
+    minus[index].onclick = function() {
         if (document.querySelectorAll('.count')[index].value > 1) {
             document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) - 1;
+            if (total_sum.innerHTML.includes(' ')) {
+                total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
+                total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
+            }
+            
+            if (Number(total_sum.innerHTML) >= 379000) {
+                let res = String((Number(total_sum.innerHTML) - 379000));
+                let result = numberWithCommas(res);
+                for(i = 0; result.length > i; i+=3){
+                    if(result.includes(',')){
+                        result = result.replace(',',' ');
+                    }
+                }
+                total_sum.innerHTML = result;
+            }
         }
     }
 })
+
+let clearSum = document.querySelector("#clearSum"); // total 
+let piece = document.querySelector("#piece"); // total piece
+let total_price2 = document.querySelectorAll(".total-price2"); // total-price
+let price_count = document.querySelector('.price-count');
+
+let minus2 = document.querySelectorAll('.minus2');
+let plus2 = document.querySelectorAll('.plus2');
+let count2 = document.querySelectorAll('.count2');
+let total_sum2 = document.querySelector('#total-sum');
+ // Update Total sum   
+function sumAll(){
+    let total_price22 = document.querySelectorAll('.total-price22');
+    let sumTotal = 0;
+    total_price22.forEach((val, ind) => {
+        val.innerHTML = val.innerHTML.replace(' ','');
+        val.innerHTML = val.innerHTML.replace(' ','');
+        val.innerHTML = val.innerHTML.replace(' ','');
+        sumTotal += Number(val.innerHTML);
+        let result = numberWithCommas(sumTotal);
+        let valu = numberWithCommas(val.innerHTML);
+        for(i = 0; result.length > i; i+=3){
+            if(result.includes(',')){
+                result = result.replace(',',' ');
+            }
+            if (valu.includes(',')){
+                valu = valu.replace(',', ' ');
+            }
+        }
+        clearSum.innerHTML = result;
+        val.innerHTML = valu;
+    })
+}
+// Update piece
+function update_piece(){
+    let sumPiece = 0;
+    document.querySelectorAll('.count2').forEach((value, index) => {
+        sumPiece += Number(value.value);
+    });
+    piece.innerHTML = sumPiece;
+}
+
+document.querySelectorAll('.count2').forEach((value, index) => {
+    value.setAttribute('disabled', true);
+    value.classList.add('text-black');
+
+    total_price2[index].innerHTML  = `<span class="total-price22">758 000</span> so’m`;
+    let total_price22 = document.querySelectorAll('.total-price22');
+
+    plus2[index].onclick = function() {
+        document.querySelectorAll('.count2')[index].value = Number(document.querySelectorAll('.count2')[index].value) + 1;
+        
+        total_price22[index].innerHTML = total_price22[index].innerHTML.replace(' ','');
+        total_price22[index].innerHTML = total_price22[index].innerHTML.replace(' ','');
+        total_price22[index].innerHTML = total_price22[index].innerHTML.replace(' ','');
+        
+        let res = String((Number(total_price22[index].innerHTML) + 379000));
+        let result = numberWithCommas(res);
+        for(i = 0; result.length > i; i+=3){
+            if(result.includes(',')){
+                result = result.replace(',',' ');
+            }
+        }
+        total_price22[index].innerHTML = result;
+        sumAll() // Update Function   
+        update_piece() // Update Piece
+    }
+    minus2[index].onclick = function() {
+        if (document.querySelectorAll('.count2')[index].value > 1) {
+            document.querySelectorAll('.count2')[index].value = Number(document.querySelectorAll('.count2')[index].value) - 1;
+            
+            if (total_price22[index].innerHTML.includes(' ')) {
+                total_price22[index].innerHTML = total_price22[index].innerHTML.replace(' ','');
+                total_price22[index].innerHTML = total_price22[index].innerHTML.replace(' ','');
+            }
+            if (Number(total_price22[index].innerHTML) >= 379000) {
+                let res = String((Number(total_price22[index].innerHTML) - 379000));
+                let result = numberWithCommas(res);
+                for(i = 0; result.length > i; i+=3){
+                    if(result.includes(',')){
+                        result = result.replace(',',' ');
+                    }
+                }
+                total_price22[index].innerHTML = result;
+                sumAll() // Update Function  
+                update_piece() // Update Piece
+            }
+        }
+    }
+});
+
+function clearRow(){
+    let clear = document.querySelectorAll('.close1');
+    let s_body = document.querySelectorAll('.s-body');
+    clear.forEach((value,index) => {
+        clear[index].onclick = function(){
+            s_body[index].style.display = 'none';
+            document.querySelectorAll('.count2')[index].value = 0;
+            document.querySelectorAll('.total-price22')[index].innerHTML = 0;
+            sumAll() // Update Function   
+            update_piece() // Update Piece
+        }
+    });
+
+}
+clearRow();
 
 function openSelect(selectId, select_show, optionHide, self) {
     let select = document.getElementById(selectId);
@@ -166,7 +646,7 @@ function openData(dataId, dataId2, self) {
     let d2 = document.getElementsByClassName(dataId2)[0];
     d1.style.display = 'flex';
     d2.style.display = 'block';
-    setTimeout(function () {
+    setTimeout(function() {
         d1.style.transform = 'translateX(0px)';
         d2.style.transform = 'translateX(0px)';
         self.style.display = 'none';
@@ -207,8 +687,8 @@ function changeImg(selfImg, mainImg) {
     let main = document.querySelector('.' + mainImg);
     main.style.opacity = 0
     main.style.transition = '0.3s';
-    setTimeout(function () { main.style.opacity = 1 }, 500);
-    setTimeout(function () { main.setAttribute('src', selfImg.getAttribute('src')); }, 500);
+    setTimeout(function() { main.style.opacity = 1 }, 500);
+    setTimeout(function() { main.setAttribute('src', selfImg.getAttribute('src')); }, 500);
     let anotherImg = document.querySelectorAll('.anotherImg');
     anotherImg.forEach((value, index) => {
         console.log(value.children[0]);
@@ -236,7 +716,7 @@ function changeImg(selfImg, mainImg) {
 function changeGreyStar() {
     let img1 = document.querySelectorAll('.starGrey1');
     img1.forEach((value, index, array) => {
-        value.onclick = function () {
+        value.onclick = function() {
             for (let i = 0; i < array.length; i++) {
                 array[i].children[0].setAttribute('src', 'img/star-grey.svg');
             }
@@ -247,12 +727,14 @@ function changeGreyStar() {
     })
 }
 changeGreyStar();
+
 function bor(b1) {
     for (let i = 0; b1.length > i; i++) {
         b1[i].classList.remove("yuq");
         b1[i].classList.add("bor");
     }
 }
+
 function yuq(b1) {
     for (let i = 0; b1.length > i; i++) {
         b1[i].classList.remove("bor");
@@ -266,6 +748,7 @@ let b4 = document.querySelectorAll('.Owl4');
 let b5 = document.querySelectorAll('.Owl5');
 let b6 = document.querySelectorAll('.Owl6');
 tabNav1();
+
 function tabNav1() {
     yuq(b2);
     yuq(b3);
@@ -273,19 +756,19 @@ function tabNav1() {
     yuq(b5);
     yuq(b6);
     bor(b1);
-    for (let i = 0; b1.length > i; i++){
-        if (i%2 == 0){
-            b1[i].children[0].onclick = function(){
+    for (let i = 0; b1.length > i; i++) {
+        if (i % 2 == 0) {
+            b1[i].children[0].onclick = function() {
                 document.querySelectorAll('.owl-prev')[0].click();
             }
-        }
-        else{
-            b1[i].children[0].onclick = function(){
+        } else {
+            b1[i].children[0].onclick = function() {
                 document.querySelectorAll('.owl-next')[0].click();
-            } 
+            }
         }
     }
 }
+
 function tabNav2() {
     yuq(b1);
     yuq(b3);
@@ -294,19 +777,19 @@ function tabNav2() {
     yuq(b6);
     bor(b2);
 
-    for (let i = 0; b2.length > i; i++){
-        if (i%2 == 0){
-            b2[i].children[0].onclick = function(){
+    for (let i = 0; b2.length > i; i++) {
+        if (i % 2 == 0) {
+            b2[i].children[0].onclick = function() {
                 document.querySelectorAll('.owl-prev')[1].click();
             }
-        }
-        else{
-            b2[i].children[0].onclick = function(){
+        } else {
+            b2[i].children[0].onclick = function() {
                 document.querySelectorAll('.owl-next')[1].click();
             }
-        } 
+        }
     }
 }
+
 function tabNav3() {
     yuq(b1);
     yuq(b2);
@@ -315,19 +798,19 @@ function tabNav3() {
     yuq(b6);
     bor(b3);
 
-    for (let i = 0; b3.length > i; i++){
-        if (i%2 == 0){
-            b3[i].children[0].onclick = function(){
+    for (let i = 0; b3.length > i; i++) {
+        if (i % 2 == 0) {
+            b3[i].children[0].onclick = function() {
                 document.querySelectorAll('.owl-prev')[2].click();
             }
-        }
-        else{
-            b3[i].children[0].onclick = function(){
+        } else {
+            b3[i].children[0].onclick = function() {
                 document.querySelectorAll('.owl-next')[2].click();
             }
         }
     }
 }
+
 function tabNav4() {
     yuq(b1);
     yuq(b2);
@@ -335,16 +818,15 @@ function tabNav4() {
     yuq(b5);
     yuq(b6);
     bor(b4);
-    for (let i = 0; b4.length > i; i++){
-        if (i%2 == 0){
-            b4[i].children[0].onclick = function(){
+    for (let i = 0; b4.length > i; i++) {
+        if (i % 2 == 0) {
+            b4[i].children[0].onclick = function() {
                 document.querySelectorAll('.owl-prev')[3].click();
             }
-        }
-        else{
-            b4[i].children[0].onclick = function(){
+        } else {
+            b4[i].children[0].onclick = function() {
                 document.querySelectorAll('.owl-next')[3].click();
-            } 
+            }
         }
     }
 }
@@ -374,7 +856,7 @@ function timeOfDiscount(setday) {
         minut.innerHTML--;
         sec.innerHTML = 60;
     }
-    let timer = setInterval(function () {
+    let timer = setInterval(function() {
         sec.innerHTML--;
         if (sec.innerHTML == 0) {
             minut.innerHTML--;
@@ -401,21 +883,21 @@ function timeOfDiscount(setday) {
 function cartOnclick() {
     let cartt = document.querySelectorAll('.cartt');
     cartt.forEach((value, index) => {
-        value.onclick = function () {
+        value.onclick = function() {
             value.classList.toggle('carttActive');
             value.children[0].classList.toggle('carttImgForAcrive');
         }
     });
     let iconPlace = document.querySelectorAll('.iconPlace');
     iconPlace.forEach((value, index) => {
-        value.onclick = function () {
+        value.onclick = function() {
             value.classList.toggle('carttActive');
             value.children[0].classList.toggle('carttImgForAcrive');
         }
     });
     let iconJoy = document.querySelectorAll('.icon-joy');
     iconJoy.forEach((value, index) => {
-        value.onclick = function () {
+        value.onclick = function() {
             value.classList.toggle('carttActive');
             value.children[0].classList.toggle('carttImgForAcrive');
         }
@@ -428,17 +910,17 @@ function likeOnclick() {
     let like2 = document.querySelectorAll('.icon-heart');
     let like3 = document.querySelectorAll('.icon-like');
     like.forEach((value, index) => {
-        value.onclick = function () {
+        value.onclick = function() {
             value.classList.toggle('likeActive');
         }
     })
     like2.forEach((value, index) => {
-        value.onclick = function () {
+        value.onclick = function() {
             value.classList.toggle('likeActive');
         }
     })
     like3.forEach((value, index) => {
-        value.onclick = function () {
+        value.onclick = function() {
             value.classList.toggle('likeActive');
         }
     })
