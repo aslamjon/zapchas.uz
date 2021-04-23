@@ -674,6 +674,9 @@
     .modal-header {
         border: none;
         padding-bottom: 0;
+        button{
+            outline: none;
+        }
     }
     .modal-body {
         img {

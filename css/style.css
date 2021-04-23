@@ -12292,6 +12292,9 @@ header .search form .dvi {
   border: none;
   padding-bottom: 0;
 }
+#forzoomImg .modal-header button {
+  outline: none;
+}
 #forzoomImg .modal-body img {
   width: 100%;
 }
