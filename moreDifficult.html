@@ -232,7 +232,7 @@
 
             <div id="otaaa" class="wow fadeInUp">
 
-                <a href="index.html" id="kichikM">Bosh sahifa / <a> <a href="#" id="kichik2M" > Barcha mahsulotlar</a>
+                <a href="index.html" id="kichikM">Bosh sahifa / <a> <a href="moreDifficult.html" id="kichik2M" > Barcha mahsulotlar</a>
             </div>
         </div>
     </header>
@@ -1148,7 +1148,7 @@
                     <p>Bizning xabarnomamizga obuna bo'lish va chegirmalar va maxsus <br> takliflar bilan dolzarb bo'lib turish uchun quyidagi elektron pochta <br> manzilingizni kiriting.</p>
                     <form class=" ">
                         <input type="text " required placeholder="Email manzilingizni kiriting ">
-                        <button type="button " class="azo-click ">A'zo bo'lish</button>
+                        <button type="submit " class="azo-click ">A'zo bo'lish</button>
                     </form>
                     <p>Bizni ijtimoiy tarmoqlarda kuzatib boring</p>
                     <div class="d-flex ">
@@ -1205,7 +1205,7 @@
                         <label for="fast-sharh">Sharh <span>*</span></label>
                         <textarea name="" id="fast-sharh" cols="30" rows="5"></textarea>
 
-                        <a href="#" class="btn btn-block mt-4">Jo'natish</a>
+                        <a href="#" class="btn btn-block mt-4 close" data-dismiss="modal">Jo'natish</a>
                     </form>
                 </div>
             </div>
@@ -1230,23 +1230,23 @@
     </script>
     <script>
         $(document).ready(function() {
+        
             let AllName = $("#pp-t").text();
             $(".nameU").click(function() {
                 if ($(".nameU").text() === "Name") {
                     $("#pp-t").text("Name");
                     $(".nameU").text("Nomi bo'yicha");
+                    $(".bosil-element").toggleClass("d-block ");
                 } else if ($(".nameU").text() === "Nomi bo'yicha") {
                     $("#pp-t").text("Nomi bo'yicha");
                     $(".nameU").text("Name");
-
                 }
-
-
             });
             $(".nameU1").click(function() {
                 if ($(".nameU1").text() === "Name") {
                     $("#pp-t").text("Name");
                     $(".nameU1").text("Nomi bo'yicha");
+                    $(".bosil-element").toggleClass("d-block");
                 } else if ($(".nameU1").text() === "Nomi bo'yicha") {
                     $("#pp-t").text("Nomi bo'yicha");
                     $(".nameU1").text("Name");
@@ -1256,6 +1256,7 @@
                 if ($(".nameU2").text() === "24") {
                     $("#pp-r").text("24");
                     $(".nameU2").text("16");
+                    $(".bosil-2-element").toggleClass("d-block");
                 } else if ($(".nameU2").text() === "16") {
                     $("#pp-r").text("16");
                     $(".nameU2").text("24");
@@ -1266,6 +1267,7 @@
                 if ($(".nameU3").text() === "36") {
                     $("#pp-r").text("36");
                     $(".nameU3").text("16");
+                    $(".bosil-2-element").toggleClass("d-block");
                 } else if ($(".nameU3").text() === "16") {
                     $("#pp-r").text("16");
                     $(".nameU3").text("36");
@@ -1291,7 +1293,7 @@
                 $(".bosil-element").toggleClass("d-block ");
             });
             $("#click-2 ").click(function() {
-                $(".bosil-2-element ").toggleClass("d-block ");
+                $(".bosil-2-element ").toggleClass("d-block");
             });
 
             $(".icon-click").click(function() {
