@@ -29,7 +29,8 @@ $('#section1Owl').owlCarousel({
     autoplayHoverPause: true,
     responsive: {
         0: {
-            items: 1
+            items: 1,
+            autoplayTimeout: 3000
         },
         600: {
             items: 3
@@ -49,7 +50,8 @@ $('#section2Owl').owlCarousel({
     autoplayHoverPause: true,
     responsive: {
         0: {
-            items: 1
+            items: 1,
+            autoplayTimeout: 3000
         },
         600: {
             items: 3
