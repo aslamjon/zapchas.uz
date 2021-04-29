@@ -1182,3 +1182,51 @@ nav {
         }
     }
 }
+
+#brend {
+    width: 100%;
+    .inBrend {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .first, .inBrendIcon{
+            display: flex;
+        }
+        .imgBrend{
+            margin-right: -10%;
+            width: 60px;
+        }
+        a{
+            padding: 0.5rem;
+            position: relative;
+            img{
+                width: 27px;
+            }
+            .noti{
+                position: absolute;
+                top: 3px;
+                right: 2px;
+                width: 18px;
+                height: 18px;
+                background: #ff0000;
+                border: 1px solid #ffffff;
+                box-sizing: border-box;
+                color: #fff;
+                font-size: 12px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    #brend{
+        .inBrend{
+            .imgBrend{
+                margin-right: 0;
+            }
+        }
+    }
+}

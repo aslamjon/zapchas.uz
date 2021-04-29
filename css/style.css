@@ -3998,6 +3998,50 @@ nav .second-collapse ul li a .cart .second {
     margin-left: 0;
   }
 }
+#brend {
+  width: 100%;
+}
+#brend .inBrend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#brend .inBrend .first, #brend .inBrend .inBrendIcon {
+  display: flex;
+}
+#brend .inBrend .imgBrend {
+  margin-right: -10%;
+  width: 60px;
+}
+#brend .inBrend a {
+  padding: 0.5rem;
+  position: relative;
+}
+#brend .inBrend a img {
+  width: 27px;
+}
+#brend .inBrend a .noti {
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  width: 18px;
+  height: 18px;
+  background: #ff0000;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 360px) {
+  #brend .inBrend .imgBrend {
+    margin-right: 0;
+  }
+}
 @font-face {
   font-family: "Roboto-Black";
   src: url("../Roboto/Roboto-Black.ttf") format("truetype");
