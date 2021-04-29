@@ -876,9 +876,11 @@ body {
         .container {
             // MOTOR MOYLARI va HAYDOVCHI KABINASI 
             .owl-carusel-2 {
+                margin-top: 35px;
                 ul {
-                    top: 100% !important;
+                    top: 0% !important;
                     left: 0;
+                    padding-left: 15px !important;
                     li {
                         a {
                             padding: 3px 5px;
@@ -889,6 +891,49 @@ body {
                         }
                     }
                 }
+                .text-songi {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 25px;
+                    padding-bottom: 0px;
+                    transform: translateY(-35px) !important;
+                }
+                .owl-carousel {
+                    width: 100% !important;
+                    .owl-nav {
+                        // margin-top: 20px;
+                        position: absolute;
+                        top: -43px !important;
+                        right: 0 !important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .owl-next {
+                            background-image: url(../img/rightt.svg) !important;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 35px !important;
+                            height: 20px !important;
+                            outline: none !important;
+                            span {
+                                display: none !important;
+                            }
+                        }
+                        .owl-prev {
+                            background-image: url(../img/leftt.svg) !important;
+                            background-repeat: no-repeat !important;
+                            background-size: cover !important;
+                            width: 35px !important;
+                            height: 20px !important;
+                            margin-right: 5px;
+                            outline: none !important;
+                            span {
+                                display: none !important;
+                            }
+                        }
+                    }
+                }
+                
                 .col-md-4 {
                     .card-img-top {
                         width: 103% !important;
@@ -938,10 +983,12 @@ body {
             max-width: 96vw !important;
             // MOTOR MOYLARI va HAYDOVCHI KABINASI
             .owl-carusel-2 {
+                margin-top: 35px;
                 ul {
                     width: 100% !important;
-                    top: 100% !important;
+                    top: 0% !important;
                     left: 0;
+                    padding-left: 10px;
                     overflow-x: scroll;
                     flex-wrap: nowrap;
                     li {
@@ -950,6 +997,48 @@ body {
                             &.active {
                                 background-color: black;
                                 color: white !important;
+                            }
+                        }
+                    }
+                }
+                .text-songi {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 25px;
+                    padding-bottom: 0px;
+                    transform: translateY(-35px) !important;
+                }
+                .owl-carousel {
+                    width: 100% !important;
+                    .owl-nav {
+                        // margin-top: 20px;
+                        position: absolute;
+                        top: -43px !important;
+                        right: 0 !important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .owl-next {
+                            background-image: url(../img/rightt.svg) !important;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 35px !important;
+                            height: 20px !important;
+                            outline: none !important;
+                            span {
+                                display: none !important;
+                            }
+                        }
+                        .owl-prev {
+                            background-image: url(../img/leftt.svg) !important;
+                            background-repeat: no-repeat !important;
+                            background-size: cover !important;
+                            width: 35px !important;
+                            height: 20px !important;
+                            margin-right: 5px;
+                            outline: none !important;
+                            span {
+                                display: none !important;
                             }
                         }
                     }
@@ -1047,14 +1136,20 @@ body {
             }
             //  Carusel
             .owl-carusel-2 {
+                margin-top: 50px !important;
                 .text-songi {
+                    font-weight: 400;
                     font-size: 18px;
+                    line-height: 25px;
+                    padding-bottom: 0px;
+                    transform: translateY(-35px) !important;
                 }
                 ul {
                     width: 100% !important;
-                    top: 100% !important;
+                    top: 0% !important;
                     left: 0;
                     overflow-x: scroll;
+                    padding-left: 12px;
                     flex-wrap: nowrap;
                     li {
                         a {
@@ -1062,6 +1157,40 @@ body {
                             &.active {
                                 background-color: black;
                                 color: white !important;
+                            }
+                        }
+                    }
+                }
+                .owl-carousel {
+                    width: 100% !important;
+                    .owl-nav {
+                        position: absolute !important;
+                        top: 100% !important;
+                        right: 35% !important;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .owl-next {
+                            background-image: url(../img/rightt.svg) !important;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 36px !important;
+                            height: 20px !important;
+                            outline: none !important;
+                            span {
+                                display: none !important;
+                            }
+                        }
+                        .owl-prev {
+                            background-image: url(../img/leftt.svg) !important;
+                            background-repeat: no-repeat !important;
+                            background-size: cover !important;
+                            width: 36px !important;
+                            height: 20px !important;
+                            margin-right: 5px;
+                            outline: none !important;
+                            span {
+                                display: none !important;
                             }
                         }
                     }

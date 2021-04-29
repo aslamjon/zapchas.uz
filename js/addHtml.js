@@ -19,21 +19,56 @@ function addSavat() {
 </div>
     `
     document.getElementById("addSavatPlace").innerHTML += addSavatH;
+    
+    document.querySelector('.total-sum').innerHTML = `<span id="total-sum">1 137 000</span> so’m`;
+    
     let minus = document.querySelectorAll('.minus');
     let plus = document.querySelectorAll('.plus');
     let count = document.querySelectorAll('.count');
+    let total_sum = document.querySelector('#total-sum');
 
-    document.querySelectorAll('.count').forEach((value, index) => {
-        plus[index].onclick = function () {
-            document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) + 1;
 
-        }
-        minus[index].onclick = function () {
-            if (document.querySelectorAll('.count')[index].value > 1) {
-                document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) - 1;
+    function countPlusMinus(){
+        document.querySelectorAll('.count').forEach((value, index) => {
+            value.setAttribute('disabled', true);
+            value.classList.add('text-black');
+            plus[index].onclick = function() {
+                document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) + 1;
+                
+                total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
+                total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
+                let res = String((Number(total_sum.innerHTML) + 379000));
+                let result = numberWithCommas(res);
+                for(i = 0; result.length > i; i+=3){
+                    if(result.includes(',')){
+                        result = result.replace(',',' ');
+                    }
+                }
+                total_sum.innerHTML = result;
             }
-        }
-    })
+            minus[index].onclick = function() {
+                if (document.querySelectorAll('.count')[index].value > 1) {
+                    document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) - 1;
+                    if (total_sum.innerHTML.includes(' ')) {
+                        total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
+                        total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
+                    }
+                    
+                    if (Number(total_sum.innerHTML) >= 379000) {
+                        let res = String((Number(total_sum.innerHTML) - 379000));
+                        let result = numberWithCommas(res);
+                        for(i = 0; result.length > i; i+=3){
+                            if(result.includes(',')){
+                                result = result.replace(',',' ');
+                            }
+                        }
+                        total_sum.innerHTML = result;
+                    }
+                }
+            }
+        })
+    }
+    countPlusMinus()
 }
 
 function tozalash() {

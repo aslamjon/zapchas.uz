@@ -29,7 +29,8 @@ $('#section1Owl').owlCarousel({
     autoplayHoverPause: true,
     responsive: {
         0: {
-            items: 1
+            items: 1,
+            autoplayTimeout: 3000
         },
         600: {
             items: 3
@@ -49,7 +50,8 @@ $('#section2Owl').owlCarousel({
     autoplayHoverPause: true,
     responsive: {
         0: {
-            items: 1
+            items: 1,
+            autoplayTimeout: 3000
         },
         600: {
             items: 3
@@ -428,44 +430,48 @@ let plus = document.querySelectorAll('.plus');
 let count = document.querySelectorAll('.count');
 let total_sum = document.querySelector('#total-sum');
 
-document.querySelectorAll('.count').forEach((value, index) => {
-    value.setAttribute('disabled', true);
-    value.classList.add('text-black');
-    plus[index].onclick = function() {
-        document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) + 1;
-        
-        total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
-        total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
-        let res = String((Number(total_sum.innerHTML) + 379000));
-        let result = numberWithCommas(res);
-        for(i = 0; result.length > i; i+=3){
-            if(result.includes(',')){
-                result = result.replace(',',' ');
-            }
-        }
-        total_sum.innerHTML = result;
-    }
-    minus[index].onclick = function() {
-        if (document.querySelectorAll('.count')[index].value > 1) {
-            document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) - 1;
-            if (total_sum.innerHTML.includes(' ')) {
-                total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
-                total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
-            }
+
+function countPlusMinus(){
+    document.querySelectorAll('.count').forEach((value, index) => {
+        value.setAttribute('disabled', true);
+        value.classList.add('text-black');
+        plus[index].onclick = function() {
+            document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) + 1;
             
-            if (Number(total_sum.innerHTML) >= 379000) {
-                let res = String((Number(total_sum.innerHTML) - 379000));
-                let result = numberWithCommas(res);
-                for(i = 0; result.length > i; i+=3){
-                    if(result.includes(',')){
-                        result = result.replace(',',' ');
-                    }
+            total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
+            total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
+            let res = String((Number(total_sum.innerHTML) + 379000));
+            let result = numberWithCommas(res);
+            for(i = 0; result.length > i; i+=3){
+                if(result.includes(',')){
+                    result = result.replace(',',' ');
                 }
-                total_sum.innerHTML = result;
+            }
+            total_sum.innerHTML = result;
+        }
+        minus[index].onclick = function() {
+            if (document.querySelectorAll('.count')[index].value > 1) {
+                document.querySelectorAll('.count')[index].value = Number(document.querySelectorAll('.count')[index].value) - 1;
+                if (total_sum.innerHTML.includes(' ')) {
+                    total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
+                    total_sum.innerHTML = total_sum.innerHTML.replace(' ','');
+                }
+                
+                if (Number(total_sum.innerHTML) >= 379000) {
+                    let res = String((Number(total_sum.innerHTML) - 379000));
+                    let result = numberWithCommas(res);
+                    for(i = 0; result.length > i; i+=3){
+                        if(result.includes(',')){
+                            result = result.replace(',',' ');
+                        }
+                    }
+                    total_sum.innerHTML = result;
+                }
             }
         }
-    }
-})
+    })
+}
+countPlusMinus()
 
 let clearSum = document.querySelector("#clearSum"); // total 
 let piece = document.querySelector("#piece"); // total piece
@@ -926,3 +932,29 @@ function likeOnclick() {
     })
 }
 likeOnclick();
+
+brend = document.getElementById('brend');
+brend.innerHTML = `
+<div class="inBrend">
+<div class="first">
+<button class="navbar-toggler log1" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<img src="img/Logo.svg" class="imgBrend" onclick="href('index.html')" alt="Error">
+</div>
+
+<div class="inBrendIcon">
+    <a class="nav-link" href="selectedProducts.html">
+        <img src="img/Heart.png" class="heart" alt="Error">
+        <div class="noti">0</div>
+    </a>
+    <a class="nav-link" href="Account.html">
+        <img src="img/user.svg" alt="Error">
+    </a>
+    <a class="nav-link cursor-pointer" data-toggle="modal" data-target="#myModal">
+        <img src="img/Cart2.svg" alt="Error">
+    </a>
+</div>
+
+</div>`
