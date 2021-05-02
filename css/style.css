@@ -4643,43 +4643,43 @@ header .search form .dvi {
 .section-1 .tab-content .href {
   color: #000000;
 }
-.section-1 #home #infocard {
+.section-1 #infocard {
   padding-right: 0;
   padding-left: 0 !important;
   padding: 10px !important;
 }
-.section-1 #home #infocard .modal-dialog {
+.section-1 #infocard .modal-dialog {
   margin: 4.75rem auto !important;
 }
-.section-1 #home #infocard .modal-dialog .modal-header {
+.section-1 #infocard .modal-dialog .modal-header {
   padding: 1rem 1rem 0 1rem !important;
   border: none;
 }
-.section-1 #home #infocard .modal-dialog .modal-header button {
+.section-1 #infocard .modal-dialog .modal-header button {
   border: none;
   outline: none;
 }
-.section-1 #home #infocard .modal-dialog .modal-body {
+.section-1 #infocard .modal-dialog .modal-body {
   padding-bottom: 1.5rem !important;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .first-section {
+.section-1 #infocard .modal-dialog .modal-body .first-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .first-section .row .col-4 img {
+.section-1 #infocard .modal-dialog .modal-body .first-section .row .col-4 img {
   width: 100%;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .title {
+.section-1 #infocard .modal-dialog .modal-body .title {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .about {
+.section-1 #infocard .modal-dialog .modal-body .about {
   display: flex;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .about .content {
+.section-1 #infocard .modal-dialog .modal-body .about .content {
   font-size: 12px;
   line-height: 14px;
   color: #868686;
@@ -4687,47 +4687,47 @@ header .search form .dvi {
   margin: 10px 5px;
   padding: 5px;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .about .content:first-child {
+.section-1 #infocard .modal-dialog .modal-body .about .content:first-child {
   margin-left: 0px;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .about .content:last-child {
+.section-1 #infocard .modal-dialog .modal-body .about .content:last-child {
   margin-right: 0px;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .about .content div {
+.section-1 #infocard .modal-dialog .modal-body .about .content div {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   color: #000000;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .description {
+.section-1 #infocard .modal-dialog .modal-body .description {
   font-size: 16px;
   line-height: 24px;
   /* or 150% */
   color: #868686;
   width: 88%;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .price {
+.section-1 #infocard .modal-dialog .modal-body .price {
   margin: 15px 0;
   font-weight: 900;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .price span {
+.section-1 #infocard .modal-dialog .modal-body .price span {
   font-size: 16px;
   line-height: 19px;
   /* identical to box height */
   text-decoration-line: line-through;
   color: #a5a5a5;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .m-footer {
+.section-1 #infocard .modal-dialog .modal-body .m-footer {
   display: flex;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .m-footer .myform {
+.section-1 #infocard .modal-dialog .modal-body .m-footer .myform {
   display: flex;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .m-footer .myform button,
-.section-1 #home #infocard .modal-dialog .modal-body .m-footer .myform input {
+.section-1 #infocard .modal-dialog .modal-body .m-footer .myform button,
+.section-1 #infocard .modal-dialog .modal-body .m-footer .myform input {
   width: 40px;
   height: 40px;
   margin: 0 !important;
@@ -4738,8 +4738,8 @@ header .search form .dvi {
   font-size: 16px;
   line-height: 19px;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .m-footer .btn1,
-.section-1 #home #infocard .modal-dialog .modal-body .m-footer .btn2 {
+.section-1 #infocard .modal-dialog .modal-body .m-footer .btn1,
+.section-1 #infocard .modal-dialog .modal-body .m-footer .btn2 {
   height: 40px;
   font-weight: bold;
   font-size: 16px;
@@ -4748,12 +4748,14 @@ header .search form .dvi {
   color: #ffffff;
   padding: 6px;
   border-radius: 0;
+  opacity: 1;
+  text-shadow: none;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .m-footer .btn1 {
+.section-1 #infocard .modal-dialog .modal-body .m-footer .btn1 {
   background: #007cff;
   margin: 0 10px;
 }
-.section-1 #home #infocard .modal-dialog .modal-body .m-footer .btn2 {
+.section-1 #infocard .modal-dialog .modal-body .m-footer .btn2 {
   background: #575757;
 }
 .section-1 .mobilBottomBtn {
@@ -5029,173 +5031,173 @@ header .search form .dvi {
   }
 }
 @media (min-width: 768px) {
-  .section-1 #home .modal .modal-dialog {
+  .section-1 #infocard .modal-dialog {
     max-width: 756px !important;
     margin: 1.75rem auto !important;
   }
 }
 @media (max-width: 767px) {
-  .section-1 #home .modal .modal-dialog {
+  .section-1 #infocard .modal-dialog {
     margin: 1.75rem auto !important;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .first-section .main-img {
+  .section-1 #infocard .modal-dialog .modal-body .first-section .main-img {
     width: 90%;
     margin: 0 auto;
   }
 }
 @media (max-width: 512px) {
-  .section-1 #home #infocard .modal-dialog .modal-body .m-footer {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .section-1 #home #infocard .modal-dialog .modal-body .m-footer .btn1 {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer .btn1 {
     width: 70%;
     margin: 0;
   }
-  .section-1 #home #infocard .modal-dialog .modal-body .m-footer .btn2 {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer .btn2 {
     width: 100%;
     margin-top: 15px;
   }
 }
 @media (max-width: 498px) {
-  .section-1 #home .modal .modal-dialog {
+  .section-1 #infocard .modal-dialog {
     margin: 0.75rem auto !important;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .first-section .main-img {
+  .section-1 #infocard .modal-dialog .modal-body .first-section .main-img {
     width: 90%;
     margin: 0 auto;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer {
     flex-wrap: wrap;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer .btn1 {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer .btn1 {
     display: block;
     width: 68%;
     margin: 0 0 0 10px;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer .btn2 {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer .btn2 {
     width: 100%;
     margin-top: 10px;
   }
 }
 @media (max-width: 480px) {
-  .section-1 #home .modal .modal-dialog .modal-body .about,
-.section-1 #home #infcard .modal-dialog .modal-body .about {
+  .section-1 .modal .modal-dialog .modal-body .about,
+.section-1 #infocard .modal-dialog .modal-body .about {
     flex-wrap: wrap;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .about .content,
-.section-1 #home #infcard .modal-dialog .modal-body .about .content {
+  .section-1 .modal .modal-dialog .modal-body .about .content,
+.section-1 #infocard .modal-dialog .modal-body .about .content {
     margin: 5px !important;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .about .content div,
-.section-1 #home #infcard .modal-dialog .modal-body .about .content div {
+  .section-1 .modal .modal-dialog .modal-body .about .content div,
+.section-1 #infocard .modal-dialog .modal-body .about .content div {
     font-size: 12px;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .about .content:last-child, .section-1 #home .modal .modal-dialog .modal-body .about .content:first-child,
-.section-1 #home #infcard .modal-dialog .modal-body .about .content:last-child,
-.section-1 #home #infcard .modal-dialog .modal-body .about .content:first-child {
+  .section-1 .modal .modal-dialog .modal-body .about .content:last-child, .section-1 .modal .modal-dialog .modal-body .about .content:first-child,
+.section-1 #infocard .modal-dialog .modal-body .about .content:last-child,
+.section-1 #infocard .modal-dialog .modal-body .about .content:first-child {
     margin-left: 0 !important;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .description,
-.section-1 #home #infcard .modal-dialog .modal-body .description {
+  .section-1 .modal .modal-dialog .modal-body .description,
+.section-1 #infocard .modal-dialog .modal-body .description {
     width: 96%;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer,
-.section-1 #home #infcard .modal-dialog .modal-body .m-footer {
+  .section-1 .modal .modal-dialog .modal-body .m-footer,
+.section-1 #infocard .modal-dialog .modal-body .m-footer {
     position: relative;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer .btn1,
-.section-1 #home #infcard .modal-dialog .modal-body .m-footer .btn1 {
+  .section-1 .modal .modal-dialog .modal-body .m-footer .btn1,
+.section-1 #infocard .modal-dialog .modal-body .m-footer .btn1 {
     position: absolute;
     top: 0;
     right: 0;
     width: 67% !important;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer .btn2,
-.section-1 #home #infcard .modal-dialog .modal-body .m-footer .btn2 {
+  .section-1 .modal .modal-dialog .modal-body .m-footer .btn2,
+.section-1 #infocard .modal-dialog .modal-body .m-footer .btn2 {
     width: 100%;
     margin-top: 10px;
   }
 }
 @media (max-width: 434px) {
-  .section-1 #home .modal .modal-dialog .modal-body .about .content {
+  .section-1 #infocard .modal-dialog .modal-body .about .content {
     padding: 5px;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .about .content div {
+  .section-1 #infocard .modal-dialog .modal-body .about .content div {
     font-size: 12px;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .description {
+  .section-1 #infocard .modal-dialog .modal-body .description {
     width: 96%;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer {
     position: relative;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer .btn1 {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer .btn1 {
     position: absolute;
     top: 0;
     right: 0;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer .btn2 {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer .btn2 {
     width: 100%;
     margin-top: 10px;
   }
 }
 @media (max-width: 422px) {
-  .section-1 #home .modal .modal-dialog .modal-body .about {
+  .section-1 #infocard .modal-dialog .modal-body .about {
     flex-wrap: wrap;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .about .content {
+  .section-1 #infocard .modal-dialog .modal-body .about .content {
     margin: 3px 3px;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer {
     position: relative;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer .myform {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer .myform {
     width: 31%;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer .btn1 {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer .btn1 {
     position: absolute;
     top: 0;
     right: 0;
     width: 66%;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer .btn2 {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer .btn2 {
     width: 100%;
     margin-top: 10px;
   }
 }
 @media (max-width: 382px) {
-  .section-1 #home .modal .modal-dialog .modal-body .stars {
+  .section-1 #infocard .modal-dialog .modal-body .stars {
     margin-bottom: 5px;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .about {
+  .section-1 #infocard .modal-dialog .modal-body .about {
     flex-wrap: wrap;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .about .content {
+  .section-1 #infocard .modal-dialog .modal-body .about .content {
     margin: 3px 3px;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .about .content:last-child {
+  .section-1 #infocard .modal-dialog .modal-body .about .content:last-child {
     margin: 0;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer {
     position: relative;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer .myform {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer .myform {
     width: 31%;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer .btn1 {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer .btn1 {
     position: absolute;
     top: 0;
     right: 0;
     width: 66%;
   }
-  .section-1 #home .modal .modal-dialog .modal-body .m-footer .btn2 {
+  .section-1 #infocard .modal-dialog .modal-body .m-footer .btn2 {
     width: 100%;
     margin-top: 10px;
   }
 }
 @media (max-width: 341px) {
-  .section-1 #home #infocard .modal-dialog .modal-body .about .content:nth-child(3) {
+  .section-1 #infocard .modal-dialog .modal-body .about .content:nth-child(3) {
     margin-left: 0 !important;
   }
 }
@@ -12597,6 +12599,10 @@ body {
   padding: 0;
   background-color: #fafafa;
   font-family: "Roboto-Black", sans-serif;
+}
+
+.close {
+  text-shadow: none;
 }
 
 .rang {
