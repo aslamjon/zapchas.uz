@@ -4323,6 +4323,7 @@ header .search form .s-btn {
   border: none;
   outline: none;
   padding: 10px 15px;
+  max-height: 67px;
 }
 header .search form .year #s1, header .search form .year #s2, header .search form .year #s3, header .search form .year #s4,
 header .search form .brend #s1,
@@ -4353,6 +4354,103 @@ header .search form .dvi #s2 option,
 header .search form .dvi #s3 option,
 header .search form .dvi #s4 option {
   font-weight: 100 !important;
+}
+header .search form .select-box {
+  display: flex;
+  width: 210px;
+  flex-direction: column;
+  position: relative;
+}
+header .search form .select-box .options-container {
+  background: #cecece;
+  color: #000;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 1px;
+  overflow: hidden;
+  order: 1;
+  position: absolute;
+  top: 67px;
+}
+header .search form .select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background: #0d141f;
+  background: none;
+  border-radius: 2px;
+}
+header .search form .select-box .options-container::-webkit-scrollbar-thumb {
+  background: #525861;
+  border-radius: 5px;
+}
+header .search form .select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+  z-index: 3;
+}
+header .search form .select-box .options-container.active + .selected::after {
+  transform: rotateX(180deg);
+  top: 0px;
+}
+header .search form .select-box .selected {
+  background: #fff;
+  border-radius: 1px;
+  position: relative;
+  height: 67px;
+  order: 0;
+}
+header .search form .select-box .selected #year, header .search form .select-box .selected #brend2, header .search form .select-box .selected #model, header .search form .select-box .selected #dvi {
+  font-weight: 200;
+  font-size: 19px;
+  line-height: 23px;
+  color: #000;
+}
+header .search form .select-box .selected div {
+  color: #a5a5a5;
+  font-size: 14px;
+  line-height: 19px;
+}
+header .search form .select-box .selected::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: #000;
+  cursor: pointer;
+  mask-position: center center;
+  mask-size: 90%;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-size: 90%;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url("../img/arrow-down.svg");
+  -webkit-mask-image: url("../img/arrow-down.svg");
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 10px;
+  top: 0px;
+  transition: all 0.4s;
+}
+header .search form .select-box .option, header .search form .select-box .option2, header .search form .select-box .option3, header .search form .select-box .option4,
+header .search form .select-box .selected {
+  padding: 10px;
+  cursor: pointer;
+}
+header .search form .select-box .option .radio, header .search form .select-box .option2 .radio, header .search form .select-box .option3 .radio, header .search form .select-box .option4 .radio {
+  display: none;
+}
+header .search form .select-box .option:hover, header .search form .select-box .option2:hover, header .search form .select-box .option3:hover, header .search form .select-box .option4:hover {
+  background: #414b57;
+}
+header .search form .select-box label {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+header .search form .dn {
+  display: none;
 }
 
 @media (max-width: 1129px) {
@@ -4437,6 +4535,9 @@ header .search form .dvi #s4 option {
   }
 }
 @media (max-width: 505px) {
+  header {
+    background-position-y: -35px;
+  }
   header .title {
     font-size: 30px;
     line-height: 34px;

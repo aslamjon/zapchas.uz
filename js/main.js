@@ -616,6 +616,12 @@ function openSelect(selectId, select_show, optionHide, self) {
         self.style.position = 'relative';
         select.style.position = 'absolute';
         select.style.left = '0';
+        console.log(select.childElementCount);
+        if (select.childElementCount > 8){
+            select.style.maxHeight = '205px';
+            select.style.overflowY = 'auto';
+        }
+        
         if (window.innerWidth < 997) {
             switch (selectId) {
                 case 's1':
@@ -643,9 +649,99 @@ function openSelect(selectId, select_show, optionHide, self) {
                     break;
             }
         }
-
     }
 }
+
+function selectWidthRadio() {
+    const year = document.querySelector(".year");
+    const optionsContainer = document.querySelector(".options-container");
+    const optionsList = document.querySelectorAll(".option");
+    
+    const optionsContainer2 = document.querySelector(".options-container2");
+    const brend = document.querySelector(".brend");
+    const optionsList2 = document.querySelectorAll(".option2");
+
+    const optionsContainer3 = document.querySelector(".options-container3");
+    const model = document.querySelector(".model");
+    const optionsList3 = document.querySelectorAll(".option3");
+
+    const optionsContainer4 = document.querySelector(".options-container4");
+    const dvi = document.querySelector(".dvi");
+    const optionsList4 = document.querySelectorAll(".option4");
+    let sBox1 = document.querySelector(".sBox1");
+    let sBox2 = document.querySelector(".sBox2");
+    let sBox3 = document.querySelector(".sBox3");
+    let sBox4 = document.querySelector(".sBox4");
+    // year
+    year.addEventListener("click", () => {
+        optionsContainer.classList.toggle("active");
+        if (window.innerWidth < 649) {
+            sBox2.classList.toggle("dn");
+            sBox3.classList.toggle("dn");
+            sBox4.classList.toggle("dn");
+        }
+    });
+
+    optionsList.forEach(o => {
+    o.addEventListener("click", () => {
+        document.querySelector("#year").innerHTML = o.querySelector("label").innerHTML;
+        optionsContainer.classList.remove("active");
+        });
+    });
+    
+    // brend
+    brend.addEventListener("click", () => {
+        optionsContainer2.classList.toggle("active");
+        if (window.innerWidth < 649) {
+            sBox1.classList.toggle("dn");
+            sBox3.classList.toggle("dn");
+            sBox4.classList.toggle("dn");
+        }
+    });
+
+    optionsList2.forEach(o => {
+    o.addEventListener("click", () => {
+        document.querySelector("#brend2").innerHTML = o.querySelector("label").innerHTML;
+        optionsContainer2.classList.remove("active");
+        });
+    });
+
+    
+    // model
+    model.addEventListener("click", () => {
+        optionsContainer3.classList.toggle("active");
+        if (window.innerWidth < 649) {
+            sBox2.classList.toggle("dn");
+            sBox1.classList.toggle("dn");
+            sBox4.classList.toggle("dn");
+        }
+    });
+
+    optionsList3.forEach(o => {
+    o.addEventListener("click", () => {
+        document.querySelector("#model").innerHTML = o.querySelector("label").innerHTML;
+        optionsContainer3.classList.remove("active");
+        });
+    });
+    
+    // dvi
+    dvi.addEventListener("click", () => {
+        optionsContainer4.classList.toggle("active");
+        if (window.innerWidth < 649) {
+            sBox2.classList.toggle("dn");
+            sBox3.classList.toggle("dn");
+            sBox1.classList.toggle("dn");
+        }
+    });
+
+    optionsList4.forEach(o => {
+    o.addEventListener("click", () => {
+        document.querySelector("#dvi").innerHTML = o.querySelector("label").innerHTML;
+        optionsContainer4.classList.remove("active");
+        });
+    });
+}
+selectWidthRadio();
 
 function openData(dataId, dataId2, self) {
     let d1 = document.getElementsByClassName(dataId)[0];
