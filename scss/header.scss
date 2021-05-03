@@ -93,7 +93,7 @@ header {
         form {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin-top: 30px;
             flex-wrap: wrap;
             height: 40px;
             .year,
@@ -449,7 +449,7 @@ header {
 @media (max-width: 460px) {
     header {
         .title {
-            padding-top: 53px;
+            padding-top: 60px;
         }
     }
 }
@@ -507,6 +507,11 @@ header {
 }
 @media (max-height: 538px) {
     header{
-        height: 490px;
+        height: 570px;
+    }
+} 
+@media (min-height: 600px) {
+    header{
+        height: 550px;
     }
 } 

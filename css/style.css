@@ -4132,7 +4132,7 @@ header .title {
 header .search form {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
   flex-wrap: wrap;
   height: 40px;
 }
@@ -4525,7 +4525,7 @@ header .search form .dn {
 }
 @media (max-width: 460px) {
   header .title {
-    padding-top: 53px;
+    padding-top: 60px;
   }
 }
 @media (max-width: 718px) {
@@ -4565,7 +4565,12 @@ header .search form .dvi {
 }
 @media (max-height: 538px) {
   header {
-    height: 490px;
+    height: 570px;
+  }
+}
+@media (min-height: 600px) {
+  header {
+    height: 550px;
   }
 }
 .section-1 {
@@ -5794,6 +5799,11 @@ header .search form .dvi {
 @media (max-height: 600px) {
   .section-3 {
     height: 90vh;
+  }
+}
+@media (min-height: 660px) {
+  .section-3 {
+    height: 530px;
   }
 }
 .aboutP {
@@ -8436,6 +8446,10 @@ header .search form .dvi {
 }
 @media (max-width: 490px) {
   .savatcha-page .title {
+    justify-content: space-around;
+    margin: 5px 10px;
+  }
+  .savatcha-page .title .fourth {
     display: none;
   }
   .savatcha-page .s-body {
@@ -8479,11 +8493,29 @@ header .search form .dvi {
     display: flex;
     justify-content: center;
   }
+  .savatcha-page .s-body .total .total-price {
+    order: 1;
+  }
   .savatcha-page .s-body .total .t-mess {
     font-weight: 500;
     font-size: 16px;
     line-height: 23px;
     color: #676767;
+  }
+}
+@media (max-width: 400px) {
+  .savatcha-page .head a {
+    font-size: 14px;
+  }
+  .savatcha-page .head a img {
+    width: 16px;
+  }
+  .savatcha-page .head form button {
+    width: 151px;
+    height: 32px;
+  }
+  .savatcha-page .s-body .total .t-mess {
+    font-size: 15px;
   }
 }
 @media (min-width: 1366px) {
@@ -9196,7 +9228,7 @@ header .search form .dvi {
   color: #BCBCBC;
 }
 .section-footer .container .row-footer .gani form input {
-  width: 65%;
+  width: 68%;
   padding: 5px;
   outline: none !important;
   border-radius: 3px;
@@ -9205,7 +9237,7 @@ header .search form .dvi {
   border: none !important;
 }
 .section-footer .container .row-footer .gani form input::placeholder {
-  padding-left: 30px;
+  padding-left: 5px;
   color: #BCBCBC;
 }
 .section-footer .container .row-footer .gani form .azo-click {
@@ -11565,6 +11597,8 @@ header .search form .dvi {
   color: #ffffff;
   background: #007cff;
   padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
 }
 .account-main .nav-tabs li a {
   font-size: 16px;
