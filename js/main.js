@@ -666,11 +666,14 @@ function openSelect(selectId, select_show, optionHide, self) {
     }
 }
 // tap navbar mail
-let topNav = document.querySelector('.top-nav');
-let left = topNav.firstElementChild;
-let leftContent = left.firstElementChild;
-let aMail = leftContent.childNodes[3];
-aMail.setAttribute('href','mailto:info@zapchas.uz');
+if (document.querySelector('.top-nav') != null) {
+    let topNav = document.querySelector('.top-nav');
+    let left = topNav.firstElementChild;
+    let leftContent = left.firstElementChild;
+    let aMail = leftContent.childNodes[3];
+    aMail.setAttribute('href','mailto:info@zapchas.uz');
+}
+
 
 
 function openData(dataId, dataId2, self) {
@@ -875,7 +878,6 @@ function timeOfDiscount(setday) {
     let minut = document.getElementById('minut');
     let sec = document.getElementById('sec');
     day.innerHTML = setday;
-    console.log(sec.innerHTML);
     if ((sec.innerHTML == 00) && (minut.innerHTML == 00) && (hours.innerHTML == 00)) {
         day.innerHTML--;
         hours.innerHTML = 24;
@@ -959,153 +961,160 @@ function likeOnclick() {
 }
 likeOnclick();
 
-brend = document.getElementById('brend');
-brend.innerHTML = `
-<div class="inBrend">
-<div class="first">
-<button class="navbar-toggler log1" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-</button>
-
-<img src="img/Logo.svg" class="imgBrend" onclick="href('index.html')" alt="Error">
-</div>
-
-<div class="inBrendIcon">
-    <a class="nav-link" href="selectedProducts.html">
-        <img src="img/Heart.png" class="heart" alt="Error">
-        <div class="noti">0</div>
-    </a>
-    <a class="nav-link" href="Account.html">
-        <img src="img/user.svg" alt="Error">
-    </a>
-    <a class="nav-link cursor-pointer" data-toggle="modal" data-target="#myModal">
-        <img src="img/Cart2.svg" alt="Error">
-    </a>
-</div>
-
-</div>`;
+if (document.getElementById('brend') != null) {
+    brend = document.getElementById('brend');
+    brend.innerHTML = `
+    <div class="inBrend">
+    <div class="first">
+    <button class="navbar-toggler log1" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <img src="img/Logo.svg" class="imgBrend" onclick="href('index.html')" alt="Error">
+    </div>
+    
+    <div class="inBrendIcon">
+        <a class="nav-link" href="selectedProducts.html">
+            <img src="img/Heart.png" class="heart" alt="Error">
+            <div class="noti">0</div>
+        </a>
+        <a class="nav-link" href="Account.html">
+            <img src="img/user.svg" alt="Error">
+        </a>
+        <a class="nav-link cursor-pointer" data-toggle="modal" data-target="#myModal">
+            <img src="img/Cart2.svg" alt="Error">
+        </a>
+    </div>
+    
+    </div>`;
+}
 
 
 
 function selectWidthRadio() {
-    const year = document.querySelector(".year");
-    const optionsContainer = document.querySelector(".options-container");
-    const optionsList = document.querySelectorAll(".option");
+    if (document.querySelector(".year") != null) {
+        const year = document.querySelector(".year");
+        const optionsContainer = document.querySelector(".options-container");
+        const optionsList = document.querySelectorAll(".option");
+        
+        const optionsContainer2 = document.querySelector(".options-container2");
+        const brend = document.querySelector(".brend");
+        const optionsList2 = document.querySelectorAll(".option2");
     
-    const optionsContainer2 = document.querySelector(".options-container2");
-    const brend = document.querySelector(".brend");
-    const optionsList2 = document.querySelectorAll(".option2");
-
-    const optionsContainer3 = document.querySelector(".options-container3");
-    const model = document.querySelector(".model");
-    const optionsList3 = document.querySelectorAll(".option3");
-
-    const optionsContainer4 = document.querySelector(".options-container4");
-    const dvi = document.querySelector(".dvi");
-    const optionsList4 = document.querySelectorAll(".option4");
-    let sBox1 = document.querySelector(".sBox1");
-    let sBox2 = document.querySelector(".sBox2");
-    let sBox3 = document.querySelector(".sBox3");
-    let sBox4 = document.querySelector(".sBox4");
-    // year
-    year.addEventListener("click", () => {
-        optionsContainer.classList.toggle("active");
-        if (window.innerWidth < 649) {
-            sBox2.classList.toggle("dn");
-            sBox3.classList.toggle("dn");
-            sBox4.classList.toggle("dn");
-        }
-    });
-
-    optionsList.forEach(o => {
-    o.addEventListener("click", () => {
-        document.querySelector("#year").innerHTML = o.querySelector("label").innerHTML;
-        optionsContainer.classList.remove("active");
-            sBox2.classList.remove("dn");
-            sBox3.classList.remove("dn");
-            sBox4.classList.remove("dn");
-        });
-    });
+        const optionsContainer3 = document.querySelector(".options-container3");
+        const model = document.querySelector(".model");
+        const optionsList3 = document.querySelectorAll(".option3");
     
-    // brend
-    brend.addEventListener("click", () => {
-        optionsContainer2.classList.toggle("active");
-        if (window.innerWidth < 649) {
-            sBox1.classList.toggle("dn");
-            sBox3.classList.toggle("dn");
-            sBox4.classList.toggle("dn");
-        }
-    });
-
-    optionsList2.forEach(o => {
-    o.addEventListener("click", () => {
-        document.querySelector("#brend2").innerHTML = o.querySelector("label").innerHTML;
-        optionsContainer2.classList.remove("active");
-            sBox1.classList.remove("dn");
-            sBox3.classList.remove("dn");
-            sBox4.classList.remove("dn");
-        });
-    });
-
+        const optionsContainer4 = document.querySelector(".options-container4");
+        const dvi = document.querySelector(".dvi");
+        const optionsList4 = document.querySelectorAll(".option4");
+        let sBox1 = document.querySelector(".sBox1");
+        let sBox2 = document.querySelector(".sBox2");
+        let sBox3 = document.querySelector(".sBox3");
+        let sBox4 = document.querySelector(".sBox4");
+        // year
     
-    // model
-    model.addEventListener("click", () => {
-        optionsContainer3.classList.toggle("active");
-        if (window.innerWidth < 649) {
-            sBox2.classList.toggle("dn");
-            sBox1.classList.toggle("dn");
-            sBox4.classList.toggle("dn");
-        }
-    });
-
-    optionsList3.forEach(o => {
-    o.addEventListener("click", () => {
-        document.querySelector("#model").innerHTML = o.querySelector("label").innerHTML;
-        optionsContainer3.classList.remove("active");
-            sBox2.classList.remove("dn");
-            sBox1.classList.remove("dn");
-            sBox4.classList.remove("dn");
+        year.addEventListener("click", () => {
+            optionsContainer.classList.toggle("active");
+            if (window.innerWidth < 649) {
+                sBox2.classList.toggle("dn");
+                sBox3.classList.toggle("dn");
+                sBox4.classList.toggle("dn");
+            }
         });
-    });
     
-    // dvi
-    dvi.addEventListener("click", () => {
-        optionsContainer4.classList.toggle("active");
-        if (window.innerWidth < 649) {
-            sBox2.classList.toggle("dn");
-            sBox3.classList.toggle("dn");
-            sBox1.classList.toggle("dn");
-        }
-    });
-
-    optionsList4.forEach(o => {
-    o.addEventListener("click", () => {
-        document.querySelector("#dvi").innerHTML = o.querySelector("label").innerHTML;
-        optionsContainer4.classList.remove("active");
-            sBox2.classList.remove("dn");
-            sBox3.classList.remove("dn");
-            sBox1.classList.remove("dn");
+        optionsList.forEach(o => {
+        o.addEventListener("click", () => {
+            document.querySelector("#year").innerHTML = o.querySelector("label").innerHTML;
+            optionsContainer.classList.remove("active");
+                sBox2.classList.remove("dn");
+                sBox3.classList.remove("dn");
+                sBox4.classList.remove("dn");
+            });
         });
-    });
+        
+        // brend
+        brend.addEventListener("click", () => {
+            optionsContainer2.classList.toggle("active");
+            if (window.innerWidth < 649) {
+                sBox1.classList.toggle("dn");
+                sBox3.classList.toggle("dn");
+                sBox4.classList.toggle("dn");
+            }
+        });
+    
+        optionsList2.forEach(o => {
+        o.addEventListener("click", () => {
+            document.querySelector("#brend2").innerHTML = o.querySelector("label").innerHTML;
+            optionsContainer2.classList.remove("active");
+                sBox1.classList.remove("dn");
+                sBox3.classList.remove("dn");
+                sBox4.classList.remove("dn");
+            });
+        });
+    
+        
+        // model
+        model.addEventListener("click", () => {
+            optionsContainer3.classList.toggle("active");
+            if (window.innerWidth < 649) {
+                sBox2.classList.toggle("dn");
+                sBox1.classList.toggle("dn");
+                sBox4.classList.toggle("dn");
+            }
+        });
+    
+        optionsList3.forEach(o => {
+        o.addEventListener("click", () => {
+            document.querySelector("#model").innerHTML = o.querySelector("label").innerHTML;
+            optionsContainer3.classList.remove("active");
+                sBox2.classList.remove("dn");
+                sBox1.classList.remove("dn");
+                sBox4.classList.remove("dn");
+            });
+        });
+        
+        // dvi
+        dvi.addEventListener("click", () => {
+            optionsContainer4.classList.toggle("active");
+            if (window.innerWidth < 649) {
+                sBox2.classList.toggle("dn");
+                sBox3.classList.toggle("dn");
+                sBox1.classList.toggle("dn");
+            }
+        });
+    
+        optionsList4.forEach(o => {
+        o.addEventListener("click", () => {
+            document.querySelector("#dvi").innerHTML = o.querySelector("label").innerHTML;
+            optionsContainer4.classList.remove("active");
+                sBox2.classList.remove("dn");
+                sBox3.classList.remove("dn");
+                sBox1.classList.remove("dn");
+            });
+        });
+    }
 }
 selectWidthRadio();
 
-let signup = document.getElementById('signup');
-let modal_dialog = signup.firstElementChild;
-let modal_content = modal_dialog.firstElementChild;
-let modal_body = modal_content.lastElementChild;
-let modal_form = modal_body.firstElementChild;
-let dublee = modal_form.children;
-let secondInModal = dublee[2].lastElementChild;
-
-let forMobil = `<div class="second">
-<label for="passwordd3">Parol <span>*</span></label>
-<input type="password" id="passwordd3" placeholder="Parolni qayta kiriting">
-
-<label for="tel">Telefon <span>*</span></label>
-<input type="tel" id="tel" placeholder="Telefon raqamingizni kiriting">
-
-</div>`;
-if (window.innerWidth <= 518) {
-    secondInModal.innerHTML = forMobil;
+if (document.getElementById('signup') != null) {
+    let signup = document.getElementById('signup');
+    let modal_dialog = signup.firstElementChild;
+    let modal_content = modal_dialog.firstElementChild;
+    let modal_body = modal_content.lastElementChild;
+    let modal_form = modal_body.firstElementChild;
+    let dublee = modal_form.children;
+    let secondInModal = dublee[2].lastElementChild;
+    
+    let forMobil = `<div class="second">
+    <label for="passwordd3">Parol <span>*</span></label>
+    <input type="password" id="passwordd3" placeholder="Parolni qayta kiriting">
+    
+    <label for="tel">Telefon <span>*</span></label>
+    <input type="tel" id="tel" placeholder="Telefon raqamingizni kiriting">
+    
+    </div>`;
+    if (window.innerWidth <= 518) {
+        secondInModal.innerHTML = forMobil;
+    }
 }
