@@ -248,20 +248,7 @@ nav {
         }
     }
     .modal {
-        /* width */
-        &::-webkit-scrollbar {
-            width: 10px;
-        }
-        /* Track */
-        &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px grey;
-            border-radius: 10px;
-        }
-        /* Handle */
-        &::-webkit-scrollbar-thumb {
-            background: #007cff;
-            border-radius: 60px;
-        }
+        
         .modal-dialog {
             margin: 0 !important;
             position: absolute;
@@ -1228,5 +1215,10 @@ nav {
                 margin-right: 0;
             }
         }
+    }
+}
+@media (min-height: 826px) {
+    nav .modal .modal-dialog .modal-content{
+        height: 90vh !important;
     }
 }

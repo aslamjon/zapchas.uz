@@ -3359,22 +3359,6 @@ nav .second-collapse ul li .dropdown .dropdown-menu .dropdown-item {
   padding: 5px !important;
   background: none;
 }
-nav .modal {
-  /* width */
-  /* Track */
-  /* Handle */
-}
-nav .modal::-webkit-scrollbar {
-  width: 10px;
-}
-nav .modal::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-nav .modal::-webkit-scrollbar-thumb {
-  background: #007cff;
-  border-radius: 60px;
-}
 nav .modal .modal-dialog {
   margin: 0 !important;
   position: absolute;
@@ -4039,6 +4023,11 @@ nav .second-collapse ul li a .cart .second {
 @media (max-width: 360px) {
   #brend .inBrend .imgBrend {
     margin-right: 0;
+  }
+}
+@media (min-height: 826px) {
+  nav .modal .modal-dialog .modal-content {
+    height: 90vh !important;
   }
 }
 @font-face {
